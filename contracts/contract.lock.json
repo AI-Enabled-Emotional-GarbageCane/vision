@@ -1,0 +1,18 @@
+{
+  "contract_version": "v0.3",
+  "source_repo": "https://github.com/AI-Enabled-Emotional-GarbageCane/ai-enabled-emotional-garbagecane",
+  "source_commit": "pending-center-contract-commit",
+  "module": "vision",
+  "owned_events": [
+    "recognition_result"
+  ],
+  "consumed_events": [
+    "user_detected"
+  ],
+  "forbidden_cross_repo_changes": [
+    "rename q_detected or q_result",
+    "remove required recognition_result payload fields",
+    "change class values away from accept/reject",
+    "take ownership of UI, voice playback, LED, or L515 depth trigger"
+  ]
+}

@@ -1,1 +1,14 @@
 .DS_Store
+
+# Local datasets and generated artifacts.
+data/
+runs/
+weights/
+exports/
+*.pt
+*.onnx
+*.engine
+
+# Python runtime caches.
+__pycache__/
+*.py[cod]
