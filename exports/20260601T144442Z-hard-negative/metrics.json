@@ -1,0 +1,18 @@
+{
+  "run_id": "20260601T144442Z-hard-negative",
+  "baseline_run_id": "20260601T122805Z",
+  "best_pt": "/Users/hjc/Library/CloudStorage/GoogleDrive-hjcaieng@gmail.com/我的雲端硬碟/DLA-Final/vision-training/exports/20260601T144442Z-hard-negative/best.pt",
+  "best_onnx": "/Users/hjc/Library/CloudStorage/GoogleDrive-hjcaieng@gmail.com/我的雲端硬碟/DLA-Final/vision-training/exports/20260601T144442Z-hard-negative/best.onnx",
+  "local_best_pt": "/Users/hjc/CodeSpace/DLA-Final/vision/exports/20260601T144442Z-hard-negative/best.pt",
+  "local_best_onnx": "/Users/hjc/CodeSpace/DLA-Final/vision/exports/20260601T144442Z-hard-negative/best.onnx",
+  "raw_top1": 0.8746177370030581,
+  "raw_false_accept_rate_on_reject": 0.20245398773006135,
+  "selected_accept_threshold": 0.68,
+  "gate_accuracy": 0.8685015290519877,
+  "gate_false_accept_rate_on_reject": 0.1656441717791411,
+  "gate_reject_recall": 0.8343558282208589,
+  "acceptance_target_top1": 0.9,
+  "acceptance_target_false_accept_rate": 0.05,
+  "top1_acceptance_met": false,
+  "false_accept_acceptance_met": false
+}

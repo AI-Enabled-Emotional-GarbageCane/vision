@@ -1,0 +1,8 @@
+{
+  "event": "recognition_result",
+  "class": "reject",
+  "confidence": 0.8718243837356567,
+  "num_objects": 1,
+  "snapshot_path": "/content/vision-training-work/processed/trashnet-realwaste-yolo11n-cls/test/accept/00001_realwaste_Miscellaneous_Trash.jpg",
+  "ts": "2026-06-01T13:06:00+00:00"
+}

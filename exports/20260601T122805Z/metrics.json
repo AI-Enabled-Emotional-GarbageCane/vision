@@ -1,0 +1,29 @@
+{
+  "run_id": "20260601T122805Z",
+  "dataset_dir": "/content/vision-training-work/processed/trashnet-realwaste-yolo11n-cls",
+  "drive_dataset_dir": "/content/drive/MyDrive/DLA-Final/vision-training/processed/trashnet-realwaste-yolo11n-cls",
+  "best_pt": "/content/drive/MyDrive/DLA-Final/vision-training/runs/yolo11n-cls-public-baseline-20260601T122805Z/weights/best.pt",
+  "save_dir": "/content/drive/MyDrive/DLA-Final/vision-training/runs/yolo11n-cls-public-baseline-20260601T122805Z",
+  "batch_used": 32,
+  "imgsz": 224,
+  "epochs": 50,
+  "top1": 0.856269121170044,
+  "top5": 1.0,
+  "acceptance_target_top1": 0.85,
+  "acceptance_met": true,
+  "dataset_counts": {
+    "train": {
+      "accept": 760,
+      "reject": 761
+    },
+    "val": {
+      "accept": 163,
+      "reject": 163
+    },
+    "test": {
+      "accept": 164,
+      "reject": 163
+    }
+  },
+  "next_step_if_below_target": "Add L515 demo-angle images and retrain/fine-tune."
+}

@@ -1,0 +1,121 @@
+{
+  "status": "ok",
+  "note": "Colab training disconnected after epoch 9; this evaluates the best.pt checkpoint saved by that partial hard-negative fine-tune run.",
+  "run_id": "20260601T144442Z-hard-negative",
+  "baseline_run_id": "20260601T122805Z",
+  "generated_at": "2026-06-01T15:24:34.584470+00:00",
+  "source_dataset": "/Users/hjc/Library/CloudStorage/GoogleDrive-hjcaieng@gmail.com/我的雲端硬碟/DLA-Final/vision-training/processed/trashnet-realwaste-yolo11n-cls",
+  "eval_dataset_local_cache": "/tmp/vision-eval-20260601T144442Z-hard-negative/dataset",
+  "run_dir": "/Users/hjc/Library/CloudStorage/GoogleDrive-hjcaieng@gmail.com/我的雲端硬碟/DLA-Final/vision-training/runs/yolo11n-cls-hard-negative-20260601T144442Z-hard-negative",
+  "best_pt": "/Users/hjc/Library/CloudStorage/GoogleDrive-hjcaieng@gmail.com/我的雲端硬碟/DLA-Final/vision-training/exports/20260601T144442Z-hard-negative/best.pt",
+  "best_onnx": "/Users/hjc/Library/CloudStorage/GoogleDrive-hjcaieng@gmail.com/我的雲端硬碟/DLA-Final/vision-training/exports/20260601T144442Z-hard-negative/best.onnx",
+  "local_best_pt": "/Users/hjc/CodeSpace/DLA-Final/vision/exports/20260601T144442Z-hard-negative/best.pt",
+  "local_best_onnx": "/Users/hjc/CodeSpace/DLA-Final/vision/exports/20260601T144442Z-hard-negative/best.onnx",
+  "training_progress": {
+    "completed_epochs_observed": 9,
+    "best_val_top1_observed": 0.89877
+  },
+  "threshold_selection": {
+    "selected_threshold": 0.68,
+    "reason": "val false_accept_rate <= 0.05",
+    "val_metric_at_selected_threshold": {
+      "threshold": 0.68,
+      "confusion": {
+        "accept": {
+          "accept": 145,
+          "reject": 18
+        },
+        "reject": {
+          "accept": 8,
+          "reject": 155
+        }
+      },
+      "total": 326,
+      "correct": 300,
+      "accuracy": 0.9202453987730062,
+      "accept_recall": 0.8895705521472392,
+      "reject_recall": 0.950920245398773,
+      "false_accept_count": 8,
+      "false_accept_rate_on_reject": 0.049079754601226995
+    },
+    "fallback_baseline_threshold": 0.76
+  },
+  "test_argmax": {
+    "confusion": {
+      "accept": {
+        "accept": 156,
+        "reject": 8
+      },
+      "reject": {
+        "accept": 33,
+        "reject": 130
+      }
+    },
+    "total": 327,
+    "correct": 286,
+    "accuracy": 0.8746177370030581,
+    "accept_recall": 0.9512195121951219,
+    "reject_recall": 0.7975460122699386,
+    "false_accept_count": 33,
+    "false_accept_rate_on_reject": 0.20245398773006135
+  },
+  "test_accept_gate": {
+    "confusion": {
+      "accept": {
+        "accept": 148,
+        "reject": 16
+      },
+      "reject": {
+        "accept": 27,
+        "reject": 136
+      }
+    },
+    "total": 327,
+    "correct": 284,
+    "accuracy": 0.8685015290519877,
+    "accept_recall": 0.9024390243902439,
+    "reject_recall": 0.8343558282208589,
+    "false_accept_count": 27,
+    "false_accept_rate_on_reject": 0.1656441717791411
+  },
+  "test_accept_gate_at_0_76": {
+    "confusion": {
+      "accept": {
+        "accept": 146,
+        "reject": 18
+      },
+      "reject": {
+        "accept": 23,
+        "reject": 140
+      }
+    },
+    "total": 327,
+    "correct": 286,
+    "accuracy": 0.8746177370030581,
+    "accept_recall": 0.8902439024390244,
+    "reject_recall": 0.8588957055214724,
+    "false_accept_count": 23,
+    "false_accept_rate_on_reject": 0.1411042944785276
+  },
+  "onnx_smoke": {
+    "sample_path": "/tmp/vision-eval-20260601T144442Z-hard-negative/dataset/test/accept/00001_realwaste_Miscellaneous_Trash.jpg",
+    "class": "accept",
+    "confidence": 0.6420819163322449
+  },
+  "sample_payload_preserves_model_best_guess": {
+    "event": "recognition_result",
+    "class": "accept",
+    "confidence": 0.6420820355415344,
+    "num_objects": 1,
+    "snapshot_path": "/tmp/vision-eval-20260601T144442Z-hard-negative/dataset/test/accept/00001_realwaste_Miscellaneous_Trash.jpg",
+    "ts": "2026-06-01T15:24:34.584530+00:00"
+  },
+  "artifacts": {
+    "report": "/Users/hjc/Library/CloudStorage/GoogleDrive-hjcaieng@gmail.com/我的雲端硬碟/DLA-Final/vision-training/exports/20260601T144442Z-hard-negative/hard_negative_training_report.json",
+    "metrics": "/Users/hjc/Library/CloudStorage/GoogleDrive-hjcaieng@gmail.com/我的雲端硬碟/DLA-Final/vision-training/exports/20260601T144442Z-hard-negative/metrics.json",
+    "test_predictions": "/Users/hjc/Library/CloudStorage/GoogleDrive-hjcaieng@gmail.com/我的雲端硬碟/DLA-Final/vision-training/exports/20260601T144442Z-hard-negative/test_predictions.csv",
+    "argmax_false_accepts": "/Users/hjc/Library/CloudStorage/GoogleDrive-hjcaieng@gmail.com/我的雲端硬碟/DLA-Final/vision-training/exports/20260601T144442Z-hard-negative/argmax_false_accepts.csv",
+    "gate_false_accepts": "/Users/hjc/Library/CloudStorage/GoogleDrive-hjcaieng@gmail.com/我的雲端硬碟/DLA-Final/vision-training/exports/20260601T144442Z-hard-negative/gate_false_accepts.csv",
+    "val_threshold_curve": "/Users/hjc/Library/CloudStorage/GoogleDrive-hjcaieng@gmail.com/我的雲端硬碟/DLA-Final/vision-training/exports/20260601T144442Z-hard-negative/val_threshold_curve.csv"
+  }
+}
