@@ -65,13 +65,19 @@ def validate_docs() -> None:
     require_contains(spec, "num_objects=1", "docs/vision-spec.md")
     require_contains(spec, "confidence < 0.5", "docs/vision-spec.md")
     require_contains(spec, "每類 50-100 張", "docs/vision-spec.md")
+    require_contains(spec, "false_accept_rate_on_reject", "docs/vision-spec.md")
+    require_contains(spec, "accept_threshold=0.76", "docs/vision-spec.md")
+    require_contains(spec, "payload class 保留模型 best guess", "docs/vision-spec.md")
 
 
 def validate_source_contract() -> None:
     source = read_text("src/vision_contract.py")
+    policy_source = read_text("src/vision_policy.py")
     require_contains(source, "RECOGNITION_RESULT_FIELDS", "src/vision_contract.py")
     require_contains(source, "num_objects", "src/vision_contract.py")
     require_contains(source, '"recognition_result"', "src/vision_contract.py")
+    require_contains(policy_source, "DEFAULT_ACCEPT_THRESHOLD", "src/vision_policy.py")
+    require_contains(policy_source, "should_allow_accept", "src/vision_policy.py")
 
 
 def main() -> None:

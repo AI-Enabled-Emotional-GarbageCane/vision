@@ -9,6 +9,14 @@ exports/
 *.onnx
 *.engine
 
+# Curated small model exports intentionally committed for project handoff.
+!exports/
+!exports/README.md
+!exports/20260601T122805Z/
+!exports/20260601T122805Z/**
+!exports/20260601T144442Z-hard-negative/
+!exports/20260601T144442Z-hard-negative/**
+
 # Python runtime caches.
 __pycache__/
 *.py[cod]

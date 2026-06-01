@@ -1,0 +1,43 @@
+{
+  "run_id": "20260601T122805Z",
+  "model": "YOLOv11n-cls public baseline",
+  "dataset": "TrashNet + RealWaste public test split",
+  "test_count": 327,
+  "accept_threshold": 0.76,
+  "acceptance_targets": {
+    "top1_min": 0.85,
+    "false_accept_rate_on_reject_max": 0.10,
+    "reject_recall_min": 0.90
+  },
+  "argmax": {
+    "top1": 0.856269121170044,
+    "confusion": {
+      "accept": {
+        "accept": 147,
+        "reject": 17
+      },
+      "reject": {
+        "accept": 30,
+        "reject": 133
+      }
+    },
+    "false_accept_rate_on_reject": 0.18404907975460122,
+    "reject_recall": 0.8159509202453987
+  },
+  "accept_gate": {
+    "accuracy": 0.8440366972477065,
+    "confusion": {
+      "accept": {
+        "accept": 129,
+        "reject": 35
+      },
+      "reject": {
+        "accept": 16,
+        "reject": 147
+      }
+    },
+    "false_accept_rate_on_reject": 0.09815950920245399,
+    "reject_recall": 0.901840490797546,
+    "accept_recall": 0.7865853658536586
+  }
+}

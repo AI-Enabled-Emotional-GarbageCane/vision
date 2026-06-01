@@ -36,7 +36,7 @@ yolo classify train data=<dataset-dir> model=yolo11n-cls.pt epochs=<n> imgsz=<si
 yolo export model=<best.pt> format=onnx
 ```
 
-- Jetson 階段再由 ONNX / PyTorch 權重轉 TensorRT engine；真權重、ONNX、engine 不進 git。
+- Jetson 階段再由 ONNX / PyTorch 權重轉 TensorRT engine；大型訓練產物不進 git，已挑選的小型 release export 可放在 `exports/`。
 
 ## 推論與 Payload
 
@@ -58,11 +58,24 @@ yolo export model=<best.pt> format=onnx
 - `confidence < 0.5` 時仍送最佳猜測的 `class`；由 display 依低信心播放「看不出來」回饋，不採用該 class 做 accept/reject 判定。
 - v1 固定 `num_objects=1`；`num_objects > 1` 規則保留給未來 detection / foreground estimation 版本。
 
+## 部署放行策略
+
+`recognition_result` 的 payload class 保留模型 best guess，不因部署保守策略改寫。為降低 `reject -> accept` 的產品風險，部署端只在以下條件成立時才視為可接受：
+
+```text
+class == "accept" and confidence >= accept_threshold=0.76
+```
+
+其餘情況都走拒收或不確定回饋。這個 gate 是衍生 action，不新增 public payload 欄位，也不改 v0.3 queue / event / required fields。
+
+目前 public baseline 的 argmax top-1 為 85.6269%，但 `false_accept_rate_on_reject` 為 18.4049%。套用 `accept_threshold=0.76` 後，`false_accept_rate_on_reject` 降至 9.8160%，`reject_recall` 升至 90.1840%，代價是整體 accuracy 降至 84.4037%、`accept_recall` 降至 78.6585%。在未取得 L515 實拍資料前，這只能作為 public dataset PoC 的保守部署策略，不代表真實桶口場景最終驗收。
+
 ## 部署與 Artifact Policy
 
 - 順序：先以筆電 + L515/OpenCV 跑通 PoC，再移植 Jetson AGX Orin Nano + TensorRT。
-- 允許進 git：小型 sample/mock fixture、設定檔、文件、contract lock、驗證腳本。
-- 不進 git：`data/`、`runs/`、`weights/`、`exports/`、`.pt`、`.onnx`、`.engine`。
+- 允許進 git：小型 sample/mock fixture、設定檔、文件、contract lock、驗證腳本，以及已挑選的小型 release export。
+- 不進 git：`data/`、`runs/`、`weights/`、未整理的 training exports、`.engine`。
+- 目前已整理的 release export 放在 `exports/`；`20260601T122805Z` 是推薦 baseline，`20260601T144442Z-hard-negative` 僅作實驗紀錄。
 
 ## 驗收標準
 
@@ -71,9 +84,10 @@ yolo export model=<best.pt> format=onnx
 | Contract | `recognition_result` 欄位完整，`class` 只允許 `accept` / `reject`。 |
 | Smoke test | `./validate.sh` 必跑 stub model smoke test，確認 pipeline 可產生合法 payload。 |
 | 模型準確率 | Test set top-1 accuracy >= 85%。 |
+| 安全 gate | Public baseline 需報告 `false_accept_rate_on_reject`；部署 gate 目標為 `false_accept_rate_on_reject <= 10%` 且 `reject_recall >= 90%`。 |
 | 部署 | 筆電 PoC 先跑通；Jetson 端再測 TensorRT latency。 |
 | Snapshot | 每次推論輸出可被 display 記錄的本機 `snapshot_path`。 |
 
 ## 目前結論
 
-v0.3 不改 queue、event 或 required payload fields；主要更新為 L515、YOLOv11n classification、`num_objects=1` v1 限制，以及可在無真模型權重時執行的 stub smoke test。
+v0.3 不改 queue、event 或 required payload fields；主要更新為 L515、YOLOv11n classification、`num_objects=1` v1 限制，以及可在無真模型權重時執行的 stub smoke test。若沒有 L515 實拍資料，只能宣稱 public dataset baseline 與保守 accept gate 通過，不能宣稱真實場景部署已完成。

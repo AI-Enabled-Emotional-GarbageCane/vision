@@ -30,4 +30,6 @@ AI 影像辨識服務 — [AI 情緒垃圾筒](https://github.com/AI-Enabled-Emo
 ./validate.sh
 ```
 
-預設驗證只跑 contract/spec 檢查與 stub model smoke test；真模型權重與 TensorRT engine 不進 git，也不作為基本驗證門檻。
+預設驗證會跑 contract/spec 檢查、stub model smoke test、accept gate 與 baseline metrics 檢查。大型資料、完整 training runs 與 TensorRT engine 不進 git；已挑選的小型模型交付檔放在 [`exports/`](./exports/)。
+
+目前 public baseline 已加入保守 accept gate：payload 的 `class` 仍保留模型 best guess，但部署放行只在 `class == "accept"` 且 `confidence >= 0.76` 時成立。這用來降低 `reject -> accept` 風險；L515 真實場景仍需另行驗收。
