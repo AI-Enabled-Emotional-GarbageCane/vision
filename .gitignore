@@ -5,6 +5,7 @@ data/
 runs/
 weights/
 exports/
+snapshots/
 *.pt
 *.onnx
 *.engine

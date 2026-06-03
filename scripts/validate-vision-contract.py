@@ -73,11 +73,19 @@ def validate_docs() -> None:
 def validate_source_contract() -> None:
     source = read_text("src/vision_contract.py")
     policy_source = read_text("src/vision_policy.py")
+    adapter_source = read_text("src/model_adapter.py")
+    runtime_source = read_text("src/runtime.py")
     require_contains(source, "RECOGNITION_RESULT_FIELDS", "src/vision_contract.py")
     require_contains(source, "num_objects", "src/vision_contract.py")
     require_contains(source, '"recognition_result"', "src/vision_contract.py")
     require_contains(policy_source, "DEFAULT_ACCEPT_THRESHOLD", "src/vision_policy.py")
     require_contains(policy_source, "should_allow_accept", "src/vision_policy.py")
+    require_contains(adapter_source, "DEFAULT_EXPORT_DIR", "src/model_adapter.py")
+    require_contains(adapter_source, "20260601T122805Z", "src/model_adapter.py")
+    require_contains(runtime_source, "q_detected", "src/runtime.py")
+    require_contains(runtime_source, "q_result", "src/runtime.py")
+    require_contains(runtime_source, "user_detected", "src/runtime.py")
+    require("firmware" not in runtime_source, "src/runtime.py must not depend on firmware internals")
 
 
 def main() -> None:
