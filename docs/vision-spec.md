@@ -59,6 +59,42 @@ yolo export model=<best.pt> format=onnx
 - `confidence < 0.5` 時仍送最佳猜測的 `class`；由 display 依低信心播放「看不出來」回饋，不採用該 class 做 accept/reject 判定。
 - v1 固定 `num_objects=1`；`num_objects > 1` 規則保留給未來 detection / foreground estimation 版本。
 
+## 語音回饋 Handoff（可選 adapter）
+
+`vision` 不直接播放語音，但提供 `src/voice_feedback.py` 讓整合端可把 `recognition_result` 轉成 `voice_feedback_cue`：
+
+```json
+{
+  "event": "voice_feedback_cue",
+  "category": "reject",
+  "level": "medium",
+  "text": "分類一下，好嗎。",
+  "audio_path": "assets/voice/gpt-sovits/reject/reject-03.wav",
+  "source_class": "reject",
+  "source_confidence": 0.84,
+  "source_ts": "2026-05-31T20:00:00",
+  "tts_model": "GPT-SoVITS",
+  "pre_sfx": "ding",
+  "pre_delay_sec": 0.5
+}
+```
+
+判斷規則：
+- `confidence < 0.5`：`low_confidence` 自嘲語音。
+- `num_objects > 1`：`multi_object` 中重度吐槽，保留給未來 detection 版本。
+- `class == "accept"`：`accept` 輕度肯定。
+- `class == "reject"`：每次都從 30 句 `reject` 錄音池隨機選一段中度吐槽。
+
+此 adapter 可在 `run_vision_runtime_loop(..., q_voice=<Queue>)` 傳入額外 queue 時啟用；未傳入時只送原本 `q_result`。`voice_feedback_cue` 不屬於 v0.3 public contract 的必要 payload，display/speaker 仍負責實際播放 GPT-SoVITS 預生成語音素材。
+
+AGX / Jetson 是語音模型與素材管理端，ESP32-S3 僅做播放。若接 ESP32 voice player，`src/esp32_serial.py` 會把 cue 壓成 newline-delimited serial JSON：
+
+```json
+{"category":"reject","audio_path":"reject/reject-03.wav","pre_sfx":"ding","pre_delay_ms":500}
+```
+
+`audio_path` 會從 AGX 的 `assets/voice/gpt-sovits/reject/reject-03.wav` 正規化為 ESP32 SD card 根目錄下的 `reject/reject-03.wav`。
+
 ## 部署放行策略
 
 `recognition_result` 的 payload class 保留模型 best guess，不因部署保守策略改寫。為降低 `reject -> accept` 的產品風險，部署端只在以下條件成立時才視為可接受：

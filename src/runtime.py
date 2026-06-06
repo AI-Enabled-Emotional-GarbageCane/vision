@@ -4,13 +4,14 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from queue import Empty
-from typing import Any, Callable, Protocol
+from typing import Any, Callable, Mapping, Protocol
 
 import numpy as np
 from PIL import Image
 
 from model_adapter import ImageClassifier, create_default_classifier
 from vision_contract import build_recognition_result
+from voice_feedback import VoiceCueRouter
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -21,6 +22,9 @@ class QueueLike(Protocol):
     def get(self, *args: Any, **kwargs: Any) -> dict[str, Any]: ...
 
     def put(self, item: dict[str, Any]) -> None: ...
+
+
+VoiceSink = Callable[[Mapping[str, Any]], None]
 
 
 class RGBFrameSource(Protocol):
@@ -113,6 +117,9 @@ def process_user_detected_event(
     frame_source: RGBFrameSource,
     classifier: ImageClassifier,
     q_result: QueueLike,
+    q_voice: QueueLike | None = None,
+    voice_router: VoiceCueRouter | None = None,
+    voice_sink: VoiceSink | None = None,
     snapshot_dir: Path,
     now: Callable[[], datetime] = datetime.now,
 ) -> dict[str, Any] | None:
@@ -132,6 +139,13 @@ def process_user_detected_event(
         ts=ts,
     )
     q_result.put(result)
+    if q_voice is not None or voice_sink is not None:
+        router = voice_router or VoiceCueRouter()
+        voice_cue = router.route(result).to_payload()
+        if q_voice is not None:
+            q_voice.put(voice_cue)
+        if voice_sink is not None:
+            voice_sink(voice_cue)
     return result
 
 
@@ -139,14 +153,18 @@ def run_vision_runtime_loop(
     q_detected: QueueLike,
     q_result: QueueLike,
     *,
+    q_voice: QueueLike | None = None,
     frame_source: RGBFrameSource | None = None,
     classifier: ImageClassifier | None = None,
+    voice_router: VoiceCueRouter | None = None,
+    voice_sink: VoiceSink | None = None,
     config: VisionRuntimeConfig | None = None,
     now: Callable[[], datetime] = datetime.now,
 ) -> int:
     runtime_config = config or VisionRuntimeConfig()
     source = frame_source or L515ColorCamera()
     model = classifier or create_default_classifier()
+    router = voice_router or (VoiceCueRouter() if q_voice is not None or voice_sink is not None else None)
     consumed = 0
     emitted = 0
 
@@ -163,6 +181,9 @@ def run_vision_runtime_loop(
                 frame_source=source,
                 classifier=model,
                 q_result=q_result,
+                q_voice=q_voice,
+                voice_router=router,
+                voice_sink=voice_sink,
                 snapshot_dir=runtime_config.snapshot_dir,
                 now=now,
             )

@@ -103,6 +103,8 @@ def main() -> None:
 
     q_detected: Queue[dict[str, object]] = Queue()
     q_result: Queue[dict[str, object]] = Queue()
+    q_voice: Queue[dict[str, object]] = Queue()
+    sent_voice_cues: list[dict[str, object]] = []
     frame_source = FakeFrameSource()
     classifier = StaticClassifier(ModelPrediction(label="accept", confidence=0.91))
 
@@ -118,8 +120,10 @@ def main() -> None:
         emitted = run_vision_runtime_loop(
             q_detected,
             q_result,
+            q_voice=q_voice,
             frame_source=frame_source,
             classifier=classifier,
+            voice_sink=lambda cue: sent_voice_cues.append(dict(cue)),
             config=VisionRuntimeConfig(snapshot_dir=Path(tmp), max_events=1),
             now=lambda: datetime(2026, 6, 4, 12, 0, 1),
         )
@@ -138,7 +142,49 @@ def main() -> None:
         with Image.open(snapshot_path) as image:
             require(image.size == (16, 12), "snapshot should preserve frame dimensions")
 
+        voice = q_voice.get(timeout=1)
+        require(voice["event"] == "voice_feedback_cue", "optional q_voice should emit a voice cue")
+        require(voice["category"] == "accept", "voice cue should match high-confidence accept")
+        require(voice["source_class"] == result["class"], "voice cue should preserve source class")
+        require(voice["source_ts"] == result["ts"], "voice cue should preserve source timestamp")
+        require(sent_voice_cues == [voice], "optional voice sink should receive the same cue as q_voice")
+
     require(frame_source.closed, "runtime should close the frame source")
+
+    q_detected = Queue()
+    q_result = Queue()
+    q_voice = Queue()
+    frame_source = FakeFrameSource()
+    reject_classifier = StaticClassifier(ModelPrediction(label="reject", confidence=0.88))
+    q_detected.put(
+        {
+            "event": "user_detected",
+            "distance_cm": 25.0,
+            "ts": "2026-06-04T12:00:30",
+        }
+    )
+
+    with TemporaryDirectory() as tmp:
+        emitted = run_vision_runtime_loop(
+            q_detected,
+            q_result,
+            q_voice=q_voice,
+            frame_source=frame_source,
+            classifier=reject_classifier,
+            config=VisionRuntimeConfig(snapshot_dir=Path(tmp), max_events=1),
+            now=lambda: datetime(2026, 6, 4, 12, 0, 31),
+        )
+
+        require(emitted == 1, "runtime should emit a reject recognition_result")
+        result = q_result.get(timeout=1)
+        require(result["class"] == "reject", "classifier reject label should become payload class")
+        voice = q_voice.get(timeout=1)
+        require(voice["category"] == "reject", "reject recognition_result should emit reject voice cue")
+        require(voice["source_class"] == "reject", "reject voice cue should preserve source class")
+        require(
+            str(voice["audio_path"]).startswith("assets/voice/gpt-sovits/reject/reject-"),
+            "reject voice cue should choose from the recorded reject WAV pool",
+        )
 
     q_detected = Queue()
     q_result = Queue()

@@ -40,6 +40,21 @@ AI 影像辨識服務 — [AI 情緒垃圾筒](https://github.com/AI-Enabled-Emo
 
 模型 adapter 預設使用 `exports/20260601T122805Z/best.onnx`；若部署環境沒有 ONNX Runtime，可改傳入 PyTorch `.pt` 模型或在測試中注入符合 `ImageClassifier` protocol 的 predictor。
 
+## 語音回饋 handoff
+
+`src/voice_feedback.py` 會把 `recognition_result` 轉成可選的 `voice_feedback_cue`，內容包含 roast 情境、GPT-SoVITS 預生成音檔路徑、台詞、音效與 0.5 秒停頓設定。這是給整合測試或下游 display 使用的 adapter；vision 仍不直接播放語音，也不改 `q_result` 的 v0.3 必要欄位。
+
+若 runtime 傳入 `q_voice`，每次送出 `recognition_result` 後會額外送出一筆 voice cue；未傳入時行為維持原本 contract。
+當 `recognition_result.class == "reject"` 且信心高於門檻時，voice cue 會從 30 句 `reject/reject-01.wav` 到 `reject/reject-30.wav` 錄音池隨機選一段。
+
+GPT-SoVITS 模型與語音素材產生放在 AGX / Jetson 端；ESP32 只當播放端。`src/esp32_serial.py` 可把 `voice_feedback_cue` 轉成 ESP32 透過 USB Serial / UART 接收的一行 JSON：
+
+```json
+{"category":"reject","audio_path":"reject/reject-01.wav","pre_sfx":"ding","pre_delay_ms":500}
+```
+
+若 runtime 傳入 `voice_sink`，同一筆 voice cue 會被送到該 sink；可用 `Esp32SerialVoiceSink("/dev/ttyACM0")` 把指令送給 ESP32-S3 voice player。ESP32 sketch 與 SD card 音檔目錄放在 firmware repo 的 `esp32_voice_player/`。
+
 ## 模型紀錄
 
 - 目前所有 curated exports 的紀錄見 [`docs/model-registry.md`](./docs/model-registry.md)。
