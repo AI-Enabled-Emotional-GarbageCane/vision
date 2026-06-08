@@ -1,0 +1,16 @@
+{
+  "purpose": "demo_accept_recall_only",
+  "production_ready": false,
+  "model": "exports/20260608-demo-accept-recall/best.onnx",
+  "accept_threshold": 0.5,
+  "uncertain_threshold": 0.5,
+  "candidate_policy": {
+    "eval_label": "accept",
+    "shots_required_per_prop": 3,
+    "min_accepts_per_prop": 2,
+    "min_props_for_smoke": 10,
+    "min_total_images_for_smoke": 30,
+    "pass_rule": "at least 2/3 shots gate to accept"
+  },
+  "contract_note": "Demo profile only. Does not modify recognition_result payload or production accept gate defaults."
+}

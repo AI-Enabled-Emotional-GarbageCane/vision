@@ -1,0 +1,61 @@
+{
+  "name": "20260608-demo-accept-recall",
+  "purpose": "demo_accept_recall_only",
+  "production_ready": false,
+  "source_run": "runs/user-accept-seed-finetune/user-accept-seed-001",
+  "base_model": "runs/hf-general-trash-finetune/hf-general-trash-001/weights/best.pt",
+  "recommended_demo_gate": {
+    "accept_threshold": 0.5,
+    "uncertain_threshold": 0.5
+  },
+  "training": {
+    "requested_epochs": 15,
+    "early_stopped_after_epochs": 11,
+    "best_epoch": 6,
+    "best_val_top1": 0.87776,
+    "imgsz": 224,
+    "batch": 32,
+    "device": "NVIDIA GeForce RTX 3060"
+  },
+  "weak_eval_at_accept_threshold_0_76": {
+    "user_seed_test": {
+      "accept_count": 9,
+      "accepted_accept_count": 8,
+      "gate_accept_recall": 0.8888888888888888
+    },
+    "hf_sample_test": {
+      "accept_count": 57,
+      "accepted_accept_count": 34,
+      "gate_accept_recall": 0.5964912280701754,
+      "reject_count": 1082,
+      "false_accept_count_on_reject": 34,
+      "false_accept_rate_on_reject": 0.031423290203327174
+    },
+    "hf_combined_test": {
+      "accept_count": 324,
+      "accepted_accept_count": 174,
+      "gate_accept_recall": 0.5370370370370371,
+      "reject_count": 1750,
+      "false_accept_count_on_reject": 66,
+      "false_accept_rate_on_reject": 0.037714285714285714
+    },
+    "taco_full": {
+      "accept_count": 783,
+      "accepted_accept_count": 311,
+      "gate_accept_recall": 0.39719029374201786,
+      "reject_count": 668,
+      "false_accept_count_on_reject": 146,
+      "false_accept_rate_on_reject": 0.218562874251497
+    }
+  },
+  "demo_threshold_notes": {
+    "accept_threshold_0_50": "Use only for prepared accept-only demo props. Candidate props should still pass 2/3-shot screening before presentation.",
+    "user_seed_test_gate_accept_recall_at_0_50": 0.8888888888888888,
+    "hf_combined_gate_accept_recall_at_0_50": 0.7716049382716049,
+    "hf_combined_false_accept_rate_on_reject_at_0_50": 0.09314285714285714
+  },
+  "checksums": {
+    "best.pt": "eaad1a0a97a1fdf18a295bf7cfb21effebde5342eeb1d610f74277da30e99d9a",
+    "best.onnx": "1f9b3aeec2540e61f64777f418f103e8e8ae00be8a3ae242881a8f38d7d4384c"
+  }
+}
