@@ -9,6 +9,7 @@ from model_adapter import (
     class_prediction_from_scores,
     preprocess_rgb,
     select_export_model,
+    select_onnx_providers,
 )
 
 
@@ -21,6 +22,26 @@ def main() -> None:
     selected = select_export_model(DEFAULT_EXPORT_DIR)
     require(selected == DEFAULT_EXPORT_DIR / "best.onnx", "default export should prefer best.onnx")
     require(selected.exists(), "selected model export must exist")
+    require(
+        select_onnx_providers(["CPUExecutionProvider"]) == ["CPUExecutionProvider"],
+        "ONNX provider selection should support CPU-only runtimes",
+    )
+    require(
+        select_onnx_providers(["CUDAExecutionProvider", "CPUExecutionProvider"])
+        == ["CUDAExecutionProvider", "CPUExecutionProvider"],
+        "ONNX provider selection should prefer CUDA over CPU",
+    )
+    require(
+        select_onnx_providers(
+            [
+                "TensorrtExecutionProvider",
+                "CUDAExecutionProvider",
+                "CPUExecutionProvider",
+            ]
+        )
+        == ["CUDAExecutionProvider", "TensorrtExecutionProvider", "CPUExecutionProvider"],
+        "ONNX provider selection should prefer CUDA before TensorRT and CPU",
+    )
 
     image = np.zeros((10, 12, 3), dtype=np.uint8)
     tensor = preprocess_rgb(image)

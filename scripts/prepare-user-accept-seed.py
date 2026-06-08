@@ -63,6 +63,11 @@ def require_image_dependencies() -> tuple[Any, Any, Any]:
     return Image, ImageDraw, ImageOps
 
 
+def bilinear_resample(image_module: Any) -> Any:
+    resampling = getattr(image_module, "Resampling", image_module)
+    return resampling.BILINEAR
+
+
 def safe_name(value: str) -> str:
     cleaned = re.sub(r"[^A-Za-z0-9_.-]+", "_", value).strip("_")
     return cleaned or "image"
@@ -290,7 +295,11 @@ def write_contact_sheet(
         x = (index % columns) * thumb_width
         y = (index // columns) * (thumb_height + label_height)
         image = image_module.open(source_dir / row["local_path"]).convert("RGB")
-        image = image_ops.contain(image, (thumb_width, thumb_height), image_module.Resampling.BILINEAR)
+        image = image_ops.contain(
+            image,
+            (thumb_width, thumb_height),
+            bilinear_resample(image_module),
+        )
         sheet.paste(image, (x + (thumb_width - image.width) // 2, y))
         draw.text(
             (x + 4, y + thumb_height + 3),

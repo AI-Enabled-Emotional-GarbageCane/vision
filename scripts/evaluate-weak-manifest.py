@@ -60,6 +60,11 @@ def require_ml_dependencies() -> tuple[Any, Any, Any, Any]:
     return np, ort, Image, (ImageDraw, ImageOps)
 
 
+def bilinear_resample(image_module: Any) -> Any:
+    resampling = getattr(image_module, "Resampling", image_module)
+    return resampling.BILINEAR
+
+
 def read_manifest(path: Path) -> list[dict[str, str]]:
     with path.open(encoding="utf-8") as handle:
         return list(csv.DictReader(handle))
@@ -76,7 +81,7 @@ def preprocess_image(path: Path, image_module: Any, image_ops: Any, np: Any, img
     image = image_ops.fit(
         image,
         (imgsz, imgsz),
-        method=image_module.Resampling.BILINEAR,
+        method=bilinear_resample(image_module),
         centering=(0.5, 0.5),
     )
     array = np.asarray(image, dtype=np.float32) / 255.0
@@ -297,7 +302,7 @@ def write_contact_sheet(
             image = image_ops.contain(
                 image,
                 (thumb_width, thumb_height),
-                image_module.Resampling.BILINEAR,
+                bilinear_resample(image_module),
             )
             sheet.paste(
                 image,

@@ -11,6 +11,11 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_EXPORT_DIR = ROOT / "exports" / "20260601T122805Z"
 DEFAULT_CLASS_NAMES = ("accept", "reject")
+PREFERRED_ONNX_PROVIDERS = (
+    "CUDAExecutionProvider",
+    "TensorrtExecutionProvider",
+    "CPUExecutionProvider",
+)
 
 
 @dataclass(frozen=True)
@@ -33,6 +38,16 @@ def select_export_model(export_dir: Path = DEFAULT_EXPORT_DIR) -> Path:
         return pt_path
 
     raise FileNotFoundError(f"missing model export in {export_dir}")
+
+
+def select_onnx_providers(available_providers: Sequence[str]) -> list[str]:
+    available = set(available_providers)
+    providers = [
+        provider
+        for provider in PREFERRED_ONNX_PROVIDERS
+        if provider in available
+    ]
+    return providers or ["CPUExecutionProvider"]
 
 
 def preprocess_rgb(image_rgb: np.ndarray, image_size: int = 224) -> np.ndarray:
@@ -76,6 +91,7 @@ class OnnxYoloClassifier:
         *,
         class_names: Sequence[str] = DEFAULT_CLASS_NAMES,
         image_size: int = 224,
+        providers: Sequence[str] | None = None,
     ) -> None:
         self.model_path = Path(model_path)
         if not self.model_path.exists():
@@ -88,7 +104,16 @@ class OnnxYoloClassifier:
 
         self._class_names = tuple(class_names)
         self._image_size = image_size
-        self._session = ort.InferenceSession(str(self.model_path), providers=["CPUExecutionProvider"])
+        selected_providers = (
+            list(providers)
+            if providers is not None
+            else select_onnx_providers(ort.get_available_providers())
+        )
+        self._session = ort.InferenceSession(
+            str(self.model_path),
+            providers=selected_providers,
+        )
+        self.providers = tuple(self._session.get_providers())
         self._input_name = self._session.get_inputs()[0].name
 
     def predict(self, image_rgb: np.ndarray) -> ModelPrediction:
