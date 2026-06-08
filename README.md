@@ -59,3 +59,102 @@ GPT-SoVITS 模型與語音素材產生放在 AGX / Jetson 端；ESP32 只當播�
 
 - 目前所有 curated exports 的紀錄見 [`docs/model-registry.md`](./docs/model-registry.md)。
 - AGX + L515 實機串接與糖果包裝塑膠紙模型問題見 [`docs/agx-l515-vision-integration-20260604.md`](./docs/agx-l515-vision-integration-20260604.md)。
+
+## Demo accept-only 篩選
+
+明天只展示一般垃圾時，可使用 demo-only low gate，不修改 production default，也不替換 `exports/`。
+先把每個道具拍 3 張，放到 `demo_candidates/accept_props/<item_name>/`：
+
+```bash
+uv run --with onnxruntime --with pillow --with numpy \
+  python scripts/run-demo-accept-candidate-eval.py \
+  --model runs/user-accept-seed-finetune/user-accept-seed-001/weights/best.onnx \
+  --accept-threshold 0.50 \
+  --uncertain-threshold 0.50 \
+  --enforce-smoke
+```
+
+每個道具至少 2/3 張被 gate 成 `accept` 才會列入
+`runs/demo-accept-recall/<run>/demo_accepted_props.txt`。這只代表 accept-only
+demo 道具篩選通過，不代表 reject safety 或 production readiness。
+
+## 弱標籤推論資料
+
+目前可用 `scripts/prepare-weak-finetune-dataset.py` 從 TACO 抽樣建立本機弱標籤資料。預設目標是 reject safety：多抽瓶、罐、玻璃、紙盒、塑膠瓶等 `reject` hard negatives，少量 `accept` 只作 sanity check。專題的主要風險指標應優先看 `false_accept_rate_on_reject`，避免把「不是一般垃圾」誤收。
+
+```bash
+python3 scripts/prepare-weak-finetune-dataset.py \
+  --output-dir data/inference_extra_waste/taco_reject_safety
+
+uv run --with onnxruntime --with pillow --with numpy \
+  python scripts/evaluate-weak-manifest.py \
+  --dataset-dir data/inference_extra_waste/taco_reject_safety \
+  --manifest data/inference_extra_waste/taco_reject_safety/manifest.csv \
+  --model exports/20260601T122805Z/best.onnx \
+  --output data/inference_extra_waste/taco_reject_safety/predictions.csv \
+  --summary data/inference_extra_waste/taco_reject_safety/prediction_summary.json \
+  --contact-sheet data/inference_extra_waste/taco_reject_safety/contact_sheet.jpg
+```
+
+這些資料的 `eval_label` 是弱標籤，必須人工審閱後才可作為 fine-tune 訓練資料或正式驗收資料。
+
+## 本機 Fine-tune
+
+RTX 3060 12GB 可直接跑本機 YOLOv11n-cls fine-tune。先把弱標籤 manifest 轉成 YOLO classification 目錄，再從目前 baseline `best.pt` 繼續訓練：
+
+```bash
+python3 scripts/build-yolo-cls-dataset.py \
+  --manifest data/inference_extra_waste/taco_reject_safety/manifest.csv \
+  --source-root data/inference_extra_waste/taco_reject_safety \
+  --output-dir data/training/reject_safety_yolo_cls
+
+uv run --with ultralytics --with torch --with torchvision \
+  --with onnx --with onnxruntime --with onnxslim \
+  python scripts/train-yolo-cls.py \
+  --data data/training/reject_safety_yolo_cls \
+  --model exports/20260601T122805Z/best.pt \
+  --project runs/reject-safety \
+  --serial-prefix reject-safety \
+  --epochs 25 \
+  --batch 16 \
+  --device 0 \
+  --export-onnx
+```
+
+`--name` 未指定時會自動使用 `--serial-prefix` 產生下一個流水號目錄，例如
+`reject-safety-001`、`reject-safety-002`。訓練權重會留在各自 run 的 `weights/`
+底下，不會覆蓋上一輪。
+
+訓練後仍需用 `scripts/evaluate-weak-manifest.py` 重算 `false_accept_rate_on_reject`，確認 reject safety 沒有退步。
+
+## RealWaste 大型弱標籤訓練
+
+RealWaste 可作為較大的補充資料集。預設 mapping 會把 `Miscellaneous Trash` 與
+`Textile Trash` 視為弱 `accept`，其他 material classes 視為弱 `reject`；這是為了先追
+accuracy/accept recall，正式驗收前仍需抽樣審閱。
+
+```bash
+mkdir -p data/sources/realwaste
+curl -L --fail \
+  --output data/sources/realwaste/realwaste.zip \
+  https://cdn.uci-ics-mlr-prod.aws.uci.edu/908/realwaste.zip
+unzip -q data/sources/realwaste/realwaste.zip -d data/sources/realwaste/extracted
+
+python3 scripts/build-folder-yolo-cls-dataset.py \
+  --source-dir data/sources/realwaste/extracted/realwaste-main/RealWaste \
+  --output-dir data/training/realwaste_yolo_cls \
+  --mapping-preset realwaste \
+  --max-train-majority-ratio 2.0
+
+uv run --with ultralytics --with torch --with torchvision \
+  --with onnx --with onnxruntime --with onnxslim \
+  python scripts/train-yolo-cls.py \
+  --data data/training/realwaste_yolo_cls \
+  --model exports/20260601T122805Z/best.pt \
+  --project runs/realwaste-accuracy \
+  --serial-prefix realwaste-accuracy \
+  --epochs 30 \
+  --batch 32 \
+  --device 0 \
+  --export-onnx
+```

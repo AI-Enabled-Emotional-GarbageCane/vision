@@ -57,6 +57,7 @@ yolo export model=<best.pt> format=onnx
 - `class` 只能是 `accept` 或 `reject`。
 - `confidence` 必須在 0 到 1 之間。
 - `confidence < 0.5` 時仍送最佳猜測的 `class`；由 display 依低信心播放「看不出來」回饋，不採用該 class 做 accept/reject 判定。
+- v1 binary classifier 沒有第三個 `unknown` 類別；不屬於一般垃圾也不屬於回收/拒收物的畫面仍會被模型強制選成 `accept` 或 `reject`。部署端需依 confidence 衍生 `uncertain` action，避免把未知或低信心畫面誤當成確定分類。
 - v1 固定 `num_objects=1`；`num_objects > 1` 規則保留給未來 detection / foreground estimation 版本。
 
 ## 語音回饋 Handoff（可選 adapter）
@@ -104,6 +105,15 @@ class == "accept" and confidence >= accept_threshold=0.76
 ```
 
 其餘情況都走拒收或不確定回饋。這個 gate 是衍生 action，不新增 public payload 欄位，也不改 v0.3 queue / event / required fields。
+
+部署端衍生 action 規則：
+
+| 條件 | action |
+|---|---|
+| `event != "recognition_result"` | `uncertain` |
+| `confidence < uncertain_threshold=0.50` | `uncertain` |
+| `class == "accept"` 且 `confidence >= accept_threshold=0.76` | `accept` |
+| 其他 `recognition_result` | `reject` |
 
 目前 public baseline 的 argmax top-1 為 85.6269%，但 `false_accept_rate_on_reject` 為 18.4049%。套用 `accept_threshold=0.76` 後，`false_accept_rate_on_reject` 降至 9.8160%，`reject_recall` 升至 90.1840%，代價是整體 accuracy 降至 84.4037%、`accept_recall` 降至 78.6585%。在未取得 L515 實拍資料前，這只能作為 public dataset PoC 的保守部署策略，不代表真實桶口場景最終驗收。
 
