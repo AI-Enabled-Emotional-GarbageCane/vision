@@ -1,0 +1,44 @@
+{
+  "model": "runs/realwaste-accuracy/realwaste-accuracy-002/weights/best.onnx",
+  "count": 50,
+  "accept_threshold": 0.76,
+  "uncertain_threshold": 0.5,
+  "weak_label_agreement": 0.0,
+  "by_eval_label": {
+    "unlabeled": {
+      "count": 50,
+      "accept": 2,
+      "reject": 48,
+      "match": 0
+    }
+  },
+  "confusion": {
+    "unlabeled": {
+      "reject": 48,
+      "accept": 2
+    }
+  },
+  "gate_confusion": {
+    "unlabeled": {
+      "reject": 50
+    }
+  },
+  "reject_safety": {
+    "reject_count": 0,
+    "false_accept_count_on_reject": 0,
+    "false_accept_rate_on_reject": null,
+    "blocked_reject_rate": null
+  },
+  "accept_behavior": {
+    "accept_count": 0,
+    "accepted_accept_count": 0,
+    "gate_accept_recall": null
+  },
+  "top_mistakes": {
+    "unlabeled:general_trash_scene->reject": 24,
+    "unlabeled:recycling_scene->reject": 24,
+    "unlabeled:general_trash_scene->accept": 1,
+    "unlabeled:recycling_scene->accept": 1
+  },
+  "note": "Weak-label inference only; eval_label is derived from source mapping and needs human review."
+}

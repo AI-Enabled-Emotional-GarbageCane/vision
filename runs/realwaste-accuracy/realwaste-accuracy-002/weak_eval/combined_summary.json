@@ -1,0 +1,133 @@
+[
+  {
+    "dataset": "realwaste_full_all",
+    "count": 4752,
+    "weak_label_agreement": 0.9852693602693603,
+    "accept_count": 813,
+    "gate_accept_recall": 0.9126691266912669,
+    "reject_count": 3939,
+    "false_accept_count_on_reject": 10,
+    "false_accept_rate_on_reject": 0.002538715410002539,
+    "top_mistakes": {
+      "accept:Miscellaneous Trash->reject": 33,
+      "reject:Plastic->accept": 10,
+      "accept:Textile Trash->reject": 7,
+      "reject:Paper->accept": 6,
+      "reject:Food Organics->accept": 5,
+      "reject:Cardboard->accept": 4,
+      "reject:Metal->accept": 4,
+      "reject:Vegetation->accept": 1
+    }
+  },
+  {
+    "dataset": "realwaste_full_train",
+    "count": 3326,
+    "weak_label_agreement": 0.9942874323511726,
+    "accept_count": 569,
+    "gate_accept_recall": 0.9560632688927944,
+    "reject_count": 2757,
+    "false_accept_count_on_reject": 1,
+    "false_accept_rate_on_reject": 0.0003627130939426913,
+    "top_mistakes": {
+      "accept:Miscellaneous Trash->reject": 9,
+      "reject:Plastic->accept": 4,
+      "reject:Cardboard->accept": 2,
+      "accept:Textile Trash->reject": 1,
+      "reject:Food Organics->accept": 1,
+      "reject:Metal->accept": 1,
+      "reject:Vegetation->accept": 1
+    }
+  },
+  {
+    "dataset": "realwaste_full_val",
+    "count": 713,
+    "weak_label_agreement": 0.97054698457223,
+    "accept_count": 122,
+    "gate_accept_recall": 0.8442622950819673,
+    "reject_count": 591,
+    "false_accept_count_on_reject": 2,
+    "false_accept_rate_on_reject": 0.00338409475465313,
+    "top_mistakes": {
+      "accept:Miscellaneous Trash->reject": 10,
+      "accept:Textile Trash->reject": 2,
+      "reject:Food Organics->accept": 2,
+      "reject:Metal->accept": 2,
+      "reject:Plastic->accept": 2,
+      "reject:Paper->accept": 2,
+      "reject:Cardboard->accept": 1
+    }
+  },
+  {
+    "dataset": "realwaste_full_test",
+    "count": 713,
+    "weak_label_agreement": 0.9579242636746143,
+    "accept_count": 122,
+    "gate_accept_recall": 0.7786885245901639,
+    "reject_count": 591,
+    "false_accept_count_on_reject": 7,
+    "false_accept_rate_on_reject": 0.011844331641285956,
+    "top_mistakes": {
+      "accept:Miscellaneous Trash->reject": 14,
+      "accept:Textile Trash->reject": 4,
+      "reject:Plastic->accept": 4,
+      "reject:Paper->accept": 4,
+      "reject:Food Organics->accept": 2,
+      "reject:Metal->accept": 1,
+      "reject:Cardboard->accept": 1
+    }
+  },
+  {
+    "dataset": "taco_reject_safety",
+    "count": 90,
+    "weak_label_agreement": 0.8555555555555555,
+    "accept_count": 10,
+    "gate_accept_recall": 0.0,
+    "reject_count": 80,
+    "false_accept_count_on_reject": 3,
+    "false_accept_rate_on_reject": 0.0375,
+    "top_mistakes": {
+      "accept:Plastic film->reject": 3,
+      "accept:Crisp packet->reject": 2,
+      "accept:Disposable food container->reject": 1,
+      "reject:Food Can->accept": 1,
+      "accept:Plastic utensils->reject": 1,
+      "reject:Spread tub->accept": 1,
+      "accept:Single-use carrier bag->reject": 1,
+      "accept:Garbage bag->reject": 1,
+      "accept:Cigarette->reject": 1,
+      "reject:Plastic bottle cap->accept": 1
+    }
+  },
+  {
+    "dataset": "taco_sample",
+    "count": 48,
+    "weak_label_agreement": 0.7291666666666666,
+    "accept_count": 12,
+    "gate_accept_recall": 0.0,
+    "reject_count": 36,
+    "false_accept_count_on_reject": 1,
+    "false_accept_rate_on_reject": 0.027777777777777776,
+    "top_mistakes": {
+      "accept:Cigarette->reject": 6,
+      "accept:Tissues->reject": 5,
+      "reject:Food Can->accept": 1,
+      "accept:Garbage bag->reject": 1
+    }
+  },
+  {
+    "dataset": "taiwan_waste",
+    "count": 50,
+    "weak_label_agreement": 0.0,
+    "accept_count": 0,
+    "gate_accept_recall": null,
+    "reject_count": 0,
+    "false_accept_count_on_reject": 0,
+    "false_accept_rate_on_reject": null,
+    "top_mistakes": {
+      "unlabeled:general_trash_scene->reject": 24,
+      "unlabeled:recycling_scene->reject": 24,
+      "unlabeled:general_trash_scene->accept": 1,
+      "unlabeled:recycling_scene->accept": 1
+    }
+  }
+]

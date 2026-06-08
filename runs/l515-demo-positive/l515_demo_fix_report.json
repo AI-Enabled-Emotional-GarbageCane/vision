@@ -1,0 +1,28 @@
+{
+  "status": "blocked",
+  "raw_counts": {
+    "raw_dir": "/home/hjc/coSpace/DLA_Final/vision/data/l515_demo_raw",
+    "accept_count": 0,
+    "reject_count": 0,
+    "by_class": {
+      "flexible_wrapper": 0,
+      "dirty_wrapper": 0,
+      "tissue_napkin": 0,
+      "cigarette_butt": 0,
+      "garbage_bag": 0,
+      "small_misc": 0,
+      "rigid_plastic_bottle": 0,
+      "drink_can": 0,
+      "bottle_cap": 0,
+      "paper_cardboard": 0,
+      "glass_metal": 0
+    }
+  },
+  "min_accept": 300,
+  "min_reject": 300,
+  "l515_dataset_dir": "/home/hjc/coSpace/DLA_Final/vision/data/training/l515_demo_yolo_cls",
+  "combined_dataset_dir": "/home/hjc/coSpace/DLA_Final/vision/data/training/l515_demo_combined_yolo_cls",
+  "project": "/home/hjc/coSpace/DLA_Final/vision/runs/l515-demo-positive",
+  "candidates": [],
+  "block_reason": "raw dataset needs at least one accept and one reject image"
+}

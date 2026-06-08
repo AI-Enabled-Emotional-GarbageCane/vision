@@ -1,0 +1,59 @@
+{
+  "model": "runs/hf-general-trash-finetune/hf-general-trash-001/weights/best.onnx",
+  "count": 42,
+  "accept_threshold": 0.76,
+  "uncertain_threshold": 0.5,
+  "weak_label_agreement": 0.6666666666666666,
+  "by_eval_label": {
+    "accept": {
+      "count": 27,
+      "accept": 20,
+      "reject": 7,
+      "match": 20
+    },
+    "reject": {
+      "count": 15,
+      "accept": 7,
+      "reject": 8,
+      "match": 8
+    }
+  },
+  "confusion": {
+    "accept": {
+      "reject": 7,
+      "accept": 20
+    },
+    "reject": {
+      "accept": 7,
+      "reject": 8
+    }
+  },
+  "gate_confusion": {
+    "accept": {
+      "reject": 10,
+      "accept": 17
+    },
+    "reject": {
+      "reject": 12,
+      "accept": 3
+    }
+  },
+  "reject_safety": {
+    "reject_count": 15,
+    "false_accept_count_on_reject": 3,
+    "false_accept_rate_on_reject": 0.2,
+    "blocked_reject_rate": 0.8
+  },
+  "accept_behavior": {
+    "accept_count": 27,
+    "accepted_accept_count": 17,
+    "gate_accept_recall": 0.6296296296296297
+  },
+  "top_mistakes": {
+    "accept:plastic->reject": 5,
+    "reject:paper->accept": 5,
+    "accept:plastic-bag->reject": 2,
+    "reject:glass->accept": 2
+  },
+  "note": "Weak-label inference only; eval_label is derived from source mapping and needs human review."
+}

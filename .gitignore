@@ -1,26 +1,9 @@
 .DS_Store
 
-# Local datasets and generated artifacts.
+# Local datasets and demo-candidate raw photos.
 data/
 demo_candidates/
 Dataset-*.zip
-runs/
-weights/
-exports/
-snapshots/
-*.pt
-*.onnx
-*.engine
-
-# Curated small model exports intentionally committed for project handoff.
-!exports/
-!exports/README.md
-!exports/20260601T122805Z/
-!exports/20260601T122805Z/**
-!exports/20260601T144442Z-hard-negative/
-!exports/20260601T144442Z-hard-negative/**
-!exports/20260608-demo-accept-recall/
-!exports/20260608-demo-accept-recall/**
 
 # Python runtime caches.
 __pycache__/

@@ -1,0 +1,59 @@
+{
+  "model": "runs/realwaste-accuracy/realwaste-accuracy-002/weights/best.onnx",
+  "count": 42,
+  "accept_threshold": 0.76,
+  "uncertain_threshold": 0.5,
+  "weak_label_agreement": 0.3333333333333333,
+  "by_eval_label": {
+    "accept": {
+      "count": 27,
+      "accept": 1,
+      "reject": 26,
+      "match": 1
+    },
+    "reject": {
+      "count": 15,
+      "accept": 2,
+      "reject": 13,
+      "match": 13
+    }
+  },
+  "confusion": {
+    "accept": {
+      "reject": 26,
+      "accept": 1
+    },
+    "reject": {
+      "reject": 13,
+      "accept": 2
+    }
+  },
+  "gate_confusion": {
+    "accept": {
+      "reject": 27
+    },
+    "reject": {
+      "reject": 13,
+      "accept": 2
+    }
+  },
+  "reject_safety": {
+    "reject_count": 15,
+    "false_accept_count_on_reject": 2,
+    "false_accept_rate_on_reject": 0.13333333333333333,
+    "blocked_reject_rate": 0.8666666666666667
+  },
+  "accept_behavior": {
+    "accept_count": 27,
+    "accepted_accept_count": 0,
+    "gate_accept_recall": 0.0
+  },
+  "top_mistakes": {
+    "accept:plastic->reject": 12,
+    "accept:cigarette-butt->reject": 7,
+    "accept:plastic-bag->reject": 4,
+    "accept:unknown->reject": 3,
+    "reject:paper->accept": 2
+  },
+  "note": "Weak-label inference only; eval_label is derived from source mapping and needs human review."
+}

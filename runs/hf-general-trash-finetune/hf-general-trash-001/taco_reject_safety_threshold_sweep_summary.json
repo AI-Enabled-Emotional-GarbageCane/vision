@@ -1,0 +1,152 @@
+{
+  "predictions": "runs/hf-general-trash-finetune/hf-general-trash-001/taco_reject_safety_predictions.csv",
+  "output": "runs/hf-general-trash-finetune/hf-general-trash-001/taco_reject_safety_threshold_sweep.csv",
+  "threshold_count": 11,
+  "thresholds": [
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.76,
+    0.8,
+    0.85,
+    0.9,
+    0.95
+  ],
+  "rows": [
+    {
+      "accept_threshold": 0.5,
+      "uncertain_threshold": 0.5,
+      "count": 90,
+      "gate_accuracy": 0.5777777777777777,
+      "accept_count": 10,
+      "accepted_accept_count": 7,
+      "gate_accept_recall": 0.7,
+      "reject_count": 80,
+      "false_accept_count_on_reject": 35,
+      "false_accept_rate_on_reject": 0.4375
+    },
+    {
+      "accept_threshold": 0.55,
+      "uncertain_threshold": 0.5,
+      "count": 90,
+      "gate_accuracy": 0.6222222222222222,
+      "accept_count": 10,
+      "accepted_accept_count": 7,
+      "gate_accept_recall": 0.7,
+      "reject_count": 80,
+      "false_accept_count_on_reject": 31,
+      "false_accept_rate_on_reject": 0.3875
+    },
+    {
+      "accept_threshold": 0.6,
+      "uncertain_threshold": 0.5,
+      "count": 90,
+      "gate_accuracy": 0.6333333333333333,
+      "accept_count": 10,
+      "accepted_accept_count": 6,
+      "gate_accept_recall": 0.6,
+      "reject_count": 80,
+      "false_accept_count_on_reject": 29,
+      "false_accept_rate_on_reject": 0.3625
+    },
+    {
+      "accept_threshold": 0.65,
+      "uncertain_threshold": 0.5,
+      "count": 90,
+      "gate_accuracy": 0.6555555555555556,
+      "accept_count": 10,
+      "accepted_accept_count": 6,
+      "gate_accept_recall": 0.6,
+      "reject_count": 80,
+      "false_accept_count_on_reject": 27,
+      "false_accept_rate_on_reject": 0.3375
+    },
+    {
+      "accept_threshold": 0.7,
+      "uncertain_threshold": 0.5,
+      "count": 90,
+      "gate_accuracy": 0.7,
+      "accept_count": 10,
+      "accepted_accept_count": 5,
+      "gate_accept_recall": 0.5,
+      "reject_count": 80,
+      "false_accept_count_on_reject": 22,
+      "false_accept_rate_on_reject": 0.275
+    },
+    {
+      "accept_threshold": 0.75,
+      "uncertain_threshold": 0.5,
+      "count": 90,
+      "gate_accuracy": 0.7444444444444445,
+      "accept_count": 10,
+      "accepted_accept_count": 3,
+      "gate_accept_recall": 0.3,
+      "reject_count": 80,
+      "false_accept_count_on_reject": 16,
+      "false_accept_rate_on_reject": 0.2
+    },
+    {
+      "accept_threshold": 0.76,
+      "uncertain_threshold": 0.5,
+      "count": 90,
+      "gate_accuracy": 0.7666666666666667,
+      "accept_count": 10,
+      "accepted_accept_count": 3,
+      "gate_accept_recall": 0.3,
+      "reject_count": 80,
+      "false_accept_count_on_reject": 14,
+      "false_accept_rate_on_reject": 0.175
+    },
+    {
+      "accept_threshold": 0.8,
+      "uncertain_threshold": 0.5,
+      "count": 90,
+      "gate_accuracy": 0.7888888888888889,
+      "accept_count": 10,
+      "accepted_accept_count": 3,
+      "gate_accept_recall": 0.3,
+      "reject_count": 80,
+      "false_accept_count_on_reject": 12,
+      "false_accept_rate_on_reject": 0.15
+    },
+    {
+      "accept_threshold": 0.85,
+      "uncertain_threshold": 0.5,
+      "count": 90,
+      "gate_accuracy": 0.8555555555555555,
+      "accept_count": 10,
+      "accepted_accept_count": 3,
+      "gate_accept_recall": 0.3,
+      "reject_count": 80,
+      "false_accept_count_on_reject": 6,
+      "false_accept_rate_on_reject": 0.075
+    },
+    {
+      "accept_threshold": 0.9,
+      "uncertain_threshold": 0.5,
+      "count": 90,
+      "gate_accuracy": 0.8888888888888888,
+      "accept_count": 10,
+      "accepted_accept_count": 3,
+      "gate_accept_recall": 0.3,
+      "reject_count": 80,
+      "false_accept_count_on_reject": 3,
+      "false_accept_rate_on_reject": 0.0375
+    },
+    {
+      "accept_threshold": 0.95,
+      "uncertain_threshold": 0.5,
+      "count": 90,
+      "gate_accuracy": 0.9,
+      "accept_count": 10,
+      "accepted_accept_count": 1,
+      "gate_accept_recall": 0.1,
+      "reject_count": 80,
+      "false_accept_count_on_reject": 0,
+      "false_accept_rate_on_reject": 0.0
+    }
+  ]
+}

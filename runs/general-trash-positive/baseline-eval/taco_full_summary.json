@@ -1,0 +1,75 @@
+{
+  "model": "runs/realwaste-accuracy/realwaste-accuracy-002/weights/best.onnx",
+  "count": 1451,
+  "accept_threshold": 0.76,
+  "uncertain_threshold": 0.5,
+  "weak_label_agreement": 0.4596829772570641,
+  "by_eval_label": {
+    "reject": {
+      "count": 668,
+      "accept": 43,
+      "reject": 625,
+      "match": 625
+    },
+    "accept": {
+      "count": 783,
+      "accept": 42,
+      "reject": 741,
+      "match": 42
+    }
+  },
+  "confusion": {
+    "reject": {
+      "reject": 625,
+      "accept": 43
+    },
+    "accept": {
+      "reject": 741,
+      "accept": 42
+    }
+  },
+  "gate_confusion": {
+    "reject": {
+      "reject": 648,
+      "accept": 20
+    },
+    "accept": {
+      "reject": 764,
+      "accept": 19
+    }
+  },
+  "reject_safety": {
+    "reject_count": 668,
+    "false_accept_count_on_reject": 20,
+    "false_accept_rate_on_reject": 0.029940119760479042,
+    "blocked_reject_rate": 0.9700598802395209
+  },
+  "accept_behavior": {
+    "accept_count": 783,
+    "accepted_accept_count": 19,
+    "gate_accept_recall": 0.024265644955300127
+  },
+  "top_mistakes": {
+    "accept:Plastic film->reject": 227,
+    "accept:Cigarette->reject": 144,
+    "accept:Other plastic wrapper->reject": 142,
+    "accept:Styrofoam piece->reject": 64,
+    "accept:Single-use carrier bag->reject": 40,
+    "accept:Disposable food container->reject": 29,
+    "accept:Crisp packet->reject": 26,
+    "accept:Tissues->reject": 23,
+    "accept:Plastic utensils->reject": 22,
+    "accept:Garbage bag->reject": 13,
+    "accept:Foam food container->reject": 11,
+    "reject:Clear plastic bottle->accept": 9,
+    "reject:Plastic bottle cap->accept": 7,
+    "reject:Drink can->accept": 7,
+    "reject:Other plastic->accept": 3,
+    "reject:Plastic straw->accept": 3,
+    "reject:Spread tub->accept": 2,
+    "reject:Other plastic bottle->accept": 2,
+    "reject:Plastic lid->accept": 2,
+    "reject:Paper bag->accept": 2
+  },
+  "note": "Weak-label inference only; eval_label is derived from source mapping and needs human review."
+}

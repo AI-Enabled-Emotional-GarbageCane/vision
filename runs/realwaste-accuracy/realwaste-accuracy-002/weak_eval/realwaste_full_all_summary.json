@@ -1,0 +1,63 @@
+{
+  "model": "runs/realwaste-accuracy/realwaste-accuracy-002/weights/best.onnx",
+  "count": 4752,
+  "accept_threshold": 0.76,
+  "uncertain_threshold": 0.5,
+  "weak_label_agreement": 0.9852693602693603,
+  "by_eval_label": {
+    "accept": {
+      "count": 813,
+      "accept": 773,
+      "reject": 40,
+      "match": 773
+    },
+    "reject": {
+      "count": 3939,
+      "accept": 30,
+      "reject": 3909,
+      "match": 3909
+    }
+  },
+  "confusion": {
+    "accept": {
+      "accept": 773,
+      "reject": 40
+    },
+    "reject": {
+      "reject": 3909,
+      "accept": 30
+    }
+  },
+  "gate_confusion": {
+    "accept": {
+      "accept": 742,
+      "reject": 71
+    },
+    "reject": {
+      "reject": 3929,
+      "accept": 10
+    }
+  },
+  "reject_safety": {
+    "reject_count": 3939,
+    "false_accept_count_on_reject": 10,
+    "false_accept_rate_on_reject": 0.002538715410002539,
+    "blocked_reject_rate": 0.9974612845899975
+  },
+  "accept_behavior": {
+    "accept_count": 813,
+    "accepted_accept_count": 742,
+    "gate_accept_recall": 0.9126691266912669
+  },
+  "top_mistakes": {
+    "accept:Miscellaneous Trash->reject": 33,
+    "reject:Plastic->accept": 10,
+    "accept:Textile Trash->reject": 7,
+    "reject:Paper->accept": 6,
+    "reject:Food Organics->accept": 5,
+    "reject:Cardboard->accept": 4,
+    "reject:Metal->accept": 4,
+    "reject:Vegetation->accept": 1
+  },
+  "note": "Weak-label inference only; eval_label is derived from source mapping and needs human review."
+}

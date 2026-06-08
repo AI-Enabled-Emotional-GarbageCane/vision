@@ -1,0 +1,63 @@
+{
+  "model": "runs/realwaste-accuracy/realwaste-accuracy-002/weights/best.onnx",
+  "count": 90,
+  "accept_threshold": 0.85,
+  "uncertain_threshold": 0.5,
+  "weak_label_agreement": 0.8555555555555555,
+  "by_eval_label": {
+    "reject": {
+      "count": 80,
+      "accept": 3,
+      "reject": 77,
+      "match": 77
+    },
+    "accept": {
+      "count": 10,
+      "accept": 0,
+      "reject": 10,
+      "match": 0
+    }
+  },
+  "confusion": {
+    "reject": {
+      "reject": 77,
+      "accept": 3
+    },
+    "accept": {
+      "reject": 10
+    }
+  },
+  "gate_confusion": {
+    "reject": {
+      "reject": 77,
+      "accept": 3
+    },
+    "accept": {
+      "reject": 10
+    }
+  },
+  "reject_safety": {
+    "reject_count": 80,
+    "false_accept_count_on_reject": 3,
+    "false_accept_rate_on_reject": 0.0375,
+    "blocked_reject_rate": 0.9625
+  },
+  "accept_behavior": {
+    "accept_count": 10,
+    "accepted_accept_count": 0,
+    "gate_accept_recall": 0.0
+  },
+  "top_mistakes": {
+    "accept:Plastic film->reject": 3,
+    "accept:Crisp packet->reject": 2,
+    "accept:Disposable food container->reject": 1,
+    "reject:Food Can->accept": 1,
+    "accept:Plastic utensils->reject": 1,
+    "reject:Spread tub->accept": 1,
+    "accept:Single-use carrier bag->reject": 1,
+    "accept:Garbage bag->reject": 1,
+    "accept:Cigarette->reject": 1,
+    "reject:Plastic bottle cap->accept": 1
+  },
+  "note": "Weak-label inference only; eval_label is derived from source mapping and needs human review."
+}

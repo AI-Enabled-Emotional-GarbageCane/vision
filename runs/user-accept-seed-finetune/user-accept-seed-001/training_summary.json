@@ -1,0 +1,16 @@
+{
+  "data": "/home/hjc/coSpace/DLA_Final/vision/data/training/user_accept_seed_combined_yolo_cls",
+  "base_model": "/home/hjc/coSpace/DLA_Final/vision/runs/hf-general-trash-finetune/hf-general-trash-001/weights/best.pt",
+  "save_dir": "/home/hjc/coSpace/DLA_Final/vision/runs/user-accept-seed-finetune/user-accept-seed-001",
+  "run_name": "user-accept-seed-001",
+  "serial_prefix": "user-accept-seed",
+  "best_pt": "/home/hjc/coSpace/DLA_Final/vision/runs/user-accept-seed-finetune/user-accept-seed-001/weights/best.pt",
+  "last_pt": "/home/hjc/coSpace/DLA_Final/vision/runs/user-accept-seed-finetune/user-accept-seed-001/weights/last.pt",
+  "export_onnx": "/home/hjc/coSpace/DLA_Final/vision/runs/user-accept-seed-finetune/user-accept-seed-001/weights/best.onnx",
+  "epochs": 15,
+  "imgsz": 224,
+  "batch": 32,
+  "device": "0",
+  "cuda_available": true,
+  "cuda_device": "NVIDIA GeForce RTX 3060"
+}

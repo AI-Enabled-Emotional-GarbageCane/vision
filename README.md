@@ -58,6 +58,7 @@ GPT-SoVITS 模型與語音素材產生放在 AGX / Jetson 端；ESP32 只當播�
 ## 模型紀錄
 
 - 目前所有 curated exports 的紀錄見 [`docs/model-registry.md`](./docs/model-registry.md)。
+- 各模型的訓練資料、參數、run 輸出與用途見 [`docs/training-lineage.md`](./docs/training-lineage.md)。
 - AGX + L515 實機串接與糖果包裝塑膠紙模型問題見 [`docs/agx-l515-vision-integration-20260604.md`](./docs/agx-l515-vision-integration-20260604.md)。
 
 ## Demo accept-only 篩選

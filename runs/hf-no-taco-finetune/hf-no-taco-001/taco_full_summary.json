@@ -1,0 +1,75 @@
+{
+  "model": "runs/hf-no-taco-finetune/hf-no-taco-001/weights/best.onnx",
+  "count": 1451,
+  "accept_threshold": 0.76,
+  "uncertain_threshold": 0.5,
+  "weak_label_agreement": 0.50723638869745,
+  "by_eval_label": {
+    "reject": {
+      "count": 668,
+      "accept": 344,
+      "reject": 324,
+      "match": 324
+    },
+    "accept": {
+      "count": 783,
+      "accept": 412,
+      "reject": 371,
+      "match": 412
+    }
+  },
+  "confusion": {
+    "reject": {
+      "reject": 324,
+      "accept": 344
+    },
+    "accept": {
+      "accept": 412,
+      "reject": 371
+    }
+  },
+  "gate_confusion": {
+    "reject": {
+      "reject": 446,
+      "accept": 222
+    },
+    "accept": {
+      "accept": 255,
+      "reject": 528
+    }
+  },
+  "reject_safety": {
+    "reject_count": 668,
+    "false_accept_count_on_reject": 222,
+    "false_accept_rate_on_reject": 0.3323353293413174,
+    "blocked_reject_rate": 0.6676646706586826
+  },
+  "accept_behavior": {
+    "accept_count": 783,
+    "accepted_accept_count": 255,
+    "gate_accept_recall": 0.32567049808429116
+  },
+  "top_mistakes": {
+    "accept:Plastic film->reject": 115,
+    "accept:Cigarette->reject": 76,
+    "reject:Clear plastic bottle->accept": 65,
+    "accept:Other plastic wrapper->reject": 55,
+    "reject:Drink can->accept": 49,
+    "reject:Other plastic->accept": 38,
+    "accept:Styrofoam piece->reject": 35,
+    "reject:Plastic bottle cap->accept": 31,
+    "reject:Plastic straw->accept": 22,
+    "accept:Single-use carrier bag->reject": 20,
+    "reject:Disposable plastic cup->accept": 18,
+    "accept:Crisp packet->reject": 16,
+    "accept:Tissues->reject": 15,
+    "accept:Disposable food container->reject": 15,
+    "reject:Paper cup->accept": 14,
+    "reject:Glass bottle->accept": 14,
+    "reject:Aluminium foil->accept": 13,
+    "reject:Other carton->accept": 12,
+    "reject:Metal bottle cap->accept": 12,
+    "accept:Plastic utensils->reject": 10
+  },
+  "note": "Weak-label inference only; eval_label is derived from source mapping and needs human review."
+}

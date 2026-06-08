@@ -1,0 +1,75 @@
+{
+  "model": "runs/user-accept-seed-finetune/user-accept-seed-001/weights/best.onnx",
+  "count": 90,
+  "accept_threshold": 0.76,
+  "uncertain_threshold": 0.5,
+  "weak_label_agreement": 0.5777777777777777,
+  "by_eval_label": {
+    "reject": {
+      "count": 80,
+      "accept": 35,
+      "reject": 45,
+      "match": 45
+    },
+    "accept": {
+      "count": 10,
+      "accept": 7,
+      "reject": 3,
+      "match": 7
+    }
+  },
+  "confusion": {
+    "reject": {
+      "reject": 45,
+      "accept": 35
+    },
+    "accept": {
+      "accept": 7,
+      "reject": 3
+    }
+  },
+  "gate_confusion": {
+    "reject": {
+      "reject": 72,
+      "accept": 8
+    },
+    "accept": {
+      "reject": 6,
+      "accept": 4
+    }
+  },
+  "reject_safety": {
+    "reject_count": 80,
+    "false_accept_count_on_reject": 8,
+    "false_accept_rate_on_reject": 0.1,
+    "blocked_reject_rate": 0.9
+  },
+  "accept_behavior": {
+    "accept_count": 10,
+    "accepted_accept_count": 4,
+    "gate_accept_recall": 0.4
+  },
+  "top_mistakes": {
+    "reject:Drink can->accept": 10,
+    "reject:Clear plastic bottle->accept": 4,
+    "reject:Plastic bottle cap->accept": 3,
+    "reject:Other carton->accept": 2,
+    "reject:Paper bag->accept": 2,
+    "reject:Plastic straw->accept": 2,
+    "accept:Crisp packet->reject": 1,
+    "reject:Paper cup->accept": 1,
+    "reject:Spread tub->accept": 1,
+    "accept:Single-use carrier bag->reject": 1,
+    "reject:Plastic lid->accept": 1,
+    "accept:Plastic film->reject": 1,
+    "reject:Food waste->accept": 1,
+    "reject:Metal bottle cap->accept": 1,
+    "reject:Other plastic bottle->accept": 1,
+    "reject:Other plastic container->accept": 1,
+    "reject:Glass bottle->accept": 1,
+    "reject:Aluminium foil->accept": 1,
+    "reject:Normal paper->accept": 1,
+    "reject:Egg carton->accept": 1
+  },
+  "note": "Weak-label inference only; eval_label is derived from source mapping and needs human review."
+}

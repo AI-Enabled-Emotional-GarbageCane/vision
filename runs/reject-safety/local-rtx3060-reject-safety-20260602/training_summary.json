@@ -1,0 +1,14 @@
+{
+  "data": "data/training/reject_safety_yolo_cls",
+  "base_model": "exports/20260601T122805Z/best.pt",
+  "save_dir": "/home/hjc/coSpace/carflow/runs/classify/runs/reject-safety/local-rtx3060-reject-safety-20260602",
+  "best_pt": "/home/hjc/coSpace/carflow/runs/classify/runs/reject-safety/local-rtx3060-reject-safety-20260602/weights/best.pt",
+  "last_pt": "/home/hjc/coSpace/carflow/runs/classify/runs/reject-safety/local-rtx3060-reject-safety-20260602/weights/last.pt",
+  "export_onnx": "/home/hjc/coSpace/carflow/runs/classify/runs/reject-safety/local-rtx3060-reject-safety-20260602/weights/best.onnx",
+  "epochs": 25,
+  "imgsz": 224,
+  "batch": 16,
+  "device": "0",
+  "cuda_available": true,
+  "cuda_device": "NVIDIA GeForce RTX 3060"
+}

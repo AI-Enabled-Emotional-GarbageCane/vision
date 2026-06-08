@@ -1,0 +1,57 @@
+{
+  "model": "runs/general-trash-positive/general-trash-positive-002/weights/best.onnx",
+  "count": 935,
+  "accept_threshold": 0.76,
+  "uncertain_threshold": 0.5,
+  "weak_label_agreement": 0.8352941176470589,
+  "by_eval_label": {
+    "accept": {
+      "count": 267,
+      "accept": 209,
+      "reject": 58,
+      "match": 209
+    },
+    "reject": {
+      "count": 668,
+      "accept": 96,
+      "reject": 572,
+      "match": 572
+    }
+  },
+  "confusion": {
+    "accept": {
+      "accept": 209,
+      "reject": 58
+    },
+    "reject": {
+      "reject": 572,
+      "accept": 96
+    }
+  },
+  "gate_confusion": {
+    "accept": {
+      "reject": 129,
+      "accept": 138
+    },
+    "reject": {
+      "reject": 631,
+      "accept": 37
+    }
+  },
+  "reject_safety": {
+    "reject_count": 668,
+    "false_accept_count_on_reject": 37,
+    "false_accept_rate_on_reject": 0.05538922155688623,
+    "blocked_reject_rate": 0.9446107784431138
+  },
+  "accept_behavior": {
+    "accept_count": 267,
+    "accepted_accept_count": 138,
+    "gate_accept_recall": 0.5168539325842697
+  },
+  "top_mistakes": {
+    "reject:->accept": 96,
+    "accept:->reject": 58
+  },
+  "note": "Weak-label inference only; eval_label is derived from source mapping and needs human review."
+}

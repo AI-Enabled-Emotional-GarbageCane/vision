@@ -1,0 +1,59 @@
+{
+  "model": "runs/hf-no-taco-finetune/hf-no-taco-001/weights/best.onnx",
+  "count": 42,
+  "accept_threshold": 0.76,
+  "uncertain_threshold": 0.5,
+  "weak_label_agreement": 0.7142857142857143,
+  "by_eval_label": {
+    "accept": {
+      "count": 27,
+      "accept": 20,
+      "reject": 7,
+      "match": 20
+    },
+    "reject": {
+      "count": 15,
+      "accept": 5,
+      "reject": 10,
+      "match": 10
+    }
+  },
+  "confusion": {
+    "accept": {
+      "reject": 7,
+      "accept": 20
+    },
+    "reject": {
+      "reject": 10,
+      "accept": 5
+    }
+  },
+  "gate_confusion": {
+    "accept": {
+      "reject": 9,
+      "accept": 18
+    },
+    "reject": {
+      "reject": 11,
+      "accept": 4
+    }
+  },
+  "reject_safety": {
+    "reject_count": 15,
+    "false_accept_count_on_reject": 4,
+    "false_accept_rate_on_reject": 0.26666666666666666,
+    "blocked_reject_rate": 0.7333333333333333
+  },
+  "accept_behavior": {
+    "accept_count": 27,
+    "accepted_accept_count": 18,
+    "gate_accept_recall": 0.6666666666666666
+  },
+  "top_mistakes": {
+    "accept:plastic->reject": 5,
+    "reject:paper->accept": 3,
+    "accept:plastic-bag->reject": 2,
+    "reject:glass->accept": 2
+  },
+  "note": "Weak-label inference only; eval_label is derived from source mapping and needs human review."
+}

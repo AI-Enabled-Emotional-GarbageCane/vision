@@ -1,0 +1,42 @@
+{
+  "model": "runs/hf-general-trash-finetune/hf-general-trash-001/weights/best.onnx",
+  "count": 9,
+  "accept_threshold": 0.76,
+  "uncertain_threshold": 0.5,
+  "weak_label_agreement": 0.4444444444444444,
+  "by_eval_label": {
+    "accept": {
+      "count": 9,
+      "accept": 4,
+      "reject": 5,
+      "match": 4
+    }
+  },
+  "confusion": {
+    "accept": {
+      "reject": 5,
+      "accept": 4
+    }
+  },
+  "gate_confusion": {
+    "accept": {
+      "reject": 7,
+      "accept": 2
+    }
+  },
+  "reject_safety": {
+    "reject_count": 0,
+    "false_accept_count_on_reject": 0,
+    "false_accept_rate_on_reject": null,
+    "blocked_reject_rate": null
+  },
+  "accept_behavior": {
+    "accept_count": 9,
+    "accepted_accept_count": 2,
+    "gate_accept_recall": 0.2222222222222222
+  },
+  "top_mistakes": {
+    "accept:user_accept_seed->reject": 5
+  },
+  "note": "Weak-label inference only; eval_label is derived from source mapping and needs human review."
+}

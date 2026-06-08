@@ -1,0 +1,10 @@
+local_path,split,label_hint,eval_label,eval_label_strength,dominant_category,all_categories,pred_class,confidence,accept_prob,reject_prob,gate_action,weak_label_match
+test/accept/00312_r00_63664f1243_00024_63664f1243_2026-06-07_135330.jpg,test,user_accept_seed,accept,user_confirmed_accept,user_accept_seed,,reject,0.988219,0.011781,0.988219,reject,False
+test/accept/00313_r00_2d4ff1af53_00039_2d4ff1af53_2026-06-07_215313.jpg,test,user_accept_seed,accept,user_confirmed_accept,user_accept_seed,,reject,0.685763,0.314237,0.685763,reject,False
+test/accept/00314_r00_611faf3a13_00043_611faf3a13_2026-06-07_215521.jpg,test,user_accept_seed,accept,user_confirmed_accept,user_accept_seed,,accept,0.850612,0.850612,0.149388,accept,True
+test/accept/00315_r00_423b28c2d4_00034_423b28c2d4_2026-06-07_152758.jpg,test,user_accept_seed,accept,user_confirmed_accept,user_accept_seed,,accept,0.599544,0.599544,0.400457,reject,True
+test/accept/00316_r00_71ae00e5dd_00007_71ae00e5dd_2026-06-07_132052.jpg,test,user_accept_seed,accept,user_confirmed_accept,user_accept_seed,,reject,0.842109,0.157891,0.842109,reject,False
+test/accept/00317_r00_b65e7ba17f_00028_b65e7ba17f_2026-06-07_152505.jpg,test,user_accept_seed,accept,user_confirmed_accept,user_accept_seed,,reject,0.763855,0.236145,0.763855,reject,False
+test/accept/00318_r00_42322a60ac_00040_42322a60ac_2026-06-07_215334.jpg,test,user_accept_seed,accept,user_confirmed_accept,user_accept_seed,,reject,0.592686,0.407314,0.592686,reject,False
+test/accept/00319_r00_8d60d9b551_00026_8d60d9b551_2026-06-07_140308.jpg,test,user_accept_seed,accept,user_confirmed_accept,user_accept_seed,,accept,0.858626,0.858626,0.141374,accept,True
+test/accept/00320_r00_7477d1f399_00020_7477d1f399_2026-06-07_134246.jpg,test,user_accept_seed,accept,user_confirmed_accept,user_accept_seed,,accept,0.611083,0.611083,0.388917,reject,True

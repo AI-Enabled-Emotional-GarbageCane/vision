@@ -1,0 +1,57 @@
+{
+  "model": "runs/hf-no-taco-finetune/hf-no-taco-001/weights/best.onnx",
+  "count": 2074,
+  "accept_threshold": 0.76,
+  "uncertain_threshold": 0.5,
+  "weak_label_agreement": 0.8891031822565092,
+  "by_eval_label": {
+    "accept": {
+      "count": 324,
+      "accept": 221,
+      "reject": 103,
+      "match": 221
+    },
+    "reject": {
+      "count": 1750,
+      "accept": 127,
+      "reject": 1623,
+      "match": 1623
+    }
+  },
+  "confusion": {
+    "accept": {
+      "reject": 103,
+      "accept": 221
+    },
+    "reject": {
+      "reject": 1623,
+      "accept": 127
+    }
+  },
+  "gate_confusion": {
+    "accept": {
+      "reject": 140,
+      "accept": 184
+    },
+    "reject": {
+      "reject": 1675,
+      "accept": 75
+    }
+  },
+  "reject_safety": {
+    "reject_count": 1750,
+    "false_accept_count_on_reject": 75,
+    "false_accept_rate_on_reject": 0.04285714285714286,
+    "blocked_reject_rate": 0.9571428571428572
+  },
+  "accept_behavior": {
+    "accept_count": 324,
+    "accepted_accept_count": 184,
+    "gate_accept_recall": 0.5679012345679012
+  },
+  "top_mistakes": {
+    "reject:->accept": 127,
+    "accept:->reject": 103
+  },
+  "note": "Weak-label inference only; eval_label is derived from source mapping and needs human review."
+}

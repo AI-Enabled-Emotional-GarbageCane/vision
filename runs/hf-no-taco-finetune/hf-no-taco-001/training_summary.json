@@ -1,0 +1,16 @@
+{
+  "data": "/home/hjc/coSpace/DLA_Final/vision/data/training/hf_no_taco_combined_yolo_cls",
+  "base_model": "/home/hjc/coSpace/DLA_Final/vision/runs/general-trash-positive/general-trash-positive-002/weights/best.pt",
+  "save_dir": "/home/hjc/coSpace/DLA_Final/vision/runs/hf-no-taco-finetune/hf-no-taco-001",
+  "run_name": "hf-no-taco-001",
+  "serial_prefix": "hf-no-taco",
+  "best_pt": "/home/hjc/coSpace/DLA_Final/vision/runs/hf-no-taco-finetune/hf-no-taco-001/weights/best.pt",
+  "last_pt": "/home/hjc/coSpace/DLA_Final/vision/runs/hf-no-taco-finetune/hf-no-taco-001/weights/last.pt",
+  "export_onnx": "/home/hjc/coSpace/DLA_Final/vision/runs/hf-no-taco-finetune/hf-no-taco-001/weights/best.onnx",
+  "epochs": 25,
+  "imgsz": 224,
+  "batch": 32,
+  "device": "0",
+  "cuda_available": true,
+  "cuda_device": "NVIDIA GeForce RTX 3060"
+}

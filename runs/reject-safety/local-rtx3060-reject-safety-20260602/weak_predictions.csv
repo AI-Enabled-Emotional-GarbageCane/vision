@@ -1,0 +1,91 @@
+local_path,label_hint,eval_label,eval_label_strength,dominant_category,all_categories,pred_class,confidence,accept_prob,reject_prob,gate_action,weak_label_match
+images/reject_weak/taco_00000_Glass_bottle_5e600256.jpg,reject_weak,reject,weak_reject_category,Glass bottle,Glass bottle,reject,0.999973,0.000027,0.999973,reject,True
+images/reject_weak/taco_00001_Meal_carton_607d7928.jpg,reject_weak,reject,weak_reject_category,Meal carton,Meal carton|Other carton,reject,0.747065,0.252935,0.747065,reject,True
+images/reject_weak/taco_00002_Clear_plastic_bottle_b4e51370.jpg,reject_weak,reject,weak_reject_category,Clear plastic bottle,Clear plastic bottle|Plastic bottle cap,reject,0.957041,0.042959,0.957041,reject,True
+images/reject_weak/taco_00003_Clear_plastic_bottle_2d11562c.jpg,reject_weak,reject,weak_reject_category,Clear plastic bottle,Clear plastic bottle|Plastic bottle cap|Drink can,reject,0.995137,0.004863,0.995137,reject,True
+images/reject_weak/taco_00004_Drink_can_0acc8519.jpg,reject_weak,reject,weak_reject_category,Drink can,Drink can,reject,0.999182,0.000818,0.999182,reject,True
+images/reject_weak/taco_00005_Food_Can_21593e35.jpg,reject_weak,reject,weak_reject_category,Food Can,Food Can|Other plastic bottle|Plastic bottle cap|Pop tab,reject,1.000000,0.000000,1.000000,reject,True
+images/reject_weak/taco_00006_Aerosol_d5272d73.jpg,reject_weak,reject,weak_reject_category,Aerosol,Aerosol,reject,0.960696,0.039304,0.960696,reject,True
+images/reject_weak/taco_00007_Clear_plastic_bottle_13c98895.jpg,reject_weak,reject,weak_reject_category,Clear plastic bottle,Clear plastic bottle|Plastic bottle cap,reject,0.912819,0.087181,0.912819,reject,True
+images/reject_weak/taco_00008_Clear_plastic_bottle_2ec94819.jpg,reject_weak,reject,weak_reject_category,Clear plastic bottle,Clear plastic bottle,reject,0.820071,0.179929,0.820071,reject,True
+images/reject_weak/taco_00009_Food_Can_72309f9a.jpg,reject_weak,reject,weak_reject_category,Food Can,Food Can|Glass cup|Pop tab,reject,0.999978,0.000022,0.999978,reject,True
+images/reject_weak/taco_00012_Other_plastic_bottle_acae0878.jpg,reject_weak,reject,weak_reject_category,Other plastic bottle,Other plastic bottle|Clear plastic bottle|Glass bottle|Drink carton|Plastic bottle cap|Metal bottle cap,reject,1.000000,0.000000,1.000000,reject,True
+images/reject_weak/taco_00014_Other_plastic_bottle_8f340bb6.jpg,reject_weak,reject,weak_reject_category,Other plastic bottle,Other plastic bottle,reject,0.999175,0.000825,0.999175,reject,True
+images/reject_weak/taco_00015_Other_plastic_bottle_b95ce2fe.jpg,reject_weak,reject,weak_reject_category,Other plastic bottle,Other plastic bottle|Plastic bottle cap,reject,0.999833,0.000167,0.999833,reject,True
+images/reject_weak/taco_00016_Aerosol_ad15261b.jpg,reject_weak,reject,weak_reject_category,Aerosol,Aerosol|Normal paper,reject,0.999852,0.000148,0.999852,reject,True
+images/reject_weak/taco_00017_Paper_cup_8c1bde81.jpg,reject_weak,reject,weak_reject_category,Paper cup,Paper cup,reject,0.689359,0.310641,0.689359,reject,True
+images/reject_weak/taco_00018_Drink_can_2ee92ad2.jpg,reject_weak,reject,weak_reject_category,Drink can,Drink can,reject,0.999047,0.000953,0.999047,reject,True
+images/reject_weak/taco_00019_Drink_can_86a1bab2.jpg,reject_weak,reject,weak_reject_category,Drink can,Drink can|Pop tab,reject,0.829213,0.170787,0.829213,reject,True
+images/reject_weak/taco_00020_Food_Can_24bc0222.jpg,reject_weak,reject,weak_reject_category,Food Can,Food Can|Pop tab,reject,0.999990,0.000010,0.999990,reject,True
+images/reject_weak/taco_00021_Food_Can_6a60e8ee.jpg,reject_weak,reject,weak_reject_category,Food Can,Food Can|Pop tab,reject,0.999973,0.000027,0.999973,reject,True
+images/reject_weak/taco_00022_Drink_can_bb8d4e60.jpg,reject_weak,reject,weak_reject_category,Drink can,Drink can|Pop tab,reject,0.986169,0.013831,0.986169,reject,True
+images/reject_weak/taco_00023_Aerosol_d8ceb03f.jpg,reject_weak,reject,weak_reject_category,Aerosol,Aerosol|Other plastic bottle|Plastic bottle cap,reject,0.999939,0.000061,0.999939,reject,True
+images/reject_weak/taco_00024_Aerosol_7deb7cd2.jpg,reject_weak,reject,weak_reject_category,Aerosol,Aerosol,reject,0.999519,0.000481,0.999519,reject,True
+images/reject_weak/taco_00027_Clear_plastic_bottle_ac5a2bf9.jpg,reject_weak,reject,weak_reject_category,Clear plastic bottle,Clear plastic bottle|Drink can|Pop tab|Plastic bottle cap,reject,0.991811,0.008189,0.991811,reject,True
+images/reject_weak/taco_00028_Drink_can_9fdba6dc.jpg,reject_weak,reject,weak_reject_category,Drink can,Drink can|Clear plastic bottle,reject,0.979137,0.020863,0.979137,reject,True
+images/reject_weak/taco_00029_Drink_can_a9207c56.jpg,reject_weak,reject,weak_reject_category,Drink can,Drink can,reject,0.999560,0.000440,0.999560,reject,True
+images/accept_weak/taco_00030_Disposable_food_container_f2a1c540.jpg,accept_weak,accept,weak_accept_category,Disposable food container,Disposable food container|Cigarette,reject,0.691609,0.308391,0.691609,reject,False
+images/reject_weak/taco_00031_Drink_can_80d91479.jpg,reject_weak,reject,weak_reject_category,Drink can,Drink can,reject,0.910812,0.089188,0.910812,reject,True
+images/reject_weak/taco_00032_Drink_can_cdbec646.jpg,reject_weak,reject,weak_reject_category,Drink can,Drink can,reject,0.859627,0.140373,0.859627,reject,True
+images/reject_weak/taco_00033_Food_Can_194a86a7.jpg,reject_weak,reject,weak_reject_category,Food Can,Food Can|Pop tab,reject,0.999993,0.000007,0.999993,reject,True
+images/reject_weak/taco_00036_Clear_plastic_bottle_c4df50d9.jpg,reject_weak,reject,weak_reject_category,Clear plastic bottle,Clear plastic bottle,reject,0.740037,0.259963,0.740037,reject,True
+images/reject_weak/taco_00037_Glass_bottle_aeb3bdb7.jpg,reject_weak,reject,weak_reject_category,Glass bottle,Glass bottle,reject,0.997812,0.002188,0.997812,reject,True
+images/accept_weak/taco_00038_Plastic_film_2a3bbdcd.jpg,accept_weak,accept,weak_accept_category,Plastic film,Plastic film|Crisp packet,reject,0.719436,0.280564,0.719436,reject,False
+images/reject_weak/taco_00039_Glass_bottle_e8e50576.jpg,reject_weak,reject,weak_reject_category,Glass bottle,Glass bottle,reject,0.931239,0.068761,0.931239,reject,True
+images/reject_weak/taco_00040_Glass_bottle_9f235a83.jpg,reject_weak,reject,weak_reject_category,Glass bottle,Glass bottle,reject,0.831586,0.168414,0.831586,reject,True
+images/reject_weak/taco_00041_Drink_can_0d800339.jpg,reject_weak,reject,weak_reject_category,Drink can,Drink can|Pop tab|Normal paper,reject,0.986540,0.013460,0.986540,reject,True
+images/reject_weak/taco_00042_Drink_can_a2887150.jpg,reject_weak,reject,weak_reject_category,Drink can,Drink can,reject,0.983846,0.016154,0.983846,reject,True
+images/reject_weak/taco_00043_Other_plastic_bottle_c1d03c6c.jpg,reject_weak,reject,weak_reject_category,Other plastic bottle,Other plastic bottle|Glass cup,reject,0.999964,0.000036,0.999964,reject,True
+images/reject_weak/taco_00044_Food_Can_128aae8f.jpg,reject_weak,reject,weak_reject_category,Food Can,Food Can|Pop tab,reject,0.999928,0.000072,0.999928,reject,True
+images/reject_weak/taco_00045_Food_Can_4b84c54b.jpg,reject_weak,reject,weak_reject_category,Food Can,Food Can,reject,0.999969,0.000031,0.999969,reject,True
+images/reject_weak/taco_00046_Food_Can_767ef223.jpg,reject_weak,reject,weak_reject_category,Food Can,Food Can|Pop tab,reject,0.999887,0.000113,0.999887,reject,True
+images/reject_weak/taco_00047_Plastic_lid_8647eb70.jpg,reject_weak,reject,weak_reject_category,Plastic lid,Plastic lid|Metal lid|Egg carton,reject,1.000000,0.000000,1.000000,reject,True
+images/reject_weak/taco_00048_Egg_carton_455f715b.jpg,reject_weak,reject,weak_reject_category,Egg carton,Egg carton,reject,0.917247,0.082753,0.917247,reject,True
+images/reject_weak/taco_00049_Egg_carton_63e49dbc.jpg,reject_weak,reject,weak_reject_category,Egg carton,Egg carton,reject,0.999528,0.000472,0.999528,reject,True
+images/reject_weak/taco_00051_Drink_can_fa3606f3.jpg,reject_weak,reject,weak_reject_category,Drink can,Drink can,reject,0.989566,0.010434,0.989566,reject,True
+images/reject_weak/taco_00052_Drink_can_e9327a60.jpg,reject_weak,reject,weak_reject_category,Drink can,Drink can,reject,0.866767,0.133233,0.866767,reject,True
+images/reject_weak/taco_00053_Other_carton_48d7c97e.jpg,reject_weak,reject,weak_reject_category,Other carton,Other carton,reject,0.913920,0.086080,0.913920,reject,True
+images/reject_weak/taco_00058_Paper_bag_e2b1c057.jpg,reject_weak,reject,weak_reject_category,Paper bag,Paper bag,reject,0.969080,0.030920,0.969080,reject,True
+images/reject_weak/taco_00059_Paper_bag_9f37daa0.jpg,reject_weak,reject,weak_reject_category,Paper bag,Paper bag,reject,0.996769,0.003231,0.996769,reject,True
+images/accept_weak/taco_00061_Crisp_packet_8654a8db.jpg,accept_weak,accept,weak_accept_category,Crisp packet,Crisp packet,reject,0.679843,0.320157,0.679843,reject,False
+images/reject_weak/taco_00062_Paper_cup_b70ff0a3.jpg,reject_weak,reject,weak_reject_category,Paper cup,Paper cup|Plastic lid,reject,0.960482,0.039518,0.960482,reject,True
+images/reject_weak/taco_00063_Disposable_plastic_cup_5fbcee6a.jpg,reject_weak,reject,weak_reject_category,Disposable plastic cup,Disposable plastic cup|Plastic lid|Drink can,reject,0.829971,0.170029,0.829971,reject,True
+images/accept_weak/taco_00065_Plastic_utensils_9d6bc2b1.jpg,accept_weak,accept,weak_accept_category,Plastic utensils,Plastic utensils|Cigarette,reject,0.691590,0.308410,0.691590,reject,False
+images/reject_weak/taco_00068_Food_Can_5e06f5de.jpg,reject_weak,reject,weak_reject_category,Food Can,Food Can|Food waste,reject,0.999916,0.000084,0.999916,reject,True
+images/reject_weak/taco_00069_Metal_bottle_cap_63a61735.jpg,reject_weak,reject,weak_reject_category,Metal bottle cap,Squeezable tube|Metal bottle cap,reject,0.999938,0.000062,0.999938,reject,True
+images/reject_weak/taco_00071_Spread_tub_70d283da.jpg,reject_weak,reject,weak_reject_category,Spread tub,Spread tub,reject,0.992560,0.007440,0.992560,reject,True
+images/accept_weak/taco_00073_Single-use_carrier_bag_d3cc4a34.jpg,accept_weak,accept,weak_accept_category,Single-use carrier bag,Single-use carrier bag|Shoe,reject,0.908671,0.091328,0.908671,reject,False
+images/accept_weak/taco_00074_Garbage_bag_cc5dec47.jpg,accept_weak,accept,weak_accept_category,Garbage bag,Garbage bag,reject,0.906755,0.093245,0.906755,reject,False
+images/reject_weak/taco_00077_Plastic_lid_c9c2a8cc.jpg,reject_weak,reject,weak_reject_category,Plastic lid,Six pack rings|Plastic lid,reject,0.774948,0.225052,0.774948,reject,True
+images/reject_weak/taco_00080_Paper_straw_1384911c.jpg,reject_weak,reject,weak_reject_category,Paper straw,Paper straw|Glass cup,reject,0.998921,0.001079,0.998921,reject,True
+images/reject_weak/taco_00081_Corrugated_carton_cdff2416.jpg,reject_weak,reject,weak_reject_category,Corrugated carton,Corrugated carton|Food waste|Unlabeled litter,reject,0.933932,0.066068,0.933932,reject,True
+images/reject_weak/taco_00082_Battery_f0fee36f.jpg,reject_weak,reject,weak_reject_category,Battery,Aluminium blister pack|Battery|Aerosol|Plastic bottle cap|Squeezable tube,reject,0.999049,0.000951,0.999049,reject,True
+images/accept_weak/taco_00083_Plastic_film_71e6f5bf.jpg,accept_weak,accept,weak_accept_category,Plastic film,Plastic film,reject,0.988379,0.011621,0.988379,reject,False
+images/reject_weak/taco_00084_Other_plastic_bottle_29d6819f.jpg,reject_weak,reject,weak_reject_category,Other plastic bottle,Toilet tube|Other plastic bottle|Plastic bottle cap,reject,0.999996,0.000004,0.999996,reject,True
+images/accept_weak/taco_00086_Cigarette_f8b561a2.jpg,accept_weak,accept,weak_accept_category,Cigarette,Rope & strings|Cigarette,reject,0.825339,0.174661,0.825339,reject,False
+images/reject_weak/taco_00090_Paper_cup_baf705f6.jpg,reject_weak,reject,weak_reject_category,Paper cup,Paper cup|Plastic lid|Unlabeled litter|Normal paper,reject,0.860576,0.139424,0.860576,reject,True
+images/accept_weak/taco_00091_Crisp_packet_d7325183.jpg,accept_weak,accept,weak_accept_category,Crisp packet,Crisp packet,reject,0.627226,0.372774,0.627226,reject,False
+images/reject_weak/taco_00092_Food_waste_ad38ae83.jpg,reject_weak,reject,weak_reject_category,Food waste,Food waste,reject,0.988182,0.011818,0.988182,reject,True
+images/accept_weak/taco_00093_Plastic_film_bfca95b3.jpg,accept_weak,accept,weak_accept_category,Plastic film,Plastic film|Cigarette,reject,0.652232,0.347768,0.652232,reject,False
+images/reject_weak/taco_00094_Plastic_bottle_cap_9f441503.jpg,reject_weak,reject,weak_reject_category,Plastic bottle cap,Plastic bottle cap|Metal bottle cap,reject,0.859700,0.140300,0.859700,reject,True
+images/reject_weak/taco_00095_Metal_bottle_cap_832de290.jpg,reject_weak,reject,weak_reject_category,Metal bottle cap,Metal bottle cap,reject,0.874659,0.125341,0.874659,reject,True
+images/reject_weak/taco_00100_Corrugated_carton_0c15c118.jpg,reject_weak,reject,weak_reject_category,Corrugated carton,Corrugated carton|Food Can|Drink carton|Other carton|Egg carton,reject,0.999920,0.000080,0.999920,reject,True
+images/reject_weak/taco_00101_Clear_plastic_bottle_ab5ac83a.jpg,reject_weak,reject,weak_reject_category,Clear plastic bottle,Clear plastic bottle,reject,0.825966,0.174033,0.825966,reject,True
+images/reject_weak/taco_00102_Other_plastic_bottle_57825ca5.jpg,reject_weak,reject,weak_reject_category,Other plastic bottle,Other plastic bottle|Plastic bottle cap|Unlabeled litter|Squeezable tube|Clear plastic bottle,reject,0.803907,0.196093,0.803907,reject,True
+images/reject_weak/taco_00108_Other_plastic_container_c973320a.jpg,reject_weak,reject,weak_reject_category,Other plastic container,Other plastic container|Unlabeled litter,reject,0.953090,0.046910,0.953090,reject,True
+images/reject_weak/taco_00111_Clear_plastic_bottle_f25693eb.jpg,reject_weak,reject,weak_reject_category,Clear plastic bottle,Unlabeled litter|Clear plastic bottle,reject,0.997234,0.002766,0.997234,reject,True
+images/reject_weak/taco_00113_Clear_plastic_bottle_a8f21f35.jpg,reject_weak,reject,weak_reject_category,Clear plastic bottle,Clear plastic bottle,reject,0.997026,0.002974,0.997026,reject,True
+images/reject_weak/taco_00114_Glass_bottle_6f524061.jpg,reject_weak,reject,weak_reject_category,Glass bottle,Glass bottle,reject,0.945128,0.054872,0.945128,reject,True
+images/reject_weak/taco_00119_Aluminium_foil_1a6ff48e.jpg,reject_weak,reject,weak_reject_category,Aluminium foil,Aluminium foil,reject,0.956065,0.043935,0.956065,reject,True
+images/reject_weak/taco_00120_Normal_paper_c85a0acf.jpg,reject_weak,reject,weak_reject_category,Normal paper,Normal paper,reject,0.958793,0.041207,0.958793,reject,True
+images/reject_weak/taco_00124_Clear_plastic_bottle_c60d33a6.jpg,reject_weak,reject,weak_reject_category,Clear plastic bottle,Clear plastic bottle,reject,0.895979,0.104021,0.895979,reject,True
+images/reject_weak/taco_00127_Egg_carton_f8fb4e27.jpg,reject_weak,reject,weak_reject_category,Egg carton,Egg carton|Polypropylene bag,reject,0.995806,0.004194,0.995806,reject,True
+images/reject_weak/taco_00129_Other_plastic_e4dfffcb.jpg,reject_weak,reject,weak_reject_category,Other plastic,Other plastic,reject,0.775956,0.224044,0.775956,reject,True
+images/reject_weak/taco_00130_Clear_plastic_bottle_bb90c754.jpg,reject_weak,reject,weak_reject_category,Clear plastic bottle,Clear plastic bottle|Scrap metal,reject,0.958154,0.041846,0.958154,reject,True
+images/reject_weak/taco_00131_Corrugated_carton_8a9e0077.jpg,reject_weak,reject,weak_reject_category,Corrugated carton,Corrugated carton,reject,0.775564,0.224436,0.775564,reject,True
+images/reject_weak/taco_00134_Plastic_straw_919845e6.jpg,reject_weak,reject,weak_reject_category,Plastic straw,Plastic straw|Unlabeled litter,reject,0.655303,0.344697,0.655303,reject,True
+images/reject_weak/taco_00139_Normal_paper_b4ead943.jpg,reject_weak,reject,weak_reject_category,Normal paper,Normal paper|Magazine paper|Drink carton|Unlabeled litter,reject,0.850296,0.149704,0.850296,reject,True
+images/reject_weak/taco_00140_Plastic_bottle_cap_11a437ab.jpg,reject_weak,reject,weak_reject_category,Plastic bottle cap,Plastic bottle cap,reject,0.957067,0.042933,0.957067,reject,True
+images/reject_weak/taco_00145_Plastic_straw_b1a4df37.jpg,reject_weak,reject,weak_reject_category,Plastic straw,Plastic straw,reject,0.951901,0.048099,0.951901,reject,True
+images/reject_weak/taco_00146_Plastic_bottle_cap_5007fd73.jpg,reject_weak,reject,weak_reject_category,Plastic bottle cap,Plastic bottle cap,reject,0.975036,0.024964,0.975036,reject,True
+images/reject_weak/taco_00147_Other_carton_6ca2834b.jpg,reject_weak,reject,weak_reject_category,Other carton,Other carton,reject,0.966954,0.033046,0.966954,reject,True

@@ -1,0 +1,60 @@
+{
+  "model": "runs/general-trash-positive/general-trash-positive-002/weights/best.onnx",
+  "count": 42,
+  "accept_threshold": 0.76,
+  "uncertain_threshold": 0.5,
+  "weak_label_agreement": 0.5714285714285714,
+  "by_eval_label": {
+    "accept": {
+      "count": 27,
+      "accept": 19,
+      "reject": 8,
+      "match": 19
+    },
+    "reject": {
+      "count": 15,
+      "accept": 10,
+      "reject": 5,
+      "match": 5
+    }
+  },
+  "confusion": {
+    "accept": {
+      "reject": 8,
+      "accept": 19
+    },
+    "reject": {
+      "accept": 10,
+      "reject": 5
+    }
+  },
+  "gate_confusion": {
+    "accept": {
+      "reject": 14,
+      "accept": 13
+    },
+    "reject": {
+      "reject": 13,
+      "accept": 2
+    }
+  },
+  "reject_safety": {
+    "reject_count": 15,
+    "false_accept_count_on_reject": 2,
+    "false_accept_rate_on_reject": 0.13333333333333333,
+    "blocked_reject_rate": 0.8666666666666667
+  },
+  "accept_behavior": {
+    "accept_count": 27,
+    "accepted_accept_count": 13,
+    "gate_accept_recall": 0.48148148148148145
+  },
+  "top_mistakes": {
+    "reject:paper->accept": 8,
+    "accept:plastic->reject": 6,
+    "reject:glass->accept": 2,
+    "accept:cigarette-butt->reject": 1,
+    "accept:plastic-bag->reject": 1
+  },
+  "note": "Weak-label inference only; eval_label is derived from source mapping and needs human review."
+}

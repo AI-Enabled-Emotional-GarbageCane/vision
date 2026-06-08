@@ -1,0 +1,63 @@
+{
+  "model": "runs/hf-no-taco-finetune/hf-no-taco-001/weights/best.onnx",
+  "count": 713,
+  "accept_threshold": 0.76,
+  "uncertain_threshold": 0.5,
+  "weak_label_agreement": 0.9270687237026648,
+  "by_eval_label": {
+    "accept": {
+      "count": 122,
+      "accept": 104,
+      "reject": 18,
+      "match": 104
+    },
+    "reject": {
+      "count": 591,
+      "accept": 34,
+      "reject": 557,
+      "match": 557
+    }
+  },
+  "confusion": {
+    "accept": {
+      "reject": 18,
+      "accept": 104
+    },
+    "reject": {
+      "reject": 557,
+      "accept": 34
+    }
+  },
+  "gate_confusion": {
+    "accept": {
+      "reject": 22,
+      "accept": 100
+    },
+    "reject": {
+      "reject": 568,
+      "accept": 23
+    }
+  },
+  "reject_safety": {
+    "reject_count": 591,
+    "false_accept_count_on_reject": 23,
+    "false_accept_rate_on_reject": 0.038917089678511,
+    "blocked_reject_rate": 0.961082910321489
+  },
+  "accept_behavior": {
+    "accept_count": 122,
+    "accepted_accept_count": 100,
+    "gate_accept_recall": 0.819672131147541
+  },
+  "top_mistakes": {
+    "reject:Plastic->accept": 14,
+    "accept:Miscellaneous Trash->reject": 12,
+    "reject:Paper->accept": 9,
+    "accept:Textile Trash->reject": 6,
+    "reject:Metal->accept": 4,
+    "reject:Food Organics->accept": 3,
+    "reject:Cardboard->accept": 3,
+    "reject:Vegetation->accept": 1
+  },
+  "note": "Weak-label inference only; eval_label is derived from source mapping and needs human review."
+}

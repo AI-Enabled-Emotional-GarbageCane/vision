@@ -1,0 +1,57 @@
+{
+  "model": "runs/user-accept-seed-finetune/user-accept-seed-001/weights/best.onnx",
+  "count": 50,
+  "accept_threshold": 0.76,
+  "uncertain_threshold": 0.5,
+  "weak_label_agreement": 0.52,
+  "by_eval_label": {
+    "accept": {
+      "count": 25,
+      "accept": 4,
+      "reject": 21,
+      "match": 4
+    },
+    "reject": {
+      "count": 25,
+      "accept": 3,
+      "reject": 22,
+      "match": 22
+    }
+  },
+  "confusion": {
+    "accept": {
+      "reject": 21,
+      "accept": 4
+    },
+    "reject": {
+      "reject": 22,
+      "accept": 3
+    }
+  },
+  "gate_confusion": {
+    "accept": {
+      "reject": 24,
+      "accept": 1
+    },
+    "reject": {
+      "reject": 24,
+      "accept": 1
+    }
+  },
+  "reject_safety": {
+    "reject_count": 25,
+    "false_accept_count_on_reject": 1,
+    "false_accept_rate_on_reject": 0.04,
+    "blocked_reject_rate": 0.96
+  },
+  "accept_behavior": {
+    "accept_count": 25,
+    "accepted_accept_count": 1,
+    "gate_accept_recall": 0.04
+  },
+  "top_mistakes": {
+    "accept:general_trash_scene->reject": 21,
+    "reject:recycling_scene->accept": 3
+  },
+  "note": "Weak-label inference only; eval_label is derived from source mapping and needs human review."
+}

@@ -1,0 +1,16 @@
+{
+  "data": "/home/hjc/coSpace/DLA_Final/vision/data/training/realwaste_yolo_cls_full",
+  "base_model": "/home/hjc/coSpace/DLA_Final/vision/exports/20260601T122805Z/best.pt",
+  "save_dir": "/home/hjc/coSpace/DLA_Final/vision/runs/realwaste-accuracy/realwaste-accuracy-002",
+  "run_name": "realwaste-accuracy-002",
+  "serial_prefix": "realwaste-accuracy",
+  "best_pt": "/home/hjc/coSpace/DLA_Final/vision/runs/realwaste-accuracy/realwaste-accuracy-002/weights/best.pt",
+  "last_pt": "/home/hjc/coSpace/DLA_Final/vision/runs/realwaste-accuracy/realwaste-accuracy-002/weights/last.pt",
+  "export_onnx": "/home/hjc/coSpace/DLA_Final/vision/runs/realwaste-accuracy/realwaste-accuracy-002/weights/best.onnx",
+  "epochs": 30,
+  "imgsz": 224,
+  "batch": 32,
+  "device": "0",
+  "cuda_available": true,
+  "cuda_device": "NVIDIA GeForce RTX 3060"
+}

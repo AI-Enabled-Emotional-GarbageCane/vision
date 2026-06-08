@@ -1,0 +1,75 @@
+{
+  "model": "runs/user-accept-seed-finetune/user-accept-seed-001/weights/best.onnx",
+  "count": 1451,
+  "accept_threshold": 0.76,
+  "uncertain_threshold": 0.5,
+  "weak_label_agreement": 0.6361130254996554,
+  "by_eval_label": {
+    "reject": {
+      "count": 668,
+      "accept": 414,
+      "reject": 254,
+      "match": 254
+    },
+    "accept": {
+      "count": 783,
+      "accept": 669,
+      "reject": 114,
+      "match": 669
+    }
+  },
+  "confusion": {
+    "reject": {
+      "reject": 254,
+      "accept": 414
+    },
+    "accept": {
+      "accept": 669,
+      "reject": 114
+    }
+  },
+  "gate_confusion": {
+    "reject": {
+      "reject": 522,
+      "accept": 146
+    },
+    "accept": {
+      "reject": 472,
+      "accept": 311
+    }
+  },
+  "reject_safety": {
+    "reject_count": 668,
+    "false_accept_count_on_reject": 146,
+    "false_accept_rate_on_reject": 0.218562874251497,
+    "blocked_reject_rate": 0.781437125748503
+  },
+  "accept_behavior": {
+    "accept_count": 783,
+    "accepted_accept_count": 311,
+    "gate_accept_recall": 0.39719029374201786
+  },
+  "top_mistakes": {
+    "reject:Clear plastic bottle->accept": 68,
+    "reject:Other plastic->accept": 56,
+    "reject:Drink can->accept": 51,
+    "reject:Plastic bottle cap->accept": 34,
+    "reject:Disposable plastic cup->accept": 31,
+    "accept:Plastic film->reject": 30,
+    "reject:Plastic straw->accept": 30,
+    "accept:Cigarette->reject": 21,
+    "reject:Glass bottle->accept": 18,
+    "reject:Aluminium foil->accept": 15,
+    "accept:Other plastic wrapper->reject": 15,
+    "reject:Paper cup->accept": 14,
+    "accept:Styrofoam piece->reject": 14,
+    "reject:Normal paper->accept": 14,
+    "reject:Other carton->accept": 13,
+    "accept:Disposable food container->reject": 11,
+    "reject:Metal bottle cap->accept": 10,
+    "accept:Crisp packet->reject": 7,
+    "accept:Single-use carrier bag->reject": 7,
+    "reject:Plastic lid->accept": 7
+  },
+  "note": "Weak-label inference only; eval_label is derived from source mapping and needs human review."
+}

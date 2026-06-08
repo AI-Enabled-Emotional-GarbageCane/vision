@@ -1,0 +1,152 @@
+{
+  "predictions": "runs/user-accept-seed-finetune/user-accept-seed-001/weak_eval/realwaste_full_test_predictions.csv",
+  "output": "runs/user-accept-seed-finetune/user-accept-seed-001/weak_eval/realwaste_full_test_threshold_sweep.csv",
+  "threshold_count": 11,
+  "thresholds": [
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.76,
+    0.8,
+    0.85,
+    0.9,
+    0.95
+  ],
+  "rows": [
+    {
+      "accept_threshold": 0.5,
+      "uncertain_threshold": 0.5,
+      "count": 713,
+      "gate_accuracy": 0.9130434782608695,
+      "accept_count": 122,
+      "accepted_accept_count": 95,
+      "gate_accept_recall": 0.7786885245901639,
+      "reject_count": 591,
+      "false_accept_count_on_reject": 35,
+      "false_accept_rate_on_reject": 0.05922165820642978
+    },
+    {
+      "accept_threshold": 0.55,
+      "uncertain_threshold": 0.5,
+      "count": 713,
+      "gate_accuracy": 0.9144460028050491,
+      "accept_count": 122,
+      "accepted_accept_count": 92,
+      "gate_accept_recall": 0.7540983606557377,
+      "reject_count": 591,
+      "false_accept_count_on_reject": 31,
+      "false_accept_rate_on_reject": 0.05245346869712352
+    },
+    {
+      "accept_threshold": 0.6,
+      "uncertain_threshold": 0.5,
+      "count": 713,
+      "gate_accuracy": 0.9186535764375876,
+      "accept_count": 122,
+      "accepted_accept_count": 88,
+      "gate_accept_recall": 0.7213114754098361,
+      "reject_count": 591,
+      "false_accept_count_on_reject": 24,
+      "false_accept_rate_on_reject": 0.04060913705583756
+    },
+    {
+      "accept_threshold": 0.65,
+      "uncertain_threshold": 0.5,
+      "count": 713,
+      "gate_accuracy": 0.9172510518934082,
+      "accept_count": 122,
+      "accepted_accept_count": 81,
+      "gate_accept_recall": 0.6639344262295082,
+      "reject_count": 591,
+      "false_accept_count_on_reject": 18,
+      "false_accept_rate_on_reject": 0.030456852791878174
+    },
+    {
+      "accept_threshold": 0.7,
+      "uncertain_threshold": 0.5,
+      "count": 713,
+      "gate_accuracy": 0.9172510518934082,
+      "accept_count": 122,
+      "accepted_accept_count": 80,
+      "gate_accept_recall": 0.6557377049180327,
+      "reject_count": 591,
+      "false_accept_count_on_reject": 17,
+      "false_accept_rate_on_reject": 0.028764805414551606
+    },
+    {
+      "accept_threshold": 0.75,
+      "uncertain_threshold": 0.5,
+      "count": 713,
+      "gate_accuracy": 0.9186535764375876,
+      "accept_count": 122,
+      "accepted_accept_count": 79,
+      "gate_accept_recall": 0.6475409836065574,
+      "reject_count": 591,
+      "false_accept_count_on_reject": 15,
+      "false_accept_rate_on_reject": 0.025380710659898477
+    },
+    {
+      "accept_threshold": 0.76,
+      "uncertain_threshold": 0.5,
+      "count": 713,
+      "gate_accuracy": 0.9186535764375876,
+      "accept_count": 122,
+      "accepted_accept_count": 79,
+      "gate_accept_recall": 0.6475409836065574,
+      "reject_count": 591,
+      "false_accept_count_on_reject": 15,
+      "false_accept_rate_on_reject": 0.025380710659898477
+    },
+    {
+      "accept_threshold": 0.8,
+      "uncertain_threshold": 0.5,
+      "count": 713,
+      "gate_accuracy": 0.9172510518934082,
+      "accept_count": 122,
+      "accepted_accept_count": 76,
+      "gate_accept_recall": 0.6229508196721312,
+      "reject_count": 591,
+      "false_accept_count_on_reject": 13,
+      "false_accept_rate_on_reject": 0.021996615905245348
+    },
+    {
+      "accept_threshold": 0.85,
+      "uncertain_threshold": 0.5,
+      "count": 713,
+      "gate_accuracy": 0.9144460028050491,
+      "accept_count": 122,
+      "accepted_accept_count": 69,
+      "gate_accept_recall": 0.5655737704918032,
+      "reject_count": 591,
+      "false_accept_count_on_reject": 8,
+      "false_accept_rate_on_reject": 0.01353637901861252
+    },
+    {
+      "accept_threshold": 0.9,
+      "uncertain_threshold": 0.5,
+      "count": 713,
+      "gate_accuracy": 0.908835904628331,
+      "accept_count": 122,
+      "accepted_accept_count": 64,
+      "gate_accept_recall": 0.5245901639344263,
+      "reject_count": 591,
+      "false_accept_count_on_reject": 7,
+      "false_accept_rate_on_reject": 0.011844331641285956
+    },
+    {
+      "accept_threshold": 0.95,
+      "uncertain_threshold": 0.5,
+      "count": 713,
+      "gate_accuracy": 0.8962131837307152,
+      "accept_count": 122,
+      "accepted_accept_count": 51,
+      "gate_accept_recall": 0.4180327868852459,
+      "reject_count": 591,
+      "false_accept_count_on_reject": 3,
+      "false_accept_rate_on_reject": 0.005076142131979695
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "model": "runs/hf-no-taco-finetune/hf-no-taco-001/weights/best.onnx",
+  "count": 50,
+  "accept_threshold": 0.76,
+  "uncertain_threshold": 0.5,
+  "weak_label_agreement": 0.52,
+  "by_eval_label": {
+    "accept": {
+      "count": 25,
+      "accept": 2,
+      "reject": 23,
+      "match": 2
+    },
+    "reject": {
+      "count": 25,
+      "accept": 1,
+      "reject": 24,
+      "match": 24
+    }
+  },
+  "confusion": {
+    "accept": {
+      "reject": 23,
+      "accept": 2
+    },
+    "reject": {
+      "reject": 24,
+      "accept": 1
+    }
+  },
+  "gate_confusion": {
+    "accept": {
+      "reject": 25
+    },
+    "reject": {
+      "reject": 25
+    }
+  },
+  "reject_safety": {
+    "reject_count": 25,
+    "false_accept_count_on_reject": 0,
+    "false_accept_rate_on_reject": 0.0,
+    "blocked_reject_rate": 1.0
+  },
+  "accept_behavior": {
+    "accept_count": 25,
+    "accepted_accept_count": 0,
+    "gate_accept_recall": 0.0
+  },
+  "top_mistakes": {
+    "accept:general_trash_scene->reject": 23,
+    "reject:recycling_scene->accept": 1
+  },
+  "note": "Weak-label inference only; eval_label is derived from source mapping and needs human review."
+}

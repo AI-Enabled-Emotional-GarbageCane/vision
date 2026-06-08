@@ -1,0 +1,57 @@
+{
+  "model": "runs/user-accept-seed-finetune/user-accept-seed-001/weights/best.onnx",
+  "count": 1139,
+  "accept_threshold": 0.76,
+  "uncertain_threshold": 0.5,
+  "weak_label_agreement": 0.9113257243195786,
+  "by_eval_label": {
+    "accept": {
+      "count": 57,
+      "accept": 43,
+      "reject": 14,
+      "match": 43
+    },
+    "reject": {
+      "count": 1082,
+      "accept": 87,
+      "reject": 995,
+      "match": 995
+    }
+  },
+  "confusion": {
+    "accept": {
+      "accept": 43,
+      "reject": 14
+    },
+    "reject": {
+      "reject": 995,
+      "accept": 87
+    }
+  },
+  "gate_confusion": {
+    "accept": {
+      "accept": 34,
+      "reject": 23
+    },
+    "reject": {
+      "reject": 1048,
+      "accept": 34
+    }
+  },
+  "reject_safety": {
+    "reject_count": 1082,
+    "false_accept_count_on_reject": 34,
+    "false_accept_rate_on_reject": 0.031423290203327174,
+    "blocked_reject_rate": 0.9685767097966729
+  },
+  "accept_behavior": {
+    "accept_count": 57,
+    "accepted_accept_count": 34,
+    "gate_accept_recall": 0.5964912280701754
+  },
+  "top_mistakes": {
+    "reject:->accept": 87,
+    "accept:->reject": 14
+  },
+  "note": "Weak-label inference only; eval_label is derived from source mapping and needs human review."
+}

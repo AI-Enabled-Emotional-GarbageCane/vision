@@ -1,0 +1,57 @@
+{
+  "model": "runs/realwaste-accuracy/realwaste-accuracy-002/weights/best.onnx",
+  "count": 48,
+  "accept_threshold": 0.76,
+  "uncertain_threshold": 0.5,
+  "weak_label_agreement": 0.7291666666666666,
+  "by_eval_label": {
+    "reject": {
+      "count": 36,
+      "accept": 1,
+      "reject": 35,
+      "match": 35
+    },
+    "accept": {
+      "count": 12,
+      "accept": 0,
+      "reject": 12,
+      "match": 0
+    }
+  },
+  "confusion": {
+    "reject": {
+      "reject": 35,
+      "accept": 1
+    },
+    "accept": {
+      "reject": 12
+    }
+  },
+  "gate_confusion": {
+    "reject": {
+      "reject": 35,
+      "accept": 1
+    },
+    "accept": {
+      "reject": 12
+    }
+  },
+  "reject_safety": {
+    "reject_count": 36,
+    "false_accept_count_on_reject": 1,
+    "false_accept_rate_on_reject": 0.027777777777777776,
+    "blocked_reject_rate": 0.9722222222222222
+  },
+  "accept_behavior": {
+    "accept_count": 12,
+    "accepted_accept_count": 0,
+    "gate_accept_recall": 0.0
+  },
+  "top_mistakes": {
+    "accept:Cigarette->reject": 6,
+    "accept:Tissues->reject": 5,
+    "reject:Food Can->accept": 1,
+    "accept:Garbage bag->reject": 1
+  },
+  "note": "Weak-label inference only; eval_label is derived from source mapping and needs human review."
+}

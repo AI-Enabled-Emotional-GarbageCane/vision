@@ -1,0 +1,152 @@
+{
+  "predictions": "runs/hf-no-taco-finetune/hf-no-taco-001/taiwan_mapped_predictions.csv",
+  "output": "runs/hf-no-taco-finetune/hf-no-taco-001/taiwan_mapped_threshold_sweep.csv",
+  "threshold_count": 11,
+  "thresholds": [
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.76,
+    0.8,
+    0.85,
+    0.9,
+    0.95
+  ],
+  "rows": [
+    {
+      "accept_threshold": 0.5,
+      "uncertain_threshold": 0.5,
+      "count": 50,
+      "gate_accuracy": 0.52,
+      "accept_count": 25,
+      "accepted_accept_count": 2,
+      "gate_accept_recall": 0.08,
+      "reject_count": 25,
+      "false_accept_count_on_reject": 1,
+      "false_accept_rate_on_reject": 0.04
+    },
+    {
+      "accept_threshold": 0.55,
+      "uncertain_threshold": 0.5,
+      "count": 50,
+      "gate_accuracy": 0.54,
+      "accept_count": 25,
+      "accepted_accept_count": 2,
+      "gate_accept_recall": 0.08,
+      "reject_count": 25,
+      "false_accept_count_on_reject": 0,
+      "false_accept_rate_on_reject": 0.0
+    },
+    {
+      "accept_threshold": 0.6,
+      "uncertain_threshold": 0.5,
+      "count": 50,
+      "gate_accuracy": 0.52,
+      "accept_count": 25,
+      "accepted_accept_count": 1,
+      "gate_accept_recall": 0.04,
+      "reject_count": 25,
+      "false_accept_count_on_reject": 0,
+      "false_accept_rate_on_reject": 0.0
+    },
+    {
+      "accept_threshold": 0.65,
+      "uncertain_threshold": 0.5,
+      "count": 50,
+      "gate_accuracy": 0.5,
+      "accept_count": 25,
+      "accepted_accept_count": 0,
+      "gate_accept_recall": 0.0,
+      "reject_count": 25,
+      "false_accept_count_on_reject": 0,
+      "false_accept_rate_on_reject": 0.0
+    },
+    {
+      "accept_threshold": 0.7,
+      "uncertain_threshold": 0.5,
+      "count": 50,
+      "gate_accuracy": 0.5,
+      "accept_count": 25,
+      "accepted_accept_count": 0,
+      "gate_accept_recall": 0.0,
+      "reject_count": 25,
+      "false_accept_count_on_reject": 0,
+      "false_accept_rate_on_reject": 0.0
+    },
+    {
+      "accept_threshold": 0.75,
+      "uncertain_threshold": 0.5,
+      "count": 50,
+      "gate_accuracy": 0.5,
+      "accept_count": 25,
+      "accepted_accept_count": 0,
+      "gate_accept_recall": 0.0,
+      "reject_count": 25,
+      "false_accept_count_on_reject": 0,
+      "false_accept_rate_on_reject": 0.0
+    },
+    {
+      "accept_threshold": 0.76,
+      "uncertain_threshold": 0.5,
+      "count": 50,
+      "gate_accuracy": 0.5,
+      "accept_count": 25,
+      "accepted_accept_count": 0,
+      "gate_accept_recall": 0.0,
+      "reject_count": 25,
+      "false_accept_count_on_reject": 0,
+      "false_accept_rate_on_reject": 0.0
+    },
+    {
+      "accept_threshold": 0.8,
+      "uncertain_threshold": 0.5,
+      "count": 50,
+      "gate_accuracy": 0.5,
+      "accept_count": 25,
+      "accepted_accept_count": 0,
+      "gate_accept_recall": 0.0,
+      "reject_count": 25,
+      "false_accept_count_on_reject": 0,
+      "false_accept_rate_on_reject": 0.0
+    },
+    {
+      "accept_threshold": 0.85,
+      "uncertain_threshold": 0.5,
+      "count": 50,
+      "gate_accuracy": 0.5,
+      "accept_count": 25,
+      "accepted_accept_count": 0,
+      "gate_accept_recall": 0.0,
+      "reject_count": 25,
+      "false_accept_count_on_reject": 0,
+      "false_accept_rate_on_reject": 0.0
+    },
+    {
+      "accept_threshold": 0.9,
+      "uncertain_threshold": 0.5,
+      "count": 50,
+      "gate_accuracy": 0.5,
+      "accept_count": 25,
+      "accepted_accept_count": 0,
+      "gate_accept_recall": 0.0,
+      "reject_count": 25,
+      "false_accept_count_on_reject": 0,
+      "false_accept_rate_on_reject": 0.0
+    },
+    {
+      "accept_threshold": 0.95,
+      "uncertain_threshold": 0.5,
+      "count": 50,
+      "gate_accuracy": 0.5,
+      "accept_count": 25,
+      "accepted_accept_count": 0,
+      "gate_accept_recall": 0.0,
+      "reject_count": 25,
+      "false_accept_count_on_reject": 0,
+      "false_accept_rate_on_reject": 0.0
+    }
+  ]
+}

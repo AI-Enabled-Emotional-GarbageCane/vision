@@ -1,0 +1,57 @@
+{
+  "model": "runs/general-trash-positive/general-trash-positive-002/weights/best.onnx",
+  "count": 50,
+  "accept_threshold": 0.76,
+  "uncertain_threshold": 0.5,
+  "weak_label_agreement": 0.56,
+  "by_eval_label": {
+    "accept": {
+      "count": 25,
+      "accept": 21,
+      "reject": 4,
+      "match": 21
+    },
+    "reject": {
+      "count": 25,
+      "accept": 18,
+      "reject": 7,
+      "match": 7
+    }
+  },
+  "confusion": {
+    "accept": {
+      "accept": 21,
+      "reject": 4
+    },
+    "reject": {
+      "accept": 18,
+      "reject": 7
+    }
+  },
+  "gate_confusion": {
+    "accept": {
+      "reject": 19,
+      "accept": 6
+    },
+    "reject": {
+      "reject": 24,
+      "accept": 1
+    }
+  },
+  "reject_safety": {
+    "reject_count": 25,
+    "false_accept_count_on_reject": 1,
+    "false_accept_rate_on_reject": 0.04,
+    "blocked_reject_rate": 0.96
+  },
+  "accept_behavior": {
+    "accept_count": 25,
+    "accepted_accept_count": 6,
+    "gate_accept_recall": 0.24
+  },
+  "top_mistakes": {
+    "reject:recycling_scene->accept": 18,
+    "accept:general_trash_scene->reject": 4
+  },
+  "note": "Weak-label inference only; eval_label is derived from source mapping and needs human review."
+}

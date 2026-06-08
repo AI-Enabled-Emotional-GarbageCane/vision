@@ -1,0 +1,58 @@
+{
+  "model": "runs/reject-safety/local-rtx3060-reject-safety-20260602/weights/best.onnx",
+  "count": 90,
+  "accept_threshold": 0.76,
+  "uncertain_threshold": 0.5,
+  "weak_label_agreement": 0.8888888888888888,
+  "by_eval_label": {
+    "reject": {
+      "count": 80,
+      "accept": 0,
+      "reject": 80,
+      "match": 80
+    },
+    "accept": {
+      "count": 10,
+      "accept": 0,
+      "reject": 10,
+      "match": 0
+    }
+  },
+  "confusion": {
+    "reject": {
+      "reject": 80
+    },
+    "accept": {
+      "reject": 10
+    }
+  },
+  "gate_confusion": {
+    "reject": {
+      "reject": 80
+    },
+    "accept": {
+      "reject": 10
+    }
+  },
+  "reject_safety": {
+    "reject_count": 80,
+    "false_accept_count_on_reject": 0,
+    "false_accept_rate_on_reject": 0.0,
+    "blocked_reject_rate": 1.0
+  },
+  "accept_behavior": {
+    "accept_count": 10,
+    "accepted_accept_count": 0,
+    "gate_accept_recall": 0.0
+  },
+  "top_mistakes": {
+    "accept:Plastic film->reject": 3,
+    "accept:Crisp packet->reject": 2,
+    "accept:Disposable food container->reject": 1,
+    "accept:Plastic utensils->reject": 1,
+    "accept:Single-use carrier bag->reject": 1,
+    "accept:Garbage bag->reject": 1,
+    "accept:Cigarette->reject": 1
+  },
+  "note": "Weak-label inference only; eval_label is derived from source mapping and needs human review."
+}

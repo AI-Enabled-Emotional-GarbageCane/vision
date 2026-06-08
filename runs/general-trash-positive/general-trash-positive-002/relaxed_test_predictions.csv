@@ -1,0 +1,936 @@
+local_path,split,label_hint,eval_label,eval_label_strength,dominant_category,all_categories,pred_class,confidence,accept_prob,reject_prob,gate_action,weak_label_match
+test/accept/realwaste_test_accept_000000_00691_Textile_Trash_3f844775ee_Textile Trash_210.jpg,test,,accept,,,,accept,0.690502,0.690502,0.309498,reject,True
+test/accept/realwaste_test_accept_000001_00692_Miscellaneous_Trash_ead6d32acf_Miscellaneous Trash_451.jpg,test,,accept,,,,accept,0.999991,0.999991,0.000009,accept,True
+test/accept/realwaste_test_accept_000002_00693_Miscellaneous_Trash_00d18c9be4_Miscellaneous Trash_314.jpg,test,,accept,,,,reject,0.919473,0.080527,0.919473,reject,False
+test/accept/realwaste_test_accept_000003_00694_Miscellaneous_Trash_85c8370594_Miscellaneous Trash_23.jpg,test,,accept,,,,accept,0.999850,0.999850,0.000150,accept,True
+test/accept/realwaste_test_accept_000004_00695_Textile_Trash_a2029b206e_Textile Trash_107.jpg,test,,accept,,,,accept,0.999967,0.999967,0.000033,accept,True
+test/accept/realwaste_test_accept_000005_00696_Miscellaneous_Trash_8fb8ad7b8f_Miscellaneous Trash_198.jpg,test,,accept,,,,accept,0.858822,0.858822,0.141178,accept,True
+test/accept/realwaste_test_accept_000006_00697_Textile_Trash_b7cc875924_Textile Trash_141.jpg,test,,accept,,,,accept,0.993268,0.993268,0.006732,accept,True
+test/accept/realwaste_test_accept_000007_00698_Miscellaneous_Trash_14f17a3066_Miscellaneous Trash_196.jpg,test,,accept,,,,accept,0.806024,0.806024,0.193976,accept,True
+test/accept/realwaste_test_accept_000008_00699_Miscellaneous_Trash_e55baa260d_Miscellaneous Trash_98.jpg,test,,accept,,,,reject,0.994958,0.005042,0.994958,reject,False
+test/accept/realwaste_test_accept_000009_00700_Miscellaneous_Trash_8e67750060_Miscellaneous Trash_425.jpg,test,,accept,,,,accept,0.991910,0.991910,0.008090,accept,True
+test/accept/realwaste_test_accept_000010_00701_Miscellaneous_Trash_8e35147a36_Miscellaneous Trash_289.jpg,test,,accept,,,,accept,0.999577,0.999577,0.000423,accept,True
+test/accept/realwaste_test_accept_000011_00702_Miscellaneous_Trash_7aafcca945_Miscellaneous Trash_52.jpg,test,,accept,,,,accept,0.998690,0.998690,0.001310,accept,True
+test/accept/realwaste_test_accept_000012_00703_Miscellaneous_Trash_6bd452d710_Miscellaneous Trash_286.jpg,test,,accept,,,,accept,0.975572,0.975572,0.024428,accept,True
+test/accept/realwaste_test_accept_000013_00704_Textile_Trash_a25289319a_Textile Trash_153.jpg,test,,accept,,,,accept,0.674168,0.674168,0.325832,reject,True
+test/accept/realwaste_test_accept_000014_00705_Textile_Trash_c3a60aed45_Textile Trash_53.jpg,test,,accept,,,,accept,0.968387,0.968387,0.031613,accept,True
+test/accept/realwaste_test_accept_000015_00706_Miscellaneous_Trash_de8a79e49a_Miscellaneous Trash_310.jpg,test,,accept,,,,accept,0.974207,0.974207,0.025793,accept,True
+test/accept/realwaste_test_accept_000016_00707_Textile_Trash_cc424bb5d8_Textile Trash_75.jpg,test,,accept,,,,accept,0.997903,0.997903,0.002097,accept,True
+test/accept/realwaste_test_accept_000017_00708_Miscellaneous_Trash_736d92536b_Miscellaneous Trash_17.jpg,test,,accept,,,,accept,0.987820,0.987820,0.012180,accept,True
+test/accept/realwaste_test_accept_000018_00709_Miscellaneous_Trash_0a76afd425_Miscellaneous Trash_34.jpg,test,,accept,,,,accept,0.983382,0.983382,0.016618,accept,True
+test/accept/realwaste_test_accept_000019_00710_Textile_Trash_87de6f089b_Textile Trash_59.jpg,test,,accept,,,,accept,0.999917,0.999917,0.000083,accept,True
+test/accept/realwaste_test_accept_000020_00711_Textile_Trash_500d705fbe_Textile Trash_218.jpg,test,,accept,,,,accept,0.999755,0.999755,0.000245,accept,True
+test/accept/realwaste_test_accept_000021_00712_Textile_Trash_55ee3afa45_Textile Trash_32.jpg,test,,accept,,,,accept,0.606760,0.606760,0.393240,reject,True
+test/accept/realwaste_test_accept_000022_00713_Miscellaneous_Trash_c1b7faebf9_Miscellaneous Trash_242.jpg,test,,accept,,,,accept,0.701308,0.701308,0.298692,reject,True
+test/accept/realwaste_test_accept_000023_00714_Miscellaneous_Trash_49b0166527_Miscellaneous Trash_174.jpg,test,,accept,,,,accept,0.999926,0.999926,0.000074,accept,True
+test/accept/realwaste_test_accept_000024_00715_Miscellaneous_Trash_9d504b14b4_Miscellaneous Trash_56.jpg,test,,accept,,,,accept,0.999332,0.999332,0.000668,accept,True
+test/accept/realwaste_test_accept_000025_00716_Miscellaneous_Trash_05df13014c_Miscellaneous Trash_156.jpg,test,,accept,,,,accept,0.999840,0.999840,0.000160,accept,True
+test/accept/realwaste_test_accept_000026_00717_Textile_Trash_0d8596e5a7_Textile Trash_48.jpg,test,,accept,,,,accept,0.990026,0.990026,0.009974,accept,True
+test/accept/realwaste_test_accept_000027_00718_Miscellaneous_Trash_c7f6057a56_Miscellaneous Trash_406.jpg,test,,accept,,,,accept,0.998511,0.998511,0.001489,accept,True
+test/accept/realwaste_test_accept_000028_00719_Miscellaneous_Trash_007a2ad1ec_Miscellaneous Trash_360.jpg,test,,accept,,,,accept,0.749341,0.749341,0.250659,reject,True
+test/accept/realwaste_test_accept_000029_00720_Textile_Trash_48885f90f7_Textile Trash_269.jpg,test,,accept,,,,accept,0.968981,0.968981,0.031019,accept,True
+test/accept/realwaste_test_accept_000030_00721_Miscellaneous_Trash_06e313c70d_Miscellaneous Trash_379.jpg,test,,accept,,,,accept,0.999916,0.999916,0.000084,accept,True
+test/accept/realwaste_test_accept_000031_00722_Miscellaneous_Trash_9740464c03_Miscellaneous Trash_385.jpg,test,,accept,,,,accept,0.750210,0.750210,0.249790,reject,True
+test/accept/realwaste_test_accept_000032_00723_Miscellaneous_Trash_75a5176e36_Miscellaneous Trash_217.jpg,test,,accept,,,,reject,0.705937,0.294063,0.705937,reject,False
+test/accept/realwaste_test_accept_000033_00724_Miscellaneous_Trash_367d3cdb40_Miscellaneous Trash_404.jpg,test,,accept,,,,reject,0.841167,0.158833,0.841167,reject,False
+test/accept/realwaste_test_accept_000034_00725_Miscellaneous_Trash_9472c56df8_Miscellaneous Trash_407.jpg,test,,accept,,,,accept,0.998981,0.998981,0.001019,accept,True
+test/accept/realwaste_test_accept_000035_00726_Textile_Trash_5392673069_Textile Trash_11.jpg,test,,accept,,,,accept,0.998860,0.998860,0.001140,accept,True
+test/accept/realwaste_test_accept_000036_00727_Miscellaneous_Trash_fe85d9dbf5_Miscellaneous Trash_411.jpg,test,,accept,,,,accept,0.976926,0.976926,0.023074,accept,True
+test/accept/realwaste_test_accept_000037_00728_Miscellaneous_Trash_ca9f5101c2_Miscellaneous Trash_383.jpg,test,,accept,,,,accept,0.996200,0.996200,0.003800,accept,True
+test/accept/realwaste_test_accept_000038_00729_Miscellaneous_Trash_01c14891c2_Miscellaneous Trash_202.jpg,test,,accept,,,,accept,0.932855,0.932855,0.067144,accept,True
+test/accept/realwaste_test_accept_000039_00730_Miscellaneous_Trash_81337e40ec_Miscellaneous Trash_290.jpg,test,,accept,,,,accept,0.909184,0.909184,0.090816,accept,True
+test/accept/realwaste_test_accept_000040_00731_Textile_Trash_9eec9c72b1_Textile Trash_127.jpg,test,,accept,,,,accept,0.999665,0.999665,0.000335,accept,True
+test/accept/realwaste_test_accept_000041_00732_Miscellaneous_Trash_81da3b463c_Miscellaneous Trash_320.jpg,test,,accept,,,,accept,0.991846,0.991846,0.008154,accept,True
+test/accept/realwaste_test_accept_000042_00733_Textile_Trash_5cf5276b04_Textile Trash_180.jpg,test,,accept,,,,accept,0.958156,0.958156,0.041844,accept,True
+test/accept/realwaste_test_accept_000043_00734_Textile_Trash_caef2211d9_Textile Trash_81.jpg,test,,accept,,,,accept,0.998312,0.998312,0.001688,accept,True
+test/accept/realwaste_test_accept_000044_00735_Textile_Trash_36fd3c3304_Textile Trash_259.jpg,test,,accept,,,,accept,0.883130,0.883130,0.116870,accept,True
+test/accept/realwaste_test_accept_000045_00736_Textile_Trash_d24a883e0d_Textile Trash_98.jpg,test,,accept,,,,accept,0.965906,0.965906,0.034094,accept,True
+test/accept/realwaste_test_accept_000046_00737_Textile_Trash_662fb29cf0_Textile Trash_38.jpg,test,,accept,,,,accept,0.814354,0.814354,0.185646,accept,True
+test/accept/realwaste_test_accept_000047_00738_Miscellaneous_Trash_501d9ca4a6_Miscellaneous Trash_336.jpg,test,,accept,,,,accept,0.841116,0.841116,0.158884,accept,True
+test/accept/realwaste_test_accept_000048_00739_Textile_Trash_7a0c7f770b_Textile Trash_292.jpg,test,,accept,,,,accept,0.999530,0.999530,0.000470,accept,True
+test/accept/realwaste_test_accept_000049_00740_Miscellaneous_Trash_c151fd9590_Miscellaneous Trash_337.jpg,test,,accept,,,,accept,0.845285,0.845285,0.154715,accept,True
+test/accept/realwaste_test_accept_000050_00741_Textile_Trash_ad14034e59_Textile Trash_31.jpg,test,,accept,,,,accept,0.998835,0.998835,0.001165,accept,True
+test/accept/realwaste_test_accept_000051_00742_Miscellaneous_Trash_92f2887478_Miscellaneous Trash_207.jpg,test,,accept,,,,reject,0.556599,0.443401,0.556599,reject,False
+test/accept/realwaste_test_accept_000052_00743_Textile_Trash_f47e51234c_Textile Trash_173.jpg,test,,accept,,,,accept,0.998678,0.998678,0.001322,accept,True
+test/accept/realwaste_test_accept_000053_00744_Miscellaneous_Trash_aa5f4d387f_Miscellaneous Trash_73.jpg,test,,accept,,,,accept,0.998912,0.998912,0.001088,accept,True
+test/accept/realwaste_test_accept_000054_00745_Miscellaneous_Trash_a074060007_Miscellaneous Trash_419.jpg,test,,accept,,,,accept,0.987381,0.987381,0.012619,accept,True
+test/accept/realwaste_test_accept_000055_00746_Miscellaneous_Trash_39775c121e_Miscellaneous Trash_308.jpg,test,,accept,,,,accept,0.970602,0.970602,0.029398,accept,True
+test/accept/realwaste_test_accept_000056_00747_Miscellaneous_Trash_465645647d_Miscellaneous Trash_424.jpg,test,,accept,,,,accept,0.997255,0.997255,0.002745,accept,True
+test/accept/realwaste_test_accept_000057_00748_Miscellaneous_Trash_9e1299eb28_Miscellaneous Trash_268.jpg,test,,accept,,,,accept,0.994802,0.994802,0.005198,accept,True
+test/accept/realwaste_test_accept_000058_00749_Miscellaneous_Trash_e3742183cb_Miscellaneous Trash_199.jpg,test,,accept,,,,accept,0.900383,0.900383,0.099617,accept,True
+test/accept/realwaste_test_accept_000059_00750_Miscellaneous_Trash_8ac5e62c7c_Miscellaneous Trash_232.jpg,test,,accept,,,,accept,0.890436,0.890436,0.109564,accept,True
+test/accept/realwaste_test_accept_000060_00751_Textile_Trash_a54d73a5dd_Textile Trash_137.jpg,test,,accept,,,,accept,0.998197,0.998197,0.001803,accept,True
+test/accept/realwaste_test_accept_000061_00752_Textile_Trash_c93ecd388e_Textile Trash_299.jpg,test,,accept,,,,reject,0.747951,0.252049,0.747951,reject,False
+test/accept/realwaste_test_accept_000062_00753_Miscellaneous_Trash_bcd7d07fdf_Miscellaneous Trash_418.jpg,test,,accept,,,,accept,0.999872,0.999872,0.000128,accept,True
+test/accept/realwaste_test_accept_000063_00754_Miscellaneous_Trash_0af0b7e6a9_Miscellaneous Trash_457.jpg,test,,accept,,,,accept,0.992685,0.992685,0.007315,accept,True
+test/accept/realwaste_test_accept_000064_00755_Textile_Trash_39303bbf3d_Textile Trash_187.jpg,test,,accept,,,,accept,0.999821,0.999821,0.000179,accept,True
+test/accept/realwaste_test_accept_000065_00756_Miscellaneous_Trash_1e7805bc9f_Miscellaneous Trash_86.jpg,test,,accept,,,,reject,0.903807,0.096193,0.903807,reject,False
+test/accept/realwaste_test_accept_000066_00757_Miscellaneous_Trash_ca767fb692_Miscellaneous Trash_487.jpg,test,,accept,,,,accept,0.997636,0.997636,0.002364,accept,True
+test/accept/realwaste_test_accept_000067_00758_Textile_Trash_3ffc8c14c3_Textile Trash_49.jpg,test,,accept,,,,accept,0.999998,0.999998,0.000002,accept,True
+test/accept/realwaste_test_accept_000068_00759_Textile_Trash_0a3f023116_Textile Trash_63.jpg,test,,accept,,,,accept,0.959301,0.959301,0.040699,accept,True
+test/accept/realwaste_test_accept_000069_00760_Textile_Trash_29a73c4b70_Textile Trash_293.jpg,test,,accept,,,,accept,0.993043,0.993043,0.006957,accept,True
+test/accept/realwaste_test_accept_000070_00761_Miscellaneous_Trash_7e69eda13d_Miscellaneous Trash_458.jpg,test,,accept,,,,accept,0.997411,0.997411,0.002589,accept,True
+test/accept/realwaste_test_accept_000071_00762_Textile_Trash_b41eab76de_Textile Trash_204.jpg,test,,accept,,,,accept,0.941951,0.941951,0.058049,accept,True
+test/accept/realwaste_test_accept_000072_00763_Miscellaneous_Trash_8f06b267d9_Miscellaneous Trash_281.jpg,test,,accept,,,,reject,0.543373,0.456627,0.543373,reject,False
+test/accept/realwaste_test_accept_000073_00764_Miscellaneous_Trash_5c6b28f619_Miscellaneous Trash_414.jpg,test,,accept,,,,reject,0.543065,0.456935,0.543065,reject,False
+test/accept/realwaste_test_accept_000074_00765_Miscellaneous_Trash_9a5cf25f74_Miscellaneous Trash_442.jpg,test,,accept,,,,accept,0.997987,0.997987,0.002013,accept,True
+test/accept/realwaste_test_accept_000075_00766_Miscellaneous_Trash_d3568b1f5d_Miscellaneous Trash_416.jpg,test,,accept,,,,accept,0.885943,0.885943,0.114057,accept,True
+test/accept/realwaste_test_accept_000076_00767_Miscellaneous_Trash_32f5ce5847_Miscellaneous Trash_57.jpg,test,,accept,,,,accept,0.798101,0.798101,0.201899,accept,True
+test/accept/realwaste_test_accept_000077_00768_Miscellaneous_Trash_2e1c87e8f6_Miscellaneous Trash_405.jpg,test,,accept,,,,accept,0.997399,0.997399,0.002601,accept,True
+test/accept/realwaste_test_accept_000078_00769_Textile_Trash_ec0baa4966_Textile Trash_37.jpg,test,,accept,,,,accept,0.997256,0.997256,0.002744,accept,True
+test/accept/realwaste_test_accept_000079_00770_Miscellaneous_Trash_3955054c8f_Miscellaneous Trash_145.jpg,test,,accept,,,,accept,0.993977,0.993977,0.006023,accept,True
+test/accept/realwaste_test_accept_000080_00771_Miscellaneous_Trash_a47eb9d22b_Miscellaneous Trash_481.jpg,test,,accept,,,,accept,0.999226,0.999226,0.000774,accept,True
+test/accept/realwaste_test_accept_000081_00772_Miscellaneous_Trash_58df9b3608_Miscellaneous Trash_36.jpg,test,,accept,,,,accept,0.972336,0.972336,0.027664,accept,True
+test/accept/realwaste_test_accept_000082_00773_Miscellaneous_Trash_499ea6fff7_Miscellaneous Trash_241.jpg,test,,accept,,,,reject,0.684904,0.315096,0.684904,reject,False
+test/accept/realwaste_test_accept_000083_00774_Textile_Trash_1c093284f3_Textile Trash_55.jpg,test,,accept,,,,accept,0.989308,0.989308,0.010692,accept,True
+test/accept/realwaste_test_accept_000084_00775_Textile_Trash_feb60a2627_Textile Trash_109.jpg,test,,accept,,,,accept,0.997923,0.997923,0.002077,accept,True
+test/accept/realwaste_test_accept_000085_00776_Miscellaneous_Trash_eb627f8897_Miscellaneous Trash_147.jpg,test,,accept,,,,accept,0.999638,0.999638,0.000362,accept,True
+test/accept/realwaste_test_accept_000086_00777_Miscellaneous_Trash_050e9289e5_Miscellaneous Trash_387.jpg,test,,accept,,,,accept,0.763621,0.763621,0.236379,accept,True
+test/accept/realwaste_test_accept_000087_00778_Miscellaneous_Trash_3172e517b8_Miscellaneous Trash_256.jpg,test,,accept,,,,accept,0.999841,0.999841,0.000159,accept,True
+test/accept/realwaste_test_accept_000088_00779_Miscellaneous_Trash_930c816bf9_Miscellaneous Trash_434.jpg,test,,accept,,,,accept,0.577269,0.577269,0.422731,reject,True
+test/accept/realwaste_test_accept_000089_00780_Miscellaneous_Trash_406ce3c9af_Miscellaneous Trash_470.jpg,test,,accept,,,,accept,0.999715,0.999715,0.000285,accept,True
+test/accept/realwaste_test_accept_000090_00781_Textile_Trash_3d5be3245f_Textile Trash_65.jpg,test,,accept,,,,accept,0.999652,0.999652,0.000348,accept,True
+test/accept/realwaste_test_accept_000091_00782_Miscellaneous_Trash_fb3aad1c4f_Miscellaneous Trash_6.jpg,test,,accept,,,,accept,0.999982,0.999982,0.000018,accept,True
+test/accept/realwaste_test_accept_000092_00783_Miscellaneous_Trash_5b6c59ccd0_Miscellaneous Trash_25.jpg,test,,accept,,,,accept,0.996137,0.996137,0.003863,accept,True
+test/accept/realwaste_test_accept_000093_00784_Miscellaneous_Trash_2c299e6ad8_Miscellaneous Trash_140.jpg,test,,accept,,,,reject,0.950095,0.049905,0.950095,reject,False
+test/accept/realwaste_test_accept_000094_00785_Miscellaneous_Trash_29b784d11c_Miscellaneous Trash_409.jpg,test,,accept,,,,accept,0.946278,0.946278,0.053722,accept,True
+test/accept/realwaste_test_accept_000095_00786_Textile_Trash_326bd3725b_Textile Trash_93.jpg,test,,accept,,,,accept,0.999110,0.999110,0.000890,accept,True
+test/accept/realwaste_test_accept_000096_00787_Textile_Trash_20822a273f_Textile Trash_232.jpg,test,,accept,,,,accept,0.985647,0.985647,0.014353,accept,True
+test/accept/realwaste_test_accept_000097_00788_Textile_Trash_5eef0432c2_Textile Trash_227.jpg,test,,accept,,,,accept,0.999865,0.999865,0.000135,accept,True
+test/accept/realwaste_test_accept_000098_00789_Miscellaneous_Trash_103a58bb60_Miscellaneous Trash_447.jpg,test,,accept,,,,accept,0.821169,0.821169,0.178831,accept,True
+test/accept/realwaste_test_accept_000099_00790_Miscellaneous_Trash_2a0bf370fe_Miscellaneous Trash_53.jpg,test,,accept,,,,accept,0.998425,0.998425,0.001575,accept,True
+test/accept/realwaste_test_accept_000100_00791_Miscellaneous_Trash_ddcf538a7b_Miscellaneous Trash_106.jpg,test,,accept,,,,accept,0.999021,0.999021,0.000979,accept,True
+test/accept/realwaste_test_accept_000101_00792_Miscellaneous_Trash_672c764418_Miscellaneous Trash_180.jpg,test,,accept,,,,accept,0.994276,0.994276,0.005724,accept,True
+test/accept/realwaste_test_accept_000102_00793_Textile_Trash_212c898130_Textile Trash_278.jpg,test,,accept,,,,accept,0.994297,0.994297,0.005703,accept,True
+test/accept/realwaste_test_accept_000103_00794_Textile_Trash_6848c51ece_Textile Trash_193.jpg,test,,accept,,,,accept,0.994671,0.994671,0.005329,accept,True
+test/accept/realwaste_test_accept_000104_00795_Miscellaneous_Trash_d8a599c073_Miscellaneous Trash_306.jpg,test,,accept,,,,reject,0.717285,0.282715,0.717285,reject,False
+test/accept/realwaste_test_accept_000105_00796_Textile_Trash_71447d78f8_Textile Trash_297.jpg,test,,accept,,,,accept,0.993860,0.993860,0.006140,accept,True
+test/accept/realwaste_test_accept_000106_00797_Miscellaneous_Trash_49d7b814c8_Miscellaneous Trash_460.jpg,test,,accept,,,,reject,0.674800,0.325200,0.674800,reject,False
+test/accept/realwaste_test_accept_000107_00798_Textile_Trash_cedac569e1_Textile Trash_142.jpg,test,,accept,,,,accept,0.998981,0.998981,0.001019,accept,True
+test/accept/realwaste_test_accept_000108_00799_Miscellaneous_Trash_8f007a5f5e_Miscellaneous Trash_399.jpg,test,,accept,,,,accept,0.989335,0.989335,0.010665,accept,True
+test/accept/realwaste_test_accept_000109_00800_Textile_Trash_e2431a4c36_Textile Trash_307.jpg,test,,accept,,,,accept,0.999669,0.999669,0.000331,accept,True
+test/accept/realwaste_test_accept_000110_00801_Textile_Trash_5039366119_Textile Trash_21.jpg,test,,accept,,,,accept,0.999982,0.999982,0.000018,accept,True
+test/accept/realwaste_test_accept_000111_00802_Textile_Trash_d7480eaf05_Textile Trash_154.jpg,test,,accept,,,,accept,0.992162,0.992162,0.007838,accept,True
+test/accept/realwaste_test_accept_000112_00803_Miscellaneous_Trash_c70498d2a3_Miscellaneous Trash_115.jpg,test,,accept,,,,accept,0.994708,0.994708,0.005292,accept,True
+test/accept/realwaste_test_accept_000113_00804_Miscellaneous_Trash_33b054e02e_Miscellaneous Trash_445.jpg,test,,accept,,,,accept,0.706203,0.706203,0.293797,reject,True
+test/accept/realwaste_test_accept_000114_00805_Textile_Trash_d1ebe92bb8_Textile Trash_219.jpg,test,,accept,,,,accept,0.999408,0.999408,0.000592,accept,True
+test/accept/realwaste_test_accept_000115_00806_Textile_Trash_e69fa31f96_Textile Trash_275.jpg,test,,accept,,,,accept,0.776976,0.776976,0.223024,accept,True
+test/accept/realwaste_test_accept_000116_00807_Textile_Trash_b58faf48c1_Textile Trash_150.jpg,test,,accept,,,,accept,0.764549,0.764549,0.235451,accept,True
+test/accept/realwaste_test_accept_000117_00808_Miscellaneous_Trash_6196c8b841_Miscellaneous Trash_212.jpg,test,,accept,,,,accept,0.763303,0.763303,0.236697,accept,True
+test/accept/realwaste_test_accept_000118_00809_Miscellaneous_Trash_b169869126_Miscellaneous Trash_7.jpg,test,,accept,,,,accept,0.999809,0.999809,0.000191,accept,True
+test/accept/realwaste_test_accept_000119_00810_Textile_Trash_14e9b6f014_Textile Trash_239.jpg,test,,accept,,,,reject,0.669851,0.330149,0.669851,reject,False
+test/accept/realwaste_test_accept_000120_00811_Miscellaneous_Trash_d5693e27c2_Miscellaneous Trash_48.jpg,test,,accept,,,,accept,0.890743,0.890743,0.109257,accept,True
+test/accept/realwaste_test_accept_000121_00812_Miscellaneous_Trash_3f9c45c698_Miscellaneous Trash_40.jpg,test,,accept,,,,accept,0.828504,0.828504,0.171496,accept,True
+test/reject/realwaste_test_reject_000000_01973_Vegetation_226a99f2ba_Vegetation_336.jpg,test,,reject,,,,reject,0.999915,0.000085,0.999915,reject,True
+test/reject/realwaste_test_reject_000001_01974_Paper_859b51995a_Paper_168.jpg,test,,reject,,,,reject,0.999613,0.000387,0.999613,reject,True
+test/reject/realwaste_test_reject_000002_01975_Plastic_9dd9911585_Plastic_848.jpg,test,,reject,,,,reject,0.944284,0.055716,0.944284,reject,True
+test/reject/realwaste_test_reject_000003_01976_Glass_f6e7f7ea07_Glass_29.jpg,test,,reject,,,,reject,0.650047,0.349953,0.650047,reject,True
+test/reject/realwaste_test_reject_000004_01977_Glass_4f89a0f350_Glass_379.jpg,test,,reject,,,,reject,0.998110,0.001890,0.998110,reject,True
+test/reject/realwaste_test_reject_000005_01978_Glass_e5a851a4f2_Glass_144.jpg,test,,reject,,,,reject,0.996981,0.003019,0.996981,reject,True
+test/reject/realwaste_test_reject_000006_01979_Metal_44caf429d5_Metal_503.jpg,test,,reject,,,,reject,0.998647,0.001353,0.998647,reject,True
+test/reject/realwaste_test_reject_000007_01980_Plastic_7478f3ad37_Plastic_795.jpg,test,,reject,,,,reject,0.973941,0.026059,0.973941,reject,True
+test/reject/realwaste_test_reject_000008_01981_Glass_3e07124bc8_Glass_302.jpg,test,,reject,,,,reject,0.993268,0.006732,0.993268,reject,True
+test/reject/realwaste_test_reject_000009_01982_Plastic_8d75c6350d_Plastic_278.jpg,test,,reject,,,,reject,0.986461,0.013539,0.986461,reject,True
+test/reject/realwaste_test_reject_000010_01983_Plastic_e12dda0b1c_Plastic_669.jpg,test,,reject,,,,reject,0.985013,0.014987,0.985013,reject,True
+test/reject/realwaste_test_reject_000011_01984_Metal_861cb35fd6_Metal_521.jpg,test,,reject,,,,reject,0.999023,0.000977,0.999023,reject,True
+test/reject/realwaste_test_reject_000012_01985_Metal_575a50ce95_Metal_425.jpg,test,,reject,,,,reject,0.996974,0.003026,0.996974,reject,True
+test/reject/realwaste_test_reject_000013_01986_Plastic_9827791ac1_Plastic_884.jpg,test,,reject,,,,reject,0.828964,0.171036,0.828964,reject,True
+test/reject/realwaste_test_reject_000014_01987_Plastic_2f6e87d684_Plastic_298.jpg,test,,reject,,,,accept,0.976682,0.976682,0.023318,accept,False
+test/reject/realwaste_test_reject_000015_01988_Paper_2fce799e24_Paper_16.jpg,test,,reject,,,,accept,0.568816,0.568816,0.431185,reject,False
+test/reject/realwaste_test_reject_000016_01989_Metal_58f1cd6b08_Metal_557.jpg,test,,reject,,,,reject,0.999963,0.000037,0.999963,reject,True
+test/reject/realwaste_test_reject_000017_01990_Metal_5ad023bdb4_Metal_299.jpg,test,,reject,,,,reject,0.932361,0.067639,0.932361,reject,True
+test/reject/realwaste_test_reject_000018_01991_Paper_048244e669_Paper_131.jpg,test,,reject,,,,reject,0.974939,0.025061,0.974939,reject,True
+test/reject/realwaste_test_reject_000019_01992_Metal_61dc8d44c8_Metal_623.jpg,test,,reject,,,,reject,0.999809,0.000191,0.999809,reject,True
+test/reject/realwaste_test_reject_000020_01993_Metal_76f2b4f5b0_Metal_195.jpg,test,,reject,,,,reject,0.999936,0.000064,0.999936,reject,True
+test/reject/realwaste_test_reject_000021_01994_Vegetation_c9096a6ad0_Vegetation_117.jpg,test,,reject,,,,reject,0.673958,0.326042,0.673958,reject,True
+test/reject/realwaste_test_reject_000022_01995_Plastic_9cba848995_Plastic_555.jpg,test,,reject,,,,reject,0.997245,0.002755,0.997245,reject,True
+test/reject/realwaste_test_reject_000023_01996_Cardboard_b8e8d693c8_Cardboard_85.jpg,test,,reject,,,,reject,0.987759,0.012241,0.987759,reject,True
+test/reject/realwaste_test_reject_000024_01997_Glass_c4f0bcdec5_Glass_365.jpg,test,,reject,,,,reject,0.974196,0.025804,0.974196,reject,True
+test/reject/realwaste_test_reject_000025_01998_Vegetation_2acf0d1e05_Vegetation_422.jpg,test,,reject,,,,reject,0.999573,0.000427,0.999573,reject,True
+test/reject/realwaste_test_reject_000026_01999_Plastic_c0feab74af_Plastic_373.jpg,test,,reject,,,,accept,0.767771,0.767771,0.232229,accept,False
+test/reject/realwaste_test_reject_000027_02000_Paper_098b9566c9_Paper_109.jpg,test,,reject,,,,reject,0.999169,0.000831,0.999169,reject,True
+test/reject/realwaste_test_reject_000028_02001_Plastic_fa0ae2877c_Plastic_832.jpg,test,,reject,,,,reject,0.999981,0.000019,0.999981,reject,True
+test/reject/realwaste_test_reject_000029_02002_Paper_446e92b0ad_Paper_365.jpg,test,,reject,,,,reject,0.591701,0.408299,0.591701,reject,True
+test/reject/realwaste_test_reject_000030_02003_Plastic_3705434fea_Plastic_66.jpg,test,,reject,,,,reject,0.983973,0.016027,0.983973,reject,True
+test/reject/realwaste_test_reject_000031_02004_Glass_01d60e40b2_Glass_73.jpg,test,,reject,,,,reject,0.994676,0.005324,0.994676,reject,True
+test/reject/realwaste_test_reject_000032_02005_Food_Organics_551d791095_Food Organics_120.jpg,test,,reject,,,,reject,0.988286,0.011714,0.988286,reject,True
+test/reject/realwaste_test_reject_000033_02006_Vegetation_c55ee0797f_Vegetation_284.jpg,test,,reject,,,,accept,0.612794,0.612794,0.387206,reject,False
+test/reject/realwaste_test_reject_000034_02007_Paper_2a0e65999b_Paper_245.jpg,test,,reject,,,,reject,0.958887,0.041113,0.958887,reject,True
+test/reject/realwaste_test_reject_000035_02008_Plastic_71630a8791_Plastic_462.jpg,test,,reject,,,,reject,0.999654,0.000346,0.999654,reject,True
+test/reject/realwaste_test_reject_000036_02009_Food_Organics_c5f51d926c_Food Organics_159.jpg,test,,reject,,,,reject,0.999653,0.000347,0.999653,reject,True
+test/reject/realwaste_test_reject_000037_02010_Plastic_1fd42c9829_Plastic_626.jpg,test,,reject,,,,reject,0.676041,0.323959,0.676041,reject,True
+test/reject/realwaste_test_reject_000038_02011_Food_Organics_2a801fc327_Food Organics_90.jpg,test,,reject,,,,accept,0.877770,0.877770,0.122230,accept,False
+test/reject/realwaste_test_reject_000039_02012_Paper_3a3a66b7a5_Paper_405.jpg,test,,reject,,,,accept,0.841721,0.841721,0.158279,accept,False
+test/reject/realwaste_test_reject_000040_02013_Plastic_a148b19047_Plastic_686.jpg,test,,reject,,,,reject,0.919545,0.080455,0.919545,reject,True
+test/reject/realwaste_test_reject_000041_02014_Metal_93cf8eb0c5_Metal_167.jpg,test,,reject,,,,reject,0.999146,0.000853,0.999146,reject,True
+test/reject/realwaste_test_reject_000042_02015_Plastic_6bd40d6315_Plastic_564.jpg,test,,reject,,,,reject,0.999024,0.000976,0.999024,reject,True
+test/reject/realwaste_test_reject_000043_02016_Metal_341db04535_Metal_45.jpg,test,,reject,,,,reject,0.995998,0.004002,0.995998,reject,True
+test/reject/realwaste_test_reject_000044_02017_Plastic_7022056e78_Plastic_761.jpg,test,,reject,,,,reject,0.996168,0.003832,0.996168,reject,True
+test/reject/realwaste_test_reject_000045_02018_Plastic_423a37e746_Plastic_776.jpg,test,,reject,,,,reject,0.999968,0.000032,0.999968,reject,True
+test/reject/realwaste_test_reject_000046_02019_Plastic_727a09e886_Plastic_5.jpg,test,,reject,,,,accept,0.684616,0.684616,0.315384,reject,False
+test/reject/realwaste_test_reject_000047_02020_Glass_84ae587d19_Glass_376.jpg,test,,reject,,,,reject,0.987911,0.012089,0.987911,reject,True
+test/reject/realwaste_test_reject_000048_02021_Metal_7b4001474c_Metal_713.jpg,test,,reject,,,,reject,0.971809,0.028191,0.971809,reject,True
+test/reject/realwaste_test_reject_000049_02022_Plastic_fc8a5c68c9_Plastic_904.jpg,test,,reject,,,,reject,0.999744,0.000256,0.999744,reject,True
+test/reject/realwaste_test_reject_000050_02023_Cardboard_7b6d7d6fd4_Cardboard_129.jpg,test,,reject,,,,reject,0.984607,0.015393,0.984607,reject,True
+test/reject/realwaste_test_reject_000051_02024_Food_Organics_2e696f26c5_Food Organics_277.jpg,test,,reject,,,,reject,0.540107,0.459893,0.540107,reject,True
+test/reject/realwaste_test_reject_000052_02025_Metal_7c344c9c56_Metal_719.jpg,test,,reject,,,,reject,0.999994,0.000006,0.999994,reject,True
+test/reject/realwaste_test_reject_000053_02026_Glass_91760e16ed_Glass_320.jpg,test,,reject,,,,reject,0.998285,0.001715,0.998285,reject,True
+test/reject/realwaste_test_reject_000054_02027_Food_Organics_8d090ec734_Food Organics_378.jpg,test,,reject,,,,reject,0.842030,0.157970,0.842030,reject,True
+test/reject/realwaste_test_reject_000055_02028_Food_Organics_b3999e9a79_Food Organics_26.jpg,test,,reject,,,,reject,0.998423,0.001577,0.998423,reject,True
+test/reject/realwaste_test_reject_000056_02029_Glass_938220d4e6_Glass_362.jpg,test,,reject,,,,reject,0.998026,0.001974,0.998026,reject,True
+test/reject/realwaste_test_reject_000057_02030_Glass_2b8fdebf26_Glass_141.jpg,test,,reject,,,,reject,0.952542,0.047458,0.952542,reject,True
+test/reject/realwaste_test_reject_000058_02031_Paper_ca576d8fbc_Paper_249.jpg,test,,reject,,,,reject,0.977931,0.022068,0.977931,reject,True
+test/reject/realwaste_test_reject_000059_02032_Paper_f8628c9958_Paper_19.jpg,test,,reject,,,,reject,0.979326,0.020674,0.979326,reject,True
+test/reject/realwaste_test_reject_000060_02033_Metal_d73684a0f8_Metal_486.jpg,test,,reject,,,,reject,0.998807,0.001193,0.998807,reject,True
+test/reject/realwaste_test_reject_000061_02034_Metal_d2bcab7640_Metal_435.jpg,test,,reject,,,,reject,0.997835,0.002165,0.997835,reject,True
+test/reject/realwaste_test_reject_000062_02035_Paper_35edd2a251_Paper_167.jpg,test,,reject,,,,reject,0.959593,0.040407,0.959593,reject,True
+test/reject/realwaste_test_reject_000063_02036_Cardboard_458ac4c940_Cardboard_26.jpg,test,,reject,,,,accept,0.905982,0.905982,0.094018,accept,False
+test/reject/realwaste_test_reject_000064_02037_Vegetation_c9d3b0d969_Vegetation_230.jpg,test,,reject,,,,reject,0.999430,0.000570,0.999430,reject,True
+test/reject/realwaste_test_reject_000065_02038_Vegetation_3920a150aa_Vegetation_342.jpg,test,,reject,,,,reject,0.999302,0.000698,0.999302,reject,True
+test/reject/realwaste_test_reject_000066_02039_Plastic_10b041313c_Plastic_466.jpg,test,,reject,,,,reject,0.650889,0.349111,0.650889,reject,True
+test/reject/realwaste_test_reject_000067_02040_Glass_a17936414d_Glass_77.jpg,test,,reject,,,,reject,0.941087,0.058913,0.941087,reject,True
+test/reject/realwaste_test_reject_000068_02041_Plastic_9a1ae9feec_Plastic_229.jpg,test,,reject,,,,reject,0.999350,0.000650,0.999350,reject,True
+test/reject/realwaste_test_reject_000069_02042_Paper_b5e96301cb_Paper_444.jpg,test,,reject,,,,accept,0.651215,0.651215,0.348785,reject,False
+test/reject/realwaste_test_reject_000070_02043_Plastic_19a770e43e_Plastic_764.jpg,test,,reject,,,,reject,0.995450,0.004550,0.995450,reject,True
+test/reject/realwaste_test_reject_000071_02044_Plastic_5e7309273b_Plastic_386.jpg,test,,reject,,,,reject,0.899015,0.100985,0.899015,reject,True
+test/reject/realwaste_test_reject_000072_02045_Vegetation_c2fe232bd0_Vegetation_46.jpg,test,,reject,,,,reject,0.787369,0.212631,0.787369,reject,True
+test/reject/realwaste_test_reject_000073_02046_Plastic_d814c1f6b0_Plastic_192.jpg,test,,reject,,,,reject,0.997761,0.002239,0.997761,reject,True
+test/reject/realwaste_test_reject_000074_02047_Metal_c3396a2416_Metal_374.jpg,test,,reject,,,,reject,0.998017,0.001983,0.998017,reject,True
+test/reject/realwaste_test_reject_000075_02048_Metal_5a31702c36_Metal_462.jpg,test,,reject,,,,reject,0.999982,0.000019,0.999982,reject,True
+test/reject/realwaste_test_reject_000076_02049_Plastic_e1fee556f0_Plastic_873.jpg,test,,reject,,,,reject,0.999755,0.000245,0.999755,reject,True
+test/reject/realwaste_test_reject_000077_02050_Paper_bb1b2b199e_Paper_299.jpg,test,,reject,,,,reject,0.973122,0.026878,0.973122,reject,True
+test/reject/realwaste_test_reject_000078_02051_Metal_9efc4ff711_Metal_262.jpg,test,,reject,,,,reject,0.999032,0.000968,0.999032,reject,True
+test/reject/realwaste_test_reject_000079_02052_Vegetation_84fcb2adf0_Vegetation_156.jpg,test,,reject,,,,reject,0.999712,0.000288,0.999712,reject,True
+test/reject/realwaste_test_reject_000080_02053_Plastic_711831514b_Plastic_717.jpg,test,,reject,,,,reject,0.991763,0.008237,0.991763,reject,True
+test/reject/realwaste_test_reject_000081_02054_Plastic_efba9d1005_Plastic_80.jpg,test,,reject,,,,reject,0.998769,0.001231,0.998769,reject,True
+test/reject/realwaste_test_reject_000082_02055_Food_Organics_aab6de881f_Food Organics_83.jpg,test,,reject,,,,reject,0.962631,0.037369,0.962631,reject,True
+test/reject/realwaste_test_reject_000083_02056_Plastic_5ebcaebe98_Plastic_710.jpg,test,,reject,,,,reject,0.979266,0.020734,0.979266,reject,True
+test/reject/realwaste_test_reject_000084_02057_Paper_1d4c8dba5f_Paper_90.jpg,test,,reject,,,,reject,0.997315,0.002686,0.997315,reject,True
+test/reject/realwaste_test_reject_000085_02058_Cardboard_ca3e5437ae_Cardboard_297.jpg,test,,reject,,,,reject,0.945128,0.054872,0.945128,reject,True
+test/reject/realwaste_test_reject_000086_02059_Metal_fb667b9462_Metal_187.jpg,test,,reject,,,,reject,0.998324,0.001676,0.998324,reject,True
+test/reject/realwaste_test_reject_000087_02060_Food_Organics_b421596e13_Food Organics_211.jpg,test,,reject,,,,reject,0.963825,0.036175,0.963825,reject,True
+test/reject/realwaste_test_reject_000088_02061_Paper_0da5390077_Paper_471.jpg,test,,reject,,,,reject,0.966210,0.033790,0.966210,reject,True
+test/reject/realwaste_test_reject_000089_02062_Plastic_97a49b5971_Plastic_826.jpg,test,,reject,,,,reject,0.998437,0.001563,0.998437,reject,True
+test/reject/realwaste_test_reject_000090_02063_Plastic_a4d3a9026d_Plastic_745.jpg,test,,reject,,,,reject,0.997006,0.002994,0.997006,reject,True
+test/reject/realwaste_test_reject_000091_02064_Vegetation_489d0009e4_Vegetation_380.jpg,test,,reject,,,,reject,0.993988,0.006012,0.993988,reject,True
+test/reject/realwaste_test_reject_000092_02065_Vegetation_940defbaae_Vegetation_399.jpg,test,,reject,,,,reject,0.998132,0.001868,0.998132,reject,True
+test/reject/realwaste_test_reject_000093_02066_Plastic_60dd79dfd7_Plastic_12.jpg,test,,reject,,,,reject,0.987791,0.012209,0.987791,reject,True
+test/reject/realwaste_test_reject_000094_02067_Metal_cdbe65df6e_Metal_565.jpg,test,,reject,,,,reject,0.779009,0.220991,0.779009,reject,True
+test/reject/realwaste_test_reject_000095_02068_Vegetation_493a8d0816_Vegetation_434.jpg,test,,reject,,,,reject,0.995357,0.004643,0.995357,reject,True
+test/reject/realwaste_test_reject_000096_02069_Vegetation_9f6b4785e1_Vegetation_242.jpg,test,,reject,,,,reject,0.998089,0.001910,0.998089,reject,True
+test/reject/realwaste_test_reject_000097_02070_Paper_02ff47ed49_Paper_115.jpg,test,,reject,,,,accept,0.575382,0.575382,0.424618,reject,False
+test/reject/realwaste_test_reject_000098_02071_Metal_5aa8e5412c_Metal_779.jpg,test,,reject,,,,reject,0.998309,0.001691,0.998309,reject,True
+test/reject/realwaste_test_reject_000099_02072_Cardboard_e8341e0a06_Cardboard_397.jpg,test,,reject,,,,reject,0.566084,0.433916,0.566084,reject,True
+test/reject/realwaste_test_reject_000100_02073_Plastic_5502feacc7_Plastic_655.jpg,test,,reject,,,,reject,0.984679,0.015321,0.984679,reject,True
+test/reject/realwaste_test_reject_000101_02074_Paper_80b016eff0_Paper_321.jpg,test,,reject,,,,reject,0.990783,0.009217,0.990783,reject,True
+test/reject/realwaste_test_reject_000102_02075_Food_Organics_c8746b2070_Food Organics_142.jpg,test,,reject,,,,reject,0.998116,0.001884,0.998116,reject,True
+test/reject/realwaste_test_reject_000103_02076_Food_Organics_f3dbfe5d48_Food Organics_82.jpg,test,,reject,,,,reject,0.994251,0.005749,0.994251,reject,True
+test/reject/realwaste_test_reject_000104_02077_Metal_375063d9da_Metal_324.jpg,test,,reject,,,,reject,0.931079,0.068921,0.931079,reject,True
+test/reject/realwaste_test_reject_000105_02078_Food_Organics_02e4bee6c8_Food Organics_3.jpg,test,,reject,,,,reject,0.940040,0.059960,0.940040,reject,True
+test/reject/realwaste_test_reject_000106_02079_Glass_38f52c2d82_Glass_193.jpg,test,,reject,,,,reject,0.996662,0.003338,0.996662,reject,True
+test/reject/realwaste_test_reject_000107_02080_Metal_89f95fa911_Metal_523.jpg,test,,reject,,,,reject,0.999205,0.000795,0.999205,reject,True
+test/reject/realwaste_test_reject_000108_02081_Glass_4554d48bf7_Glass_106.jpg,test,,reject,,,,reject,0.999161,0.000839,0.999161,reject,True
+test/reject/realwaste_test_reject_000109_02082_Vegetation_7748b5f066_Vegetation_126.jpg,test,,reject,,,,reject,0.999231,0.000769,0.999231,reject,True
+test/reject/realwaste_test_reject_000110_02083_Metal_9a4d7152c9_Metal_634.jpg,test,,reject,,,,reject,0.999558,0.000442,0.999558,reject,True
+test/reject/realwaste_test_reject_000111_02084_Glass_2ccb83b4e5_Glass_410.jpg,test,,reject,,,,reject,0.992107,0.007894,0.992107,reject,True
+test/reject/realwaste_test_reject_000112_02085_Metal_10aeeabc34_Metal_22.jpg,test,,reject,,,,reject,0.852467,0.147533,0.852467,reject,True
+test/reject/realwaste_test_reject_000113_02086_Plastic_ae32aad6d2_Plastic_474.jpg,test,,reject,,,,reject,0.999948,0.000052,0.999948,reject,True
+test/reject/realwaste_test_reject_000114_02087_Vegetation_646f802e23_Vegetation_169.jpg,test,,reject,,,,reject,0.999907,0.000092,0.999907,reject,True
+test/reject/realwaste_test_reject_000115_02088_Food_Organics_8b4dd3fae8_Food Organics_23.jpg,test,,reject,,,,accept,0.931905,0.931905,0.068095,accept,False
+test/reject/realwaste_test_reject_000116_02089_Metal_2a1f7d5aae_Metal_78.jpg,test,,reject,,,,reject,0.999437,0.000563,0.999437,reject,True
+test/reject/realwaste_test_reject_000117_02090_Plastic_e116848d04_Plastic_346.jpg,test,,reject,,,,reject,0.999532,0.000468,0.999532,reject,True
+test/reject/realwaste_test_reject_000118_02091_Plastic_b93d8d7da5_Plastic_384.jpg,test,,reject,,,,reject,0.996482,0.003518,0.996482,reject,True
+test/reject/realwaste_test_reject_000119_02092_Cardboard_0f42ef1ffd_Cardboard_283.jpg,test,,reject,,,,reject,0.968856,0.031144,0.968856,reject,True
+test/reject/realwaste_test_reject_000120_02093_Cardboard_107bba5267_Cardboard_359.jpg,test,,reject,,,,reject,0.918272,0.081728,0.918272,reject,True
+test/reject/realwaste_test_reject_000121_02094_Plastic_dd9d7c5725_Plastic_325.jpg,test,,reject,,,,reject,0.838772,0.161228,0.838772,reject,True
+test/reject/realwaste_test_reject_000122_02095_Vegetation_1c7aeae3ab_Vegetation_42.jpg,test,,reject,,,,reject,0.981329,0.018671,0.981329,reject,True
+test/reject/realwaste_test_reject_000123_02096_Paper_2e9a912c42_Paper_256.jpg,test,,reject,,,,accept,0.794238,0.794238,0.205762,accept,False
+test/reject/realwaste_test_reject_000124_02097_Cardboard_6f608afe9c_Cardboard_182.jpg,test,,reject,,,,reject,0.999958,0.000042,0.999958,reject,True
+test/reject/realwaste_test_reject_000125_02098_Plastic_e31a2e18ea_Plastic_629.jpg,test,,reject,,,,reject,0.999667,0.000333,0.999667,reject,True
+test/reject/realwaste_test_reject_000126_02099_Plastic_274fc2af4d_Plastic_579.jpg,test,,reject,,,,accept,0.729609,0.729609,0.270391,reject,False
+test/reject/realwaste_test_reject_000127_02100_Plastic_b432732d52_Plastic_544.jpg,test,,reject,,,,accept,0.989095,0.989095,0.010905,accept,False
+test/reject/realwaste_test_reject_000128_02101_Vegetation_02d0a9fdb3_Vegetation_97.jpg,test,,reject,,,,reject,0.998612,0.001388,0.998612,reject,True
+test/reject/realwaste_test_reject_000129_02102_Metal_2bdae700d1_Metal_723.jpg,test,,reject,,,,reject,0.998847,0.001153,0.998847,reject,True
+test/reject/realwaste_test_reject_000130_02103_Metal_f35f3a9b22_Metal_677.jpg,test,,reject,,,,reject,0.996407,0.003592,0.996407,reject,True
+test/reject/realwaste_test_reject_000131_02104_Cardboard_10328bd74b_Cardboard_167.jpg,test,,reject,,,,accept,0.801592,0.801592,0.198408,accept,False
+test/reject/realwaste_test_reject_000132_02105_Vegetation_0508a3575e_Vegetation_359.jpg,test,,reject,,,,reject,0.991997,0.008003,0.991997,reject,True
+test/reject/realwaste_test_reject_000133_02106_Food_Organics_48ba663faf_Food Organics_337.jpg,test,,reject,,,,reject,0.961686,0.038314,0.961686,reject,True
+test/reject/realwaste_test_reject_000134_02107_Metal_8ba94f91b3_Metal_1.jpg,test,,reject,,,,reject,0.999924,0.000076,0.999924,reject,True
+test/reject/realwaste_test_reject_000135_02108_Food_Organics_64f5fa3b52_Food Organics_201.jpg,test,,reject,,,,reject,0.965125,0.034875,0.965125,reject,True
+test/reject/realwaste_test_reject_000136_02109_Cardboard_9a809c2608_Cardboard_172.jpg,test,,reject,,,,reject,0.995429,0.004571,0.995429,reject,True
+test/reject/realwaste_test_reject_000137_02110_Metal_c4d9ec1f98_Metal_637.jpg,test,,reject,,,,reject,0.999970,0.000030,0.999970,reject,True
+test/reject/realwaste_test_reject_000138_02111_Plastic_fc9d504424_Plastic_874.jpg,test,,reject,,,,reject,0.999845,0.000155,0.999845,reject,True
+test/reject/realwaste_test_reject_000139_02112_Cardboard_d368288ee9_Cardboard_460.jpg,test,,reject,,,,reject,0.775369,0.224631,0.775369,reject,True
+test/reject/realwaste_test_reject_000140_02113_Glass_15040fbbb5_Glass_69.jpg,test,,reject,,,,reject,0.999320,0.000680,0.999320,reject,True
+test/reject/realwaste_test_reject_000141_02114_Paper_117721374a_Paper_304.jpg,test,,reject,,,,reject,0.657694,0.342306,0.657694,reject,True
+test/reject/realwaste_test_reject_000142_02115_Paper_ba82ef4cd8_Paper_203.jpg,test,,reject,,,,reject,0.962617,0.037383,0.962617,reject,True
+test/reject/realwaste_test_reject_000143_02116_Metal_7f0f732ba0_Metal_688.jpg,test,,reject,,,,reject,0.946544,0.053456,0.946544,reject,True
+test/reject/realwaste_test_reject_000144_02117_Metal_5a279e5f42_Metal_203.jpg,test,,reject,,,,reject,0.624242,0.375758,0.624242,reject,True
+test/reject/realwaste_test_reject_000145_02118_Food_Organics_b3c8fa4dce_Food Organics_258.jpg,test,,reject,,,,reject,0.990752,0.009248,0.990752,reject,True
+test/reject/realwaste_test_reject_000146_02119_Vegetation_aa45bbfd21_Vegetation_314.jpg,test,,reject,,,,reject,0.972266,0.027734,0.972266,reject,True
+test/reject/realwaste_test_reject_000147_02120_Paper_536b5f70e2_Paper_236.jpg,test,,reject,,,,reject,0.995573,0.004427,0.995573,reject,True
+test/reject/realwaste_test_reject_000148_02121_Glass_9c13d4fc73_Glass_76.jpg,test,,reject,,,,reject,0.997145,0.002854,0.997145,reject,True
+test/reject/realwaste_test_reject_000149_02122_Plastic_8cfa78b654_Plastic_478.jpg,test,,reject,,,,reject,0.999996,0.000004,0.999996,reject,True
+test/reject/realwaste_test_reject_000150_02123_Cardboard_3ec814f50c_Cardboard_187.jpg,test,,reject,,,,reject,0.998662,0.001338,0.998662,reject,True
+test/reject/realwaste_test_reject_000151_02124_Cardboard_18b3f0e0f6_Cardboard_34.jpg,test,,reject,,,,reject,0.986308,0.013692,0.986308,reject,True
+test/reject/realwaste_test_reject_000152_02125_Metal_c00839cf46_Metal_183.jpg,test,,reject,,,,reject,0.996888,0.003112,0.996888,reject,True
+test/reject/realwaste_test_reject_000153_02126_Cardboard_11166f5f10_Cardboard_76.jpg,test,,reject,,,,reject,0.999013,0.000987,0.999013,reject,True
+test/reject/realwaste_test_reject_000154_02127_Glass_326cdd93df_Glass_333.jpg,test,,reject,,,,reject,0.999970,0.000030,0.999970,reject,True
+test/reject/realwaste_test_reject_000155_02128_Food_Organics_b7b1087148_Food Organics_363.jpg,test,,reject,,,,reject,0.993709,0.006291,0.993709,reject,True
+test/reject/realwaste_test_reject_000156_02129_Plastic_04ccfd5034_Plastic_702.jpg,test,,reject,,,,reject,0.974841,0.025159,0.974841,reject,True
+test/reject/realwaste_test_reject_000157_02130_Food_Organics_656c2864fe_Food Organics_343.jpg,test,,reject,,,,reject,0.945249,0.054751,0.945249,reject,True
+test/reject/realwaste_test_reject_000158_02131_Glass_3456643db4_Glass_30.jpg,test,,reject,,,,reject,0.999967,0.000033,0.999967,reject,True
+test/reject/realwaste_test_reject_000159_02132_Metal_21e615cdcf_Metal_668.jpg,test,,reject,,,,reject,0.996840,0.003159,0.996840,reject,True
+test/reject/realwaste_test_reject_000160_02133_Metal_ad2fa9566c_Metal_554.jpg,test,,reject,,,,reject,0.999607,0.000393,0.999607,reject,True
+test/reject/realwaste_test_reject_000161_02134_Vegetation_811e70f9ff_Vegetation_411.jpg,test,,reject,,,,accept,0.767597,0.767597,0.232403,accept,False
+test/reject/realwaste_test_reject_000162_02135_Paper_57955c667d_Paper_297.jpg,test,,reject,,,,reject,0.999978,0.000022,0.999978,reject,True
+test/reject/realwaste_test_reject_000163_02136_Plastic_3720a4023f_Plastic_879.jpg,test,,reject,,,,reject,0.999961,0.000039,0.999961,reject,True
+test/reject/realwaste_test_reject_000164_02137_Food_Organics_b04171a2f2_Food Organics_264.jpg,test,,reject,,,,reject,0.881485,0.118515,0.881485,reject,True
+test/reject/realwaste_test_reject_000165_02138_Metal_90ef612d57_Metal_34.jpg,test,,reject,,,,reject,0.935403,0.064597,0.935403,reject,True
+test/reject/realwaste_test_reject_000166_02139_Glass_e6cd766db5_Glass_88.jpg,test,,reject,,,,reject,0.997974,0.002026,0.997974,reject,True
+test/reject/realwaste_test_reject_000167_02140_Metal_273c8b4049_Metal_225.jpg,test,,reject,,,,reject,0.949664,0.050336,0.949664,reject,True
+test/reject/realwaste_test_reject_000168_02141_Plastic_ec0ce0b2ee_Plastic_188.jpg,test,,reject,,,,reject,0.999325,0.000675,0.999325,reject,True
+test/reject/realwaste_test_reject_000169_02142_Plastic_784d5185b1_Plastic_654.jpg,test,,reject,,,,reject,0.999063,0.000937,0.999063,reject,True
+test/reject/realwaste_test_reject_000170_02143_Plastic_f277a0fb04_Plastic_825.jpg,test,,reject,,,,reject,0.999824,0.000176,0.999824,reject,True
+test/reject/realwaste_test_reject_000171_02144_Plastic_569f001a5c_Plastic_828.jpg,test,,reject,,,,reject,0.999985,0.000016,0.999985,reject,True
+test/reject/realwaste_test_reject_000172_02145_Cardboard_cc965e5cf7_Cardboard_399.jpg,test,,reject,,,,reject,0.984165,0.015835,0.984165,reject,True
+test/reject/realwaste_test_reject_000173_02146_Plastic_2a1aae00b9_Plastic_582.jpg,test,,reject,,,,reject,0.999977,0.000023,0.999977,reject,True
+test/reject/realwaste_test_reject_000174_02147_Plastic_0de28917c7_Plastic_89.jpg,test,,reject,,,,reject,0.995636,0.004364,0.995636,reject,True
+test/reject/realwaste_test_reject_000175_02148_Vegetation_dab36eef88_Vegetation_367.jpg,test,,reject,,,,reject,0.999987,0.000013,0.999987,reject,True
+test/reject/realwaste_test_reject_000176_02149_Plastic_faeaaa65cb_Plastic_367.jpg,test,,reject,,,,reject,0.998754,0.001246,0.998754,reject,True
+test/reject/realwaste_test_reject_000177_02150_Glass_f545c3f390_Glass_188.jpg,test,,reject,,,,reject,0.945432,0.054568,0.945432,reject,True
+test/reject/realwaste_test_reject_000178_02151_Metal_afc5156194_Metal_580.jpg,test,,reject,,,,reject,0.702987,0.297013,0.702987,reject,True
+test/reject/realwaste_test_reject_000179_02152_Vegetation_a14f448e8d_Vegetation_246.jpg,test,,reject,,,,reject,0.970995,0.029005,0.970995,reject,True
+test/reject/realwaste_test_reject_000180_02153_Metal_5911d42fde_Metal_494.jpg,test,,reject,,,,reject,0.998780,0.001220,0.998780,reject,True
+test/reject/realwaste_test_reject_000181_02154_Plastic_07d96495ce_Plastic_301.jpg,test,,reject,,,,reject,0.965396,0.034604,0.965396,reject,True
+test/reject/realwaste_test_reject_000182_02155_Metal_6abc4c42e3_Metal_662.jpg,test,,reject,,,,reject,0.999891,0.000109,0.999891,reject,True
+test/reject/realwaste_test_reject_000183_02156_Metal_f6b856a98f_Metal_420.jpg,test,,reject,,,,reject,0.998765,0.001235,0.998765,reject,True
+test/reject/realwaste_test_reject_000184_02157_Food_Organics_e73b94c882_Food Organics_54.jpg,test,,reject,,,,reject,0.999214,0.000786,0.999214,reject,True
+test/reject/realwaste_test_reject_000185_02158_Glass_b2b8b67072_Glass_97.jpg,test,,reject,,,,reject,0.999708,0.000292,0.999708,reject,True
+test/reject/realwaste_test_reject_000186_02159_Glass_aa89e89638_Glass_145.jpg,test,,reject,,,,reject,0.998919,0.001081,0.998919,reject,True
+test/reject/realwaste_test_reject_000187_02160_Metal_2d98db181a_Metal_783.jpg,test,,reject,,,,reject,0.983568,0.016432,0.983568,reject,True
+test/reject/realwaste_test_reject_000188_02161_Paper_8dee28ec1d_Paper_334.jpg,test,,reject,,,,reject,0.999889,0.000111,0.999889,reject,True
+test/reject/realwaste_test_reject_000189_02162_Cardboard_9d342a56e2_Cardboard_266.jpg,test,,reject,,,,reject,0.944447,0.055553,0.944447,reject,True
+test/reject/realwaste_test_reject_000190_02163_Vegetation_d0e07b3e02_Vegetation_381.jpg,test,,reject,,,,reject,0.920752,0.079248,0.920752,reject,True
+test/reject/realwaste_test_reject_000191_02164_Vegetation_203ff5848b_Vegetation_433.jpg,test,,reject,,,,reject,0.978602,0.021398,0.978602,reject,True
+test/reject/realwaste_test_reject_000192_02165_Cardboard_54404e7465_Cardboard_353.jpg,test,,reject,,,,reject,0.997192,0.002808,0.997192,reject,True
+test/reject/realwaste_test_reject_000193_02166_Plastic_8d75dff6bc_Plastic_381.jpg,test,,reject,,,,reject,0.994990,0.005010,0.994990,reject,True
+test/reject/realwaste_test_reject_000194_02167_Cardboard_91c04cca5a_Cardboard_421.jpg,test,,reject,,,,reject,0.932247,0.067753,0.932247,reject,True
+test/reject/realwaste_test_reject_000195_02168_Plastic_75c5a3c815_Plastic_476.jpg,test,,reject,,,,reject,0.999971,0.000029,0.999971,reject,True
+test/reject/realwaste_test_reject_000196_02169_Plastic_42ccf47518_Plastic_349.jpg,test,,reject,,,,accept,0.570539,0.570539,0.429461,reject,False
+test/reject/realwaste_test_reject_000197_02170_Vegetation_cef0c68214_Vegetation_48.jpg,test,,reject,,,,reject,0.999809,0.000191,0.999809,reject,True
+test/reject/realwaste_test_reject_000198_02171_Cardboard_73072d08e1_Cardboard_448.jpg,test,,reject,,,,reject,0.939366,0.060634,0.939366,reject,True
+test/reject/realwaste_test_reject_000199_02172_Plastic_5aa2ba9eaa_Plastic_755.jpg,test,,reject,,,,reject,0.991864,0.008136,0.991864,reject,True
+test/reject/realwaste_test_reject_000200_02173_Glass_e0d3d153d8_Glass_249.jpg,test,,reject,,,,reject,0.996317,0.003683,0.996317,reject,True
+test/reject/realwaste_test_reject_000201_02174_Vegetation_7a9c15ef6a_Vegetation_285.jpg,test,,reject,,,,reject,0.999462,0.000538,0.999462,reject,True
+test/reject/realwaste_test_reject_000202_02175_Food_Organics_7fb5e94abf_Food Organics_226.jpg,test,,reject,,,,reject,0.998034,0.001966,0.998034,reject,True
+test/reject/realwaste_test_reject_000203_02176_Cardboard_0d6542de95_Cardboard_390.jpg,test,,reject,,,,reject,0.930584,0.069416,0.930584,reject,True
+test/reject/realwaste_test_reject_000204_02177_Vegetation_371ab57f6e_Vegetation_99.jpg,test,,reject,,,,reject,0.998684,0.001316,0.998684,reject,True
+test/reject/realwaste_test_reject_000205_02178_Cardboard_eda7f80d1a_Cardboard_138.jpg,test,,reject,,,,reject,0.999403,0.000597,0.999403,reject,True
+test/reject/realwaste_test_reject_000206_02179_Paper_41e3410b78_Paper_387.jpg,test,,reject,,,,accept,0.945677,0.945677,0.054323,accept,False
+test/reject/realwaste_test_reject_000207_02180_Paper_08edc5c657_Paper_222.jpg,test,,reject,,,,reject,0.999640,0.000360,0.999640,reject,True
+test/reject/realwaste_test_reject_000208_02181_Cardboard_6c98f6d678_Cardboard_348.jpg,test,,reject,,,,reject,0.999457,0.000543,0.999457,reject,True
+test/reject/realwaste_test_reject_000209_02182_Paper_70bafcdda6_Paper_148.jpg,test,,reject,,,,reject,0.996444,0.003556,0.996444,reject,True
+test/reject/realwaste_test_reject_000210_02183_Paper_ab1ada28a9_Paper_128.jpg,test,,reject,,,,accept,0.829078,0.829078,0.170922,accept,False
+test/reject/realwaste_test_reject_000211_02184_Paper_77c42a94b1_Paper_415.jpg,test,,reject,,,,accept,0.981413,0.981413,0.018587,accept,False
+test/reject/realwaste_test_reject_000212_02185_Vegetation_c5b462830a_Vegetation_50.jpg,test,,reject,,,,reject,0.999989,0.000011,0.999989,reject,True
+test/reject/realwaste_test_reject_000213_02186_Paper_49803ffb19_Paper_231.jpg,test,,reject,,,,reject,0.999198,0.000802,0.999198,reject,True
+test/reject/realwaste_test_reject_000214_02187_Plastic_13495b5ada_Plastic_758.jpg,test,,reject,,,,reject,0.901394,0.098606,0.901394,reject,True
+test/reject/realwaste_test_reject_000215_02188_Glass_0eca2d4358_Glass_233.jpg,test,,reject,,,,reject,0.929732,0.070268,0.929732,reject,True
+test/reject/realwaste_test_reject_000216_02189_Plastic_485985bfe2_Plastic_648.jpg,test,,reject,,,,reject,0.999015,0.000985,0.999015,reject,True
+test/reject/realwaste_test_reject_000217_02190_Glass_3fde08d99d_Glass_108.jpg,test,,reject,,,,reject,0.999918,0.000082,0.999918,reject,True
+test/reject/realwaste_test_reject_000218_02191_Cardboard_95e217a972_Cardboard_153.jpg,test,,reject,,,,reject,0.981942,0.018058,0.981942,reject,True
+test/reject/realwaste_test_reject_000219_02192_Metal_c4ad971839_Metal_452.jpg,test,,reject,,,,accept,0.601653,0.601653,0.398347,reject,False
+test/reject/realwaste_test_reject_000220_02193_Glass_3a571c2ef0_Glass_238.jpg,test,,reject,,,,reject,0.998329,0.001671,0.998329,reject,True
+test/reject/realwaste_test_reject_000221_02194_Paper_889acf3418_Paper_456.jpg,test,,reject,,,,reject,0.999438,0.000562,0.999438,reject,True
+test/reject/realwaste_test_reject_000222_02195_Glass_d32959ce2d_Glass_175.jpg,test,,reject,,,,reject,0.998541,0.001459,0.998541,reject,True
+test/reject/realwaste_test_reject_000223_02196_Metal_7029d9f13b_Metal_710.jpg,test,,reject,,,,reject,0.999152,0.000848,0.999152,reject,True
+test/reject/realwaste_test_reject_000224_02197_Glass_a0e9b0284d_Glass_161.jpg,test,,reject,,,,reject,0.996945,0.003055,0.996945,reject,True
+test/reject/realwaste_test_reject_000225_02198_Plastic_26a63fb810_Plastic_126.jpg,test,,reject,,,,reject,0.999850,0.000150,0.999850,reject,True
+test/reject/realwaste_test_reject_000226_02199_Plastic_8b5b2d489f_Plastic_256.jpg,test,,reject,,,,reject,0.880418,0.119582,0.880418,reject,True
+test/reject/realwaste_test_reject_000227_02200_Paper_bb924c7bcc_Paper_100.jpg,test,,reject,,,,reject,0.787337,0.212663,0.787337,reject,True
+test/reject/realwaste_test_reject_000228_02201_Paper_9112eb899d_Paper_22.jpg,test,,reject,,,,reject,0.982244,0.017756,0.982244,reject,True
+test/reject/realwaste_test_reject_000229_02202_Plastic_17b3f416dc_Plastic_605.jpg,test,,reject,,,,reject,0.999143,0.000857,0.999143,reject,True
+test/reject/realwaste_test_reject_000230_02203_Glass_e3249d8733_Glass_68.jpg,test,,reject,,,,reject,0.698503,0.301497,0.698503,reject,True
+test/reject/realwaste_test_reject_000231_02204_Food_Organics_93d7ebb2c0_Food Organics_25.jpg,test,,reject,,,,reject,0.988015,0.011985,0.988015,reject,True
+test/reject/realwaste_test_reject_000232_02205_Metal_f097ef480d_Metal_205.jpg,test,,reject,,,,reject,0.992766,0.007234,0.992766,reject,True
+test/reject/realwaste_test_reject_000233_02206_Food_Organics_ea23ebf294_Food Organics_77.jpg,test,,reject,,,,reject,0.970544,0.029456,0.970544,reject,True
+test/reject/realwaste_test_reject_000234_02207_Paper_d7702545b9_Paper_331.jpg,test,,reject,,,,reject,0.991983,0.008017,0.991983,reject,True
+test/reject/realwaste_test_reject_000235_02208_Cardboard_16ac4c8e59_Cardboard_422.jpg,test,,reject,,,,reject,0.851704,0.148296,0.851704,reject,True
+test/reject/realwaste_test_reject_000236_02209_Glass_627c9602fa_Glass_8.jpg,test,,reject,,,,reject,0.989182,0.010818,0.989182,reject,True
+test/reject/realwaste_test_reject_000237_02210_Metal_86cfc1b218_Metal_547.jpg,test,,reject,,,,reject,0.999582,0.000418,0.999582,reject,True
+test/reject/realwaste_test_reject_000238_02211_Plastic_9171e9b7c3_Plastic_573.jpg,test,,reject,,,,reject,0.999806,0.000194,0.999806,reject,True
+test/reject/realwaste_test_reject_000239_02212_Food_Organics_9f0d2b1a25_Food Organics_191.jpg,test,,reject,,,,reject,0.996982,0.003018,0.996982,reject,True
+test/reject/realwaste_test_reject_000240_02213_Glass_40efee1ae6_Glass_111.jpg,test,,reject,,,,reject,0.996633,0.003367,0.996633,reject,True
+test/reject/realwaste_test_reject_000241_02214_Food_Organics_82e5121eb1_Food Organics_373.jpg,test,,reject,,,,reject,0.963576,0.036424,0.963576,reject,True
+test/reject/realwaste_test_reject_000242_02215_Paper_561f92391d_Paper_123.jpg,test,,reject,,,,reject,0.899063,0.100937,0.899063,reject,True
+test/reject/realwaste_test_reject_000243_02216_Glass_6233e57800_Glass_240.jpg,test,,reject,,,,reject,0.951284,0.048716,0.951284,reject,True
+test/reject/realwaste_test_reject_000244_02217_Cardboard_8fd96db267_Cardboard_314.jpg,test,,reject,,,,reject,0.776401,0.223599,0.776401,reject,True
+test/reject/realwaste_test_reject_000245_02218_Plastic_18dcd510f9_Plastic_869.jpg,test,,reject,,,,reject,0.973994,0.026006,0.973994,reject,True
+test/reject/realwaste_test_reject_000246_02219_Food_Organics_8fedb74872_Food Organics_187.jpg,test,,reject,,,,reject,0.999694,0.000306,0.999694,reject,True
+test/reject/realwaste_test_reject_000247_02220_Plastic_469907ca7b_Plastic_144.jpg,test,,reject,,,,reject,0.998633,0.001367,0.998633,reject,True
+test/reject/realwaste_test_reject_000248_02221_Paper_ea70c858d6_Paper_34.jpg,test,,reject,,,,reject,0.738112,0.261888,0.738112,reject,True
+test/reject/realwaste_test_reject_000249_02222_Plastic_af91afa99a_Plastic_36.jpg,test,,reject,,,,reject,0.531610,0.468390,0.531610,reject,True
+test/reject/realwaste_test_reject_000250_02223_Metal_a87469af7f_Metal_75.jpg,test,,reject,,,,reject,0.996138,0.003862,0.996138,reject,True
+test/reject/realwaste_test_reject_000251_02224_Cardboard_91190164e2_Cardboard_99.jpg,test,,reject,,,,reject,0.998355,0.001645,0.998355,reject,True
+test/reject/realwaste_test_reject_000252_02225_Plastic_6634a355e4_Plastic_596.jpg,test,,reject,,,,reject,0.998639,0.001361,0.998639,reject,True
+test/reject/realwaste_test_reject_000253_02226_Metal_8067cd0751_Metal_98.jpg,test,,reject,,,,reject,0.992203,0.007797,0.992203,reject,True
+test/reject/realwaste_test_reject_000254_02227_Food_Organics_8857b660d9_Food Organics_158.jpg,test,,reject,,,,reject,0.999084,0.000916,0.999084,reject,True
+test/reject/realwaste_test_reject_000255_02228_Cardboard_08ddee88de_Cardboard_420.jpg,test,,reject,,,,accept,0.542383,0.542383,0.457617,reject,False
+test/reject/realwaste_test_reject_000256_02229_Cardboard_5d9956a17d_Cardboard_347.jpg,test,,reject,,,,reject,0.998180,0.001820,0.998180,reject,True
+test/reject/realwaste_test_reject_000257_02230_Cardboard_aea61ad2de_Cardboard_200.jpg,test,,reject,,,,reject,0.971455,0.028545,0.971455,reject,True
+test/reject/realwaste_test_reject_000258_02231_Food_Organics_360ded41fa_Food Organics_50.jpg,test,,reject,,,,reject,0.988747,0.011253,0.988747,reject,True
+test/reject/realwaste_test_reject_000259_02232_Vegetation_52d506a58f_Vegetation_113.jpg,test,,reject,,,,reject,0.997319,0.002681,0.997319,reject,True
+test/reject/realwaste_test_reject_000260_02233_Plastic_77d493be89_Plastic_509.jpg,test,,reject,,,,accept,0.870672,0.870672,0.129328,accept,False
+test/reject/realwaste_test_reject_000261_02234_Vegetation_0804101475_Vegetation_198.jpg,test,,reject,,,,accept,0.595710,0.595710,0.404290,reject,False
+test/reject/realwaste_test_reject_000262_02235_Food_Organics_77af9d6916_Food Organics_136.jpg,test,,reject,,,,reject,0.999890,0.000110,0.999890,reject,True
+test/reject/realwaste_test_reject_000263_02236_Glass_036a264f95_Glass_300.jpg,test,,reject,,,,reject,0.998844,0.001156,0.998844,reject,True
+test/reject/realwaste_test_reject_000264_02237_Food_Organics_a3ad822c92_Food Organics_369.jpg,test,,reject,,,,reject,0.999592,0.000408,0.999592,reject,True
+test/reject/realwaste_test_reject_000265_02238_Plastic_5fa25f61c6_Plastic_561.jpg,test,,reject,,,,reject,0.980998,0.019002,0.980998,reject,True
+test/reject/realwaste_test_reject_000266_02239_Plastic_044911169c_Plastic_642.jpg,test,,reject,,,,reject,0.746115,0.253885,0.746115,reject,True
+test/reject/realwaste_test_reject_000267_02240_Vegetation_e2fc168e4f_Vegetation_110.jpg,test,,reject,,,,reject,0.999407,0.000593,0.999407,reject,True
+test/reject/realwaste_test_reject_000268_02241_Plastic_3e600bcea6_Plastic_403.jpg,test,,reject,,,,reject,0.999833,0.000167,0.999833,reject,True
+test/reject/realwaste_test_reject_000269_02242_Paper_c427a8d0d5_Paper_134.jpg,test,,reject,,,,reject,0.997405,0.002595,0.997405,reject,True
+test/reject/realwaste_test_reject_000270_02243_Vegetation_1fb4d463c6_Vegetation_264.jpg,test,,reject,,,,reject,0.997980,0.002020,0.997980,reject,True
+test/reject/realwaste_test_reject_000271_02244_Vegetation_434f0b9819_Vegetation_180.jpg,test,,reject,,,,reject,0.997723,0.002277,0.997723,reject,True
+test/reject/realwaste_test_reject_000272_02245_Plastic_7f83270a0d_Plastic_53.jpg,test,,reject,,,,reject,0.777880,0.222120,0.777880,reject,True
+test/reject/realwaste_test_reject_000273_02246_Metal_2cc785f9ae_Metal_727.jpg,test,,reject,,,,reject,0.999755,0.000245,0.999755,reject,True
+test/reject/realwaste_test_reject_000274_02247_Food_Organics_0cb0bfec93_Food Organics_14.jpg,test,,reject,,,,reject,0.771877,0.228123,0.771877,reject,True
+test/reject/realwaste_test_reject_000275_02248_Metal_ef4dc79dcf_Metal_375.jpg,test,,reject,,,,reject,0.999964,0.000036,0.999964,reject,True
+test/reject/realwaste_test_reject_000276_02249_Food_Organics_467fb98388_Food Organics_59.jpg,test,,reject,,,,reject,0.999286,0.000714,0.999286,reject,True
+test/reject/realwaste_test_reject_000277_02250_Vegetation_ebb1a79d40_Vegetation_201.jpg,test,,reject,,,,reject,0.878874,0.121126,0.878874,reject,True
+test/reject/realwaste_test_reject_000278_02251_Metal_44c7a27522_Metal_148.jpg,test,,reject,,,,reject,0.998083,0.001917,0.998083,reject,True
+test/reject/realwaste_test_reject_000279_02252_Cardboard_8397557d72_Cardboard_271.jpg,test,,reject,,,,reject,0.993615,0.006385,0.993615,reject,True
+test/reject/realwaste_test_reject_000280_02253_Metal_a6e7f4eacb_Metal_600.jpg,test,,reject,,,,reject,0.999371,0.000629,0.999371,reject,True
+test/reject/realwaste_test_reject_000281_02254_Plastic_aa47e6fa6c_Plastic_203.jpg,test,,reject,,,,reject,0.998198,0.001802,0.998198,reject,True
+test/reject/realwaste_test_reject_000282_02255_Food_Organics_18e462bac0_Food Organics_361.jpg,test,,reject,,,,reject,0.996275,0.003725,0.996275,reject,True
+test/reject/realwaste_test_reject_000283_02256_Metal_b6d4bc0e61_Metal_624.jpg,test,,reject,,,,reject,0.999028,0.000972,0.999028,reject,True
+test/reject/realwaste_test_reject_000284_02257_Plastic_844b92e242_Plastic_511.jpg,test,,reject,,,,reject,0.999871,0.000129,0.999871,reject,True
+test/reject/realwaste_test_reject_000285_02258_Metal_4cd422c0cf_Metal_767.jpg,test,,reject,,,,reject,0.999983,0.000017,0.999983,reject,True
+test/reject/realwaste_test_reject_000286_02259_Plastic_74d76999b9_Plastic_127.jpg,test,,reject,,,,reject,0.998846,0.001154,0.998846,reject,True
+test/reject/realwaste_test_reject_000287_02260_Food_Organics_f7a0dc6455_Food Organics_65.jpg,test,,reject,,,,reject,0.998705,0.001295,0.998705,reject,True
+test/reject/realwaste_test_reject_000288_02261_Glass_ce34f7d741_Glass_134.jpg,test,,reject,,,,accept,0.540924,0.540924,0.459076,reject,False
+test/reject/realwaste_test_reject_000289_02262_Metal_925d46f91b_Metal_635.jpg,test,,reject,,,,reject,0.998885,0.001115,0.998885,reject,True
+test/reject/realwaste_test_reject_000290_02263_Glass_fdb16c005c_Glass_41.jpg,test,,reject,,,,reject,0.992682,0.007318,0.992682,reject,True
+test/reject/realwaste_test_reject_000291_02264_Vegetation_6c87e9fd9e_Vegetation_347.jpg,test,,reject,,,,accept,0.691403,0.691403,0.308597,reject,False
+test/reject/realwaste_test_reject_000292_02265_Vegetation_bcfad12fa6_Vegetation_321.jpg,test,,reject,,,,reject,0.994848,0.005152,0.994848,reject,True
+test/reject/realwaste_test_reject_000293_02266_Plastic_43ef529636_Plastic_297.jpg,test,,reject,,,,accept,0.648376,0.648376,0.351624,reject,False
+test/reject/realwaste_test_reject_000294_02267_Plastic_ebb63daa7a_Plastic_908.jpg,test,,reject,,,,reject,0.998027,0.001973,0.998027,reject,True
+test/reject/realwaste_test_reject_000295_02268_Metal_547263c062_Metal_264.jpg,test,,reject,,,,accept,0.844436,0.844436,0.155564,accept,False
+test/reject/realwaste_test_reject_000296_02269_Vegetation_0684f93c98_Vegetation_346.jpg,test,,reject,,,,reject,0.995731,0.004269,0.995731,reject,True
+test/reject/realwaste_test_reject_000297_02270_Metal_767cd36aae_Metal_352.jpg,test,,reject,,,,reject,0.999961,0.000039,0.999961,reject,True
+test/reject/realwaste_test_reject_000298_02271_Vegetation_9f40241530_Vegetation_174.jpg,test,,reject,,,,reject,0.758891,0.241109,0.758891,reject,True
+test/reject/realwaste_test_reject_000299_02272_Vegetation_bc5bb995e7_Vegetation_33.jpg,test,,reject,,,,reject,0.989893,0.010106,0.989893,reject,True
+test/reject/realwaste_test_reject_000300_02273_Plastic_660538117c_Plastic_282.jpg,test,,reject,,,,reject,0.914538,0.085462,0.914538,reject,True
+test/reject/realwaste_test_reject_000301_02274_Glass_d5dd3ae3fd_Glass_133.jpg,test,,reject,,,,reject,0.996944,0.003056,0.996944,reject,True
+test/reject/realwaste_test_reject_000302_02275_Glass_01c69b0818_Glass_20.jpg,test,,reject,,,,reject,0.925330,0.074670,0.925330,reject,True
+test/reject/realwaste_test_reject_000303_02276_Food_Organics_39f794b73d_Food Organics_265.jpg,test,,reject,,,,reject,0.879580,0.120420,0.879580,reject,True
+test/reject/realwaste_test_reject_000304_02277_Metal_49ad933215_Metal_13.jpg,test,,reject,,,,reject,0.999840,0.000160,0.999840,reject,True
+test/reject/realwaste_test_reject_000305_02278_Cardboard_ca42be8ede_Cardboard_33.jpg,test,,reject,,,,reject,0.939263,0.060737,0.939263,reject,True
+test/reject/realwaste_test_reject_000306_02279_Plastic_4d0d6d202c_Plastic_570.jpg,test,,reject,,,,reject,0.999587,0.000413,0.999587,reject,True
+test/reject/realwaste_test_reject_000307_02280_Glass_41c7a517f4_Glass_114.jpg,test,,reject,,,,reject,0.993778,0.006222,0.993778,reject,True
+test/reject/realwaste_test_reject_000308_02281_Plastic_5202f022d6_Plastic_7.jpg,test,,reject,,,,reject,0.949122,0.050878,0.949122,reject,True
+test/reject/realwaste_test_reject_000309_02282_Metal_f9fa267bf7_Metal_578.jpg,test,,reject,,,,reject,0.993898,0.006102,0.993898,reject,True
+test/reject/realwaste_test_reject_000310_02283_Food_Organics_c5ba249a6e_Food Organics_278.jpg,test,,reject,,,,reject,0.814857,0.185143,0.814857,reject,True
+test/reject/realwaste_test_reject_000311_02284_Cardboard_884d88e61d_Cardboard_288.jpg,test,,reject,,,,reject,0.988049,0.011951,0.988049,reject,True
+test/reject/realwaste_test_reject_000312_02285_Food_Organics_ad9cb2171f_Food Organics_222.jpg,test,,reject,,,,reject,0.999919,0.000081,0.999919,reject,True
+test/reject/realwaste_test_reject_000313_02286_Paper_e7c8d89d5b_Paper_438.jpg,test,,reject,,,,accept,0.635162,0.635162,0.364838,reject,False
+test/reject/realwaste_test_reject_000314_02287_Paper_131544f451_Paper_2.jpg,test,,reject,,,,reject,0.997047,0.002953,0.997047,reject,True
+test/reject/realwaste_test_reject_000315_02288_Plastic_898e1ea155_Plastic_59.jpg,test,,reject,,,,reject,0.999720,0.000280,0.999720,reject,True
+test/reject/realwaste_test_reject_000316_02289_Plastic_c6a7bca824_Plastic_719.jpg,test,,reject,,,,reject,0.989286,0.010714,0.989286,reject,True
+test/reject/realwaste_test_reject_000317_02290_Metal_6e08b5dd0c_Metal_33.jpg,test,,reject,,,,reject,0.994462,0.005538,0.994462,reject,True
+test/reject/realwaste_test_reject_000318_02291_Plastic_c044887406_Plastic_304.jpg,test,,reject,,,,reject,0.911823,0.088177,0.911823,reject,True
+test/reject/realwaste_test_reject_000319_02292_Paper_a981ce24f6_Paper_104.jpg,test,,reject,,,,reject,0.885847,0.114153,0.885847,reject,True
+test/reject/realwaste_test_reject_000320_02293_Cardboard_f651f17b9f_Cardboard_279.jpg,test,,reject,,,,reject,0.967065,0.032935,0.967065,reject,True
+test/reject/realwaste_test_reject_000321_02294_Metal_288aa17efc_Metal_450.jpg,test,,reject,,,,reject,0.999611,0.000389,0.999611,reject,True
+test/reject/realwaste_test_reject_000322_02295_Plastic_065f9fc152_Plastic_526.jpg,test,,reject,,,,reject,0.999900,0.000099,0.999900,reject,True
+test/reject/realwaste_test_reject_000323_02296_Cardboard_5cde840d37_Cardboard_398.jpg,test,,reject,,,,reject,0.976657,0.023343,0.976657,reject,True
+test/reject/realwaste_test_reject_000324_02297_Paper_c7262b1e37_Paper_59.jpg,test,,reject,,,,accept,0.520367,0.520367,0.479633,reject,False
+test/reject/realwaste_test_reject_000325_02298_Food_Organics_ab0e665153_Food Organics_305.jpg,test,,reject,,,,reject,0.993815,0.006185,0.993815,reject,True
+test/reject/realwaste_test_reject_000326_02299_Plastic_3dc214a79c_Plastic_801.jpg,test,,reject,,,,reject,0.974204,0.025796,0.974204,reject,True
+test/reject/realwaste_test_reject_000327_02300_Plastic_889e4f50d9_Plastic_627.jpg,test,,reject,,,,reject,0.871437,0.128563,0.871437,reject,True
+test/reject/realwaste_test_reject_000328_02301_Glass_9fffdb75e7_Glass_325.jpg,test,,reject,,,,reject,0.992708,0.007292,0.992708,reject,True
+test/reject/realwaste_test_reject_000329_02302_Glass_a3db733f21_Glass_287.jpg,test,,reject,,,,reject,0.899948,0.100052,0.899948,reject,True
+test/reject/realwaste_test_reject_000330_02303_Paper_854ba4eb18_Paper_1.jpg,test,,reject,,,,reject,0.995981,0.004019,0.995981,reject,True
+test/reject/realwaste_test_reject_000331_02304_Food_Organics_265bf9db47_Food Organics_301.jpg,test,,reject,,,,accept,0.978706,0.978706,0.021294,accept,False
+test/reject/realwaste_test_reject_000332_02305_Plastic_449c8f1b14_Plastic_407.jpg,test,,reject,,,,reject,0.947755,0.052245,0.947755,reject,True
+test/reject/realwaste_test_reject_000333_02306_Vegetation_34c2b19e65_Vegetation_17.jpg,test,,reject,,,,reject,0.885784,0.114216,0.885784,reject,True
+test/reject/realwaste_test_reject_000334_02307_Food_Organics_00642f9ce4_Food Organics_295.jpg,test,,reject,,,,reject,0.987916,0.012084,0.987916,reject,True
+test/reject/realwaste_test_reject_000335_02308_Food_Organics_46c1b12bb3_Food Organics_236.jpg,test,,reject,,,,reject,0.978289,0.021711,0.978289,reject,True
+test/reject/realwaste_test_reject_000336_02309_Food_Organics_e7b36387a3_Food Organics_173.jpg,test,,reject,,,,reject,0.833262,0.166738,0.833262,reject,True
+test/reject/realwaste_test_reject_000337_02310_Vegetation_404dffc419_Vegetation_349.jpg,test,,reject,,,,reject,0.835283,0.164717,0.835283,reject,True
+test/reject/realwaste_test_reject_000338_02311_Glass_f812b3b831_Glass_415.jpg,test,,reject,,,,reject,0.998272,0.001728,0.998272,reject,True
+test/reject/realwaste_test_reject_000339_02312_Paper_6f18c20677_Paper_199.jpg,test,,reject,,,,reject,0.970205,0.029795,0.970205,reject,True
+test/reject/realwaste_test_reject_000340_02313_Metal_c4b0c2b09c_Metal_161.jpg,test,,reject,,,,reject,0.999953,0.000047,0.999953,reject,True
+test/reject/realwaste_test_reject_000341_02314_Paper_d67df5ea5d_Paper_198.jpg,test,,reject,,,,reject,0.978757,0.021243,0.978757,reject,True
+test/reject/realwaste_test_reject_000342_02315_Vegetation_81bdc99e6b_Vegetation_289.jpg,test,,reject,,,,reject,0.998705,0.001295,0.998705,reject,True
+test/reject/realwaste_test_reject_000343_02316_Food_Organics_dd7fdcc216_Food Organics_133.jpg,test,,reject,,,,reject,0.908066,0.091934,0.908066,reject,True
+test/reject/realwaste_test_reject_000344_02317_Metal_d45d9289ea_Metal_416.jpg,test,,reject,,,,reject,0.994424,0.005576,0.994424,reject,True
+test/reject/realwaste_test_reject_000345_02318_Plastic_55f0a11add_Plastic_709.jpg,test,,reject,,,,reject,0.755503,0.244497,0.755503,reject,True
+test/reject/realwaste_test_reject_000346_02319_Metal_a0fb1dccbb_Metal_51.jpg,test,,reject,,,,reject,0.999749,0.000251,0.999749,reject,True
+test/reject/realwaste_test_reject_000347_02320_Cardboard_db92163717_Cardboard_96.jpg,test,,reject,,,,reject,0.990983,0.009017,0.990983,reject,True
+test/reject/realwaste_test_reject_000348_02321_Vegetation_be320267fe_Vegetation_210.jpg,test,,reject,,,,reject,0.999348,0.000652,0.999348,reject,True
+test/reject/realwaste_test_reject_000349_02322_Cardboard_44bf6ceb5a_Cardboard_190.jpg,test,,reject,,,,reject,0.848411,0.151589,0.848411,reject,True
+test/reject/realwaste_test_reject_000350_02323_Paper_5023cd4cea_Paper_149.jpg,test,,reject,,,,accept,0.862560,0.862560,0.137440,accept,False
+test/reject/realwaste_test_reject_000351_02324_Food_Organics_d9d11006a1_Food Organics_249.jpg,test,,reject,,,,reject,0.999433,0.000567,0.999433,reject,True
+test/reject/realwaste_test_reject_000352_02325_Plastic_960ee748cb_Plastic_362.jpg,test,,reject,,,,reject,0.995939,0.004061,0.995939,reject,True
+test/reject/realwaste_test_reject_000353_02326_Plastic_72818f3205_Plastic_311.jpg,test,,reject,,,,reject,0.993077,0.006923,0.993077,reject,True
+test/reject/realwaste_test_reject_000354_02327_Cardboard_b7003e7ac9_Cardboard_72.jpg,test,,reject,,,,reject,0.984479,0.015521,0.984479,reject,True
+test/reject/realwaste_test_reject_000355_02328_Paper_008ebcaca6_Paper_230.jpg,test,,reject,,,,reject,0.974612,0.025388,0.974612,reject,True
+test/reject/realwaste_test_reject_000356_02329_Paper_b2fce4cc14_Paper_463.jpg,test,,reject,,,,reject,0.992489,0.007511,0.992489,reject,True
+test/reject/realwaste_test_reject_000357_02330_Metal_5d5481f91b_Metal_274.jpg,test,,reject,,,,reject,0.999509,0.000491,0.999509,reject,True
+test/reject/realwaste_test_reject_000358_02331_Plastic_cf0bcb8def_Plastic_300.jpg,test,,reject,,,,accept,0.709500,0.709500,0.290500,reject,False
+test/reject/realwaste_test_reject_000359_02332_Plastic_eeeeba3a73_Plastic_130.jpg,test,,reject,,,,reject,0.997284,0.002716,0.997284,reject,True
+test/reject/realwaste_test_reject_000360_02333_Vegetation_c89e5040ff_Vegetation_234.jpg,test,,reject,,,,reject,0.999953,0.000047,0.999953,reject,True
+test/reject/realwaste_test_reject_000361_02334_Vegetation_245e4242c6_Vegetation_165.jpg,test,,reject,,,,reject,0.999978,0.000022,0.999978,reject,True
+test/reject/realwaste_test_reject_000362_02335_Vegetation_774408178c_Vegetation_274.jpg,test,,reject,,,,reject,0.984070,0.015930,0.984070,reject,True
+test/reject/realwaste_test_reject_000363_02336_Paper_08586eedd5_Paper_205.jpg,test,,reject,,,,reject,0.973554,0.026446,0.973554,reject,True
+test/reject/realwaste_test_reject_000364_02337_Paper_8cde85b0e9_Paper_132.jpg,test,,reject,,,,reject,0.923942,0.076058,0.923942,reject,True
+test/reject/realwaste_test_reject_000365_02338_Metal_968f0cdb48_Metal_198.jpg,test,,reject,,,,reject,0.999144,0.000856,0.999144,reject,True
+test/reject/realwaste_test_reject_000366_02339_Metal_9340760a2d_Metal_417.jpg,test,,reject,,,,reject,0.999952,0.000048,0.999952,reject,True
+test/reject/realwaste_test_reject_000367_02340_Metal_8a03f16c3a_Metal_250.jpg,test,,reject,,,,reject,0.998878,0.001122,0.998878,reject,True
+test/reject/realwaste_test_reject_000368_02341_Glass_e52872e8f3_Glass_364.jpg,test,,reject,,,,reject,0.999770,0.000230,0.999770,reject,True
+test/reject/realwaste_test_reject_000369_02342_Plastic_f4341bc7f1_Plastic_902.jpg,test,,reject,,,,reject,0.999372,0.000628,0.999372,reject,True
+test/reject/realwaste_test_reject_000370_02343_Vegetation_92ed9577f6_Vegetation_87.jpg,test,,reject,,,,reject,0.949497,0.050503,0.949497,reject,True
+test/reject/realwaste_test_reject_000371_02344_Plastic_841a1a5036_Plastic_44.jpg,test,,reject,,,,reject,0.999318,0.000681,0.999318,reject,True
+test/reject/realwaste_test_reject_000372_02345_Food_Organics_9d1479f6fa_Food Organics_398.jpg,test,,reject,,,,reject,0.991785,0.008215,0.991785,reject,True
+test/reject/realwaste_test_reject_000373_02346_Paper_7fe700fea4_Paper_152.jpg,test,,reject,,,,accept,0.758483,0.758483,0.241517,reject,False
+test/reject/realwaste_test_reject_000374_02347_Paper_a2d327a1d9_Paper_146.jpg,test,,reject,,,,reject,0.801108,0.198892,0.801108,reject,True
+test/reject/realwaste_test_reject_000375_02348_Plastic_5eeba0fbd7_Plastic_827.jpg,test,,reject,,,,reject,0.999179,0.000821,0.999179,reject,True
+test/reject/realwaste_test_reject_000376_02349_Plastic_0bfed1f90c_Plastic_793.jpg,test,,reject,,,,reject,0.999527,0.000473,0.999527,reject,True
+test/reject/realwaste_test_reject_000377_02350_Paper_e21bcb9c69_Paper_200.jpg,test,,reject,,,,reject,0.960000,0.040000,0.960000,reject,True
+test/reject/realwaste_test_reject_000378_02351_Paper_71d59858b3_Paper_373.jpg,test,,reject,,,,reject,0.980965,0.019035,0.980965,reject,True
+test/reject/realwaste_test_reject_000379_02352_Plastic_9781d4d2a3_Plastic_738.jpg,test,,reject,,,,reject,0.917074,0.082926,0.917074,reject,True
+test/reject/realwaste_test_reject_000380_02353_Cardboard_dc09fa47dd_Cardboard_395.jpg,test,,reject,,,,reject,0.921935,0.078065,0.921935,reject,True
+test/reject/realwaste_test_reject_000381_02354_Metal_740328f720_Metal_558.jpg,test,,reject,,,,reject,0.999878,0.000122,0.999878,reject,True
+test/reject/realwaste_test_reject_000382_02355_Metal_a1ca1d8ca8_Metal_660.jpg,test,,reject,,,,reject,0.929060,0.070940,0.929060,reject,True
+test/reject/realwaste_test_reject_000383_02356_Glass_d0514fcd1e_Glass_32.jpg,test,,reject,,,,reject,0.999719,0.000281,0.999719,reject,True
+test/reject/realwaste_test_reject_000384_02357_Paper_642df948e2_Paper_30.jpg,test,,reject,,,,accept,0.712789,0.712789,0.287211,reject,False
+test/reject/realwaste_test_reject_000385_02358_Plastic_80fa7283a4_Plastic_815.jpg,test,,reject,,,,reject,0.999784,0.000216,0.999784,reject,True
+test/reject/realwaste_test_reject_000386_02359_Plastic_4b75a9b0ce_Plastic_313.jpg,test,,reject,,,,reject,0.987655,0.012345,0.987655,reject,True
+test/reject/realwaste_test_reject_000387_02360_Paper_b21da1d675_Paper_420.jpg,test,,reject,,,,reject,0.872898,0.127102,0.872898,reject,True
+test/reject/realwaste_test_reject_000388_02361_Metal_e07470919d_Metal_279.jpg,test,,reject,,,,reject,0.999837,0.000163,0.999837,reject,True
+test/reject/realwaste_test_reject_000389_02362_Food_Organics_098a62ae2c_Food Organics_237.jpg,test,,reject,,,,reject,0.997128,0.002872,0.997128,reject,True
+test/reject/realwaste_test_reject_000390_02363_Paper_016a686788_Paper_43.jpg,test,,reject,,,,reject,0.998346,0.001654,0.998346,reject,True
+test/reject/realwaste_test_reject_000391_02364_Food_Organics_f99ae3aa91_Food Organics_291.jpg,test,,reject,,,,reject,0.985951,0.014049,0.985951,reject,True
+test/reject/realwaste_test_reject_000392_02365_Metal_e6d59287da_Metal_387.jpg,test,,reject,,,,reject,0.999834,0.000166,0.999834,reject,True
+test/reject/realwaste_test_reject_000393_02366_Paper_31f1b7a4de_Paper_295.jpg,test,,reject,,,,reject,0.997468,0.002532,0.997468,reject,True
+test/reject/realwaste_test_reject_000394_02367_Vegetation_eefe8a9280_Vegetation_305.jpg,test,,reject,,,,reject,0.999077,0.000923,0.999077,reject,True
+test/reject/realwaste_test_reject_000395_02368_Metal_4dd2e09bb4_Metal_654.jpg,test,,reject,,,,reject,0.994727,0.005273,0.994727,reject,True
+test/reject/realwaste_test_reject_000396_02369_Plastic_77d0c534a5_Plastic_477.jpg,test,,reject,,,,reject,0.991885,0.008115,0.991885,reject,True
+test/reject/realwaste_test_reject_000397_02370_Cardboard_6a3555c4af_Cardboard_14.jpg,test,,reject,,,,reject,0.993629,0.006371,0.993629,reject,True
+test/reject/realwaste_test_reject_000398_02371_Paper_a3c0935b63_Paper_208.jpg,test,,reject,,,,reject,0.986617,0.013383,0.986617,reject,True
+test/reject/realwaste_test_reject_000399_02372_Food_Organics_4fbe4d9d88_Food Organics_270.jpg,test,,reject,,,,accept,0.537554,0.537554,0.462446,reject,False
+test/reject/realwaste_test_reject_000400_02373_Paper_35a2f32b65_Paper_55.jpg,test,,reject,,,,reject,0.861292,0.138708,0.861292,reject,True
+test/reject/realwaste_test_reject_000401_02374_Food_Organics_99e38e0c2d_Food Organics_150.jpg,test,,reject,,,,reject,0.971433,0.028567,0.971433,reject,True
+test/reject/realwaste_test_reject_000402_02375_Plastic_fab94d6f09_Plastic_133.jpg,test,,reject,,,,reject,0.934358,0.065642,0.934358,reject,True
+test/reject/realwaste_test_reject_000403_02376_Plastic_1000fa2e65_Plastic_577.jpg,test,,reject,,,,reject,0.982008,0.017992,0.982008,reject,True
+test/reject/realwaste_test_reject_000404_02377_Metal_71ed4ee49c_Metal_735.jpg,test,,reject,,,,reject,0.999971,0.000029,0.999971,reject,True
+test/reject/realwaste_test_reject_000405_02378_Metal_70e9cb6ccb_Metal_574.jpg,test,,reject,,,,reject,0.999577,0.000423,0.999577,reject,True
+test/reject/realwaste_test_reject_000406_02379_Metal_e9f2ae4881_Metal_755.jpg,test,,reject,,,,reject,0.975190,0.024810,0.975190,reject,True
+test/reject/realwaste_test_reject_000407_02380_Food_Organics_1a09396f4a_Food Organics_208.jpg,test,,reject,,,,reject,0.999108,0.000892,0.999108,reject,True
+test/reject/realwaste_test_reject_000408_02381_Paper_c70c662f4e_Paper_53.jpg,test,,reject,,,,reject,0.993966,0.006034,0.993966,reject,True
+test/reject/realwaste_test_reject_000409_02382_Paper_5f44a976ff_Paper_279.jpg,test,,reject,,,,reject,0.998598,0.001402,0.998598,reject,True
+test/reject/realwaste_test_reject_000410_02383_Vegetation_d4d726c14c_Vegetation_307.jpg,test,,reject,,,,reject,0.961030,0.038970,0.961030,reject,True
+test/reject/realwaste_test_reject_000411_02384_Paper_533de98795_Paper_89.jpg,test,,reject,,,,accept,0.794016,0.794016,0.205984,accept,False
+test/reject/realwaste_test_reject_000412_02385_Vegetation_99e4bae3f7_Vegetation_129.jpg,test,,reject,,,,reject,0.999993,0.000007,0.999993,reject,True
+test/reject/realwaste_test_reject_000413_02386_Glass_aaccb5b003_Glass_207.jpg,test,,reject,,,,reject,0.975822,0.024178,0.975822,reject,True
+test/reject/realwaste_test_reject_000414_02387_Paper_1e7775dc40_Paper_432.jpg,test,,reject,,,,reject,0.528397,0.471603,0.528397,reject,True
+test/reject/realwaste_test_reject_000415_02388_Plastic_eafd380c09_Plastic_604.jpg,test,,reject,,,,reject,0.998935,0.001065,0.998935,reject,True
+test/reject/realwaste_test_reject_000416_02389_Plastic_3702625947_Plastic_779.jpg,test,,reject,,,,reject,0.999992,0.000008,0.999992,reject,True
+test/reject/realwaste_test_reject_000417_02390_Glass_18e217b71b_Glass_151.jpg,test,,reject,,,,reject,0.985089,0.014911,0.985089,reject,True
+test/reject/realwaste_test_reject_000418_02391_Metal_d8728cb911_Metal_505.jpg,test,,reject,,,,reject,0.999970,0.000030,0.999970,reject,True
+test/reject/realwaste_test_reject_000419_02392_Plastic_1a98bc44c2_Plastic_556.jpg,test,,reject,,,,reject,0.990192,0.009808,0.990192,reject,True
+test/reject/realwaste_test_reject_000420_02393_Glass_3241166505_Glass_285.jpg,test,,reject,,,,reject,0.977459,0.022541,0.977459,reject,True
+test/reject/realwaste_test_reject_000421_02394_Metal_1682802bfd_Metal_234.jpg,test,,reject,,,,reject,0.999293,0.000707,0.999293,reject,True
+test/reject/realwaste_test_reject_000422_02395_Plastic_ba477bc6f4_Plastic_251.jpg,test,,reject,,,,reject,0.999946,0.000054,0.999946,reject,True
+test/reject/realwaste_test_reject_000423_02396_Paper_f600557b02_Paper_93.jpg,test,,reject,,,,accept,0.795119,0.795119,0.204881,accept,False
+test/reject/realwaste_test_reject_000424_02397_Metal_eb38f353a1_Metal_506.jpg,test,,reject,,,,reject,0.999568,0.000432,0.999568,reject,True
+test/reject/realwaste_test_reject_000425_02398_Cardboard_e724930e61_Cardboard_263.jpg,test,,reject,,,,reject,0.996876,0.003124,0.996876,reject,True
+test/reject/realwaste_test_reject_000426_02399_Plastic_a297666ea3_Plastic_29.jpg,test,,reject,,,,accept,0.992312,0.992312,0.007688,accept,False
+test/reject/realwaste_test_reject_000427_02400_Glass_c325760c46_Glass_84.jpg,test,,reject,,,,reject,0.999995,0.000005,0.999995,reject,True
+test/reject/realwaste_test_reject_000428_02401_Metal_4c4fb2df74_Metal_556.jpg,test,,reject,,,,reject,0.999648,0.000352,0.999648,reject,True
+test/reject/realwaste_test_reject_000429_02402_Metal_65c395f7ce_Metal_355.jpg,test,,reject,,,,reject,0.999984,0.000016,0.999984,reject,True
+test/reject/realwaste_test_reject_000430_02403_Plastic_c52330c20a_Plastic_294.jpg,test,,reject,,,,reject,0.999799,0.000201,0.999799,reject,True
+test/reject/realwaste_test_reject_000431_02404_Glass_36a78b5ec6_Glass_253.jpg,test,,reject,,,,reject,0.993527,0.006473,0.993527,reject,True
+test/reject/realwaste_test_reject_000432_02405_Paper_8410dd01a5_Paper_454.jpg,test,,reject,,,,reject,0.997990,0.002010,0.997990,reject,True
+test/reject/realwaste_test_reject_000433_02406_Cardboard_2f79ebe555_Cardboard_295.jpg,test,,reject,,,,reject,0.921754,0.078246,0.921754,reject,True
+test/reject/realwaste_test_reject_000434_02407_Plastic_5fe2a8d98a_Plastic_320.jpg,test,,reject,,,,reject,0.802865,0.197135,0.802865,reject,True
+test/reject/realwaste_test_reject_000435_02408_Metal_c77f4e5602_Metal_626.jpg,test,,reject,,,,reject,0.999892,0.000108,0.999892,reject,True
+test/reject/realwaste_test_reject_000436_02409_Glass_3c590c1642_Glass_317.jpg,test,,reject,,,,reject,0.998695,0.001305,0.998695,reject,True
+test/reject/realwaste_test_reject_000437_02410_Plastic_018b4ad604_Plastic_195.jpg,test,,reject,,,,accept,0.523236,0.523236,0.476764,reject,False
+test/reject/realwaste_test_reject_000438_02411_Plastic_ccddc7669b_Plastic_484.jpg,test,,reject,,,,reject,0.997623,0.002377,0.997623,reject,True
+test/reject/realwaste_test_reject_000439_02412_Paper_c93caf415d_Paper_246.jpg,test,,reject,,,,reject,0.951901,0.048098,0.951901,reject,True
+test/reject/realwaste_test_reject_000440_02413_Metal_bbf345d513_Metal_495.jpg,test,,reject,,,,reject,0.998700,0.001300,0.998700,reject,True
+test/reject/realwaste_test_reject_000441_02414_Plastic_5375fe0a1e_Plastic_422.jpg,test,,reject,,,,reject,0.999787,0.000213,0.999787,reject,True
+test/reject/realwaste_test_reject_000442_02415_Cardboard_9b45c4b1fd_Cardboard_251.jpg,test,,reject,,,,reject,0.970624,0.029376,0.970624,reject,True
+test/reject/realwaste_test_reject_000443_02416_Glass_ec10f188af_Glass_132.jpg,test,,reject,,,,reject,0.999746,0.000254,0.999746,reject,True
+test/reject/realwaste_test_reject_000444_02417_Plastic_f2bde1ee6e_Plastic_84.jpg,test,,reject,,,,reject,0.936669,0.063331,0.936669,reject,True
+test/reject/realwaste_test_reject_000445_02418_Plastic_698c0cd314_Plastic_614.jpg,test,,reject,,,,reject,0.993937,0.006063,0.993937,reject,True
+test/reject/realwaste_test_reject_000446_02419_Plastic_b5f11e878d_Plastic_637.jpg,test,,reject,,,,reject,0.978762,0.021238,0.978762,reject,True
+test/reject/realwaste_test_reject_000447_02420_Plastic_732246da91_Plastic_275.jpg,test,,reject,,,,reject,0.999098,0.000902,0.999098,reject,True
+test/reject/realwaste_test_reject_000448_02421_Paper_42ea521a21_Paper_356.jpg,test,,reject,,,,reject,0.980819,0.019181,0.980819,reject,True
+test/reject/realwaste_test_reject_000449_02422_Plastic_d7f25eb41f_Plastic_231.jpg,test,,reject,,,,reject,0.989763,0.010237,0.989763,reject,True
+test/reject/realwaste_test_reject_000450_02423_Metal_5a236072cc_Metal_259.jpg,test,,reject,,,,reject,0.999902,0.000098,0.999902,reject,True
+test/reject/realwaste_test_reject_000451_02424_Metal_5bc1507cb3_Metal_65.jpg,test,,reject,,,,reject,0.974539,0.025461,0.974539,reject,True
+test/reject/realwaste_test_reject_000452_02425_Paper_cbb473a32c_Paper_417.jpg,test,,reject,,,,reject,0.935053,0.064947,0.935053,reject,True
+test/reject/realwaste_test_reject_000453_02426_Food_Organics_3648554611_Food Organics_71.jpg,test,,reject,,,,reject,0.998449,0.001551,0.998449,reject,True
+test/reject/realwaste_test_reject_000454_02427_Metal_0d9fa7deba_Metal_712.jpg,test,,reject,,,,reject,0.999917,0.000083,0.999917,reject,True
+test/reject/realwaste_test_reject_000455_02428_Plastic_d8d02644b2_Plastic_483.jpg,test,,reject,,,,reject,0.998360,0.001640,0.998360,reject,True
+test/reject/realwaste_test_reject_000456_02429_Cardboard_46ffb2aaf9_Cardboard_235.jpg,test,,reject,,,,reject,0.904983,0.095017,0.904983,reject,True
+test/reject/realwaste_test_reject_000457_02430_Plastic_f10b870a79_Plastic_380.jpg,test,,reject,,,,accept,0.646463,0.646463,0.353537,reject,False
+test/reject/realwaste_test_reject_000458_02431_Paper_e804b6b8cc_Paper_36.jpg,test,,reject,,,,reject,0.977078,0.022922,0.977078,reject,True
+test/reject/realwaste_test_reject_000459_02432_Plastic_ba97886733_Plastic_650.jpg,test,,reject,,,,reject,0.997110,0.002890,0.997110,reject,True
+test/reject/realwaste_test_reject_000460_02433_Metal_27b5ec20bd_Metal_235.jpg,test,,reject,,,,reject,0.997824,0.002176,0.997824,reject,True
+test/reject/realwaste_test_reject_000461_02434_Metal_4955d4c6e0_Metal_646.jpg,test,,reject,,,,reject,0.999966,0.000034,0.999966,reject,True
+test/reject/realwaste_test_reject_000462_02435_Paper_af1e66127b_Paper_137.jpg,test,,reject,,,,reject,0.993250,0.006750,0.993250,reject,True
+test/reject/realwaste_test_reject_000463_02436_Paper_af4ffe029f_Paper_288.jpg,test,,reject,,,,reject,0.996361,0.003639,0.996361,reject,True
+test/reject/realwaste_test_reject_000464_02437_Food_Organics_eb8db08f75_Food Organics_193.jpg,test,,reject,,,,reject,0.999806,0.000194,0.999806,reject,True
+test/reject/realwaste_test_reject_000465_02438_Vegetation_2510ded998_Vegetation_153.jpg,test,,reject,,,,reject,0.999444,0.000556,0.999444,reject,True
+test/reject/realwaste_test_reject_000466_02439_Paper_8861a34b1e_Paper_274.jpg,test,,reject,,,,reject,0.748328,0.251672,0.748328,reject,True
+test/reject/realwaste_test_reject_000467_02440_Food_Organics_bdc7412057_Food Organics_64.jpg,test,,reject,,,,reject,0.994940,0.005060,0.994940,reject,True
+test/reject/realwaste_test_reject_000468_02441_Plastic_31b412b16c_Plastic_606.jpg,test,,reject,,,,reject,0.999769,0.000231,0.999769,reject,True
+test/reject/realwaste_test_reject_000469_02442_Glass_7ef7e25b4a_Glass_169.jpg,test,,reject,,,,reject,0.990837,0.009163,0.990837,reject,True
+test/reject/realwaste_test_reject_000470_02443_Cardboard_4128f42f69_Cardboard_73.jpg,test,,reject,,,,reject,0.999892,0.000108,0.999892,reject,True
+test/reject/realwaste_test_reject_000471_02444_Food_Organics_e4baa5071e_Food Organics_179.jpg,test,,reject,,,,reject,0.923799,0.076201,0.923799,reject,True
+test/reject/realwaste_test_reject_000472_02445_Plastic_1fa73d242f_Plastic_342.jpg,test,,reject,,,,reject,0.878932,0.121068,0.878932,reject,True
+test/reject/realwaste_test_reject_000473_02446_Metal_0c37c521b5_Metal_513.jpg,test,,reject,,,,reject,0.999988,0.000012,0.999988,reject,True
+test/reject/realwaste_test_reject_000474_02447_Plastic_000d2076a9_Plastic_245.jpg,test,,reject,,,,reject,0.726383,0.273617,0.726383,reject,True
+test/reject/realwaste_test_reject_000475_02448_Paper_f5fc884871_Paper_49.jpg,test,,reject,,,,reject,0.994349,0.005651,0.994349,reject,True
+test/reject/realwaste_test_reject_000476_02449_Paper_e425aacfe1_Paper_289.jpg,test,,reject,,,,reject,0.998011,0.001989,0.998011,reject,True
+test/reject/realwaste_test_reject_000477_02450_Plastic_db6c0e9c95_Plastic_378.jpg,test,,reject,,,,reject,0.900120,0.099880,0.900120,reject,True
+test/reject/realwaste_test_reject_000478_02451_Plastic_d1b3b0ab6f_Plastic_900.jpg,test,,reject,,,,reject,0.973970,0.026030,0.973970,reject,True
+test/reject/realwaste_test_reject_000479_02452_Paper_279c194084_Paper_352.jpg,test,,reject,,,,reject,0.631269,0.368731,0.631269,reject,True
+test/reject/realwaste_test_reject_000480_02453_Cardboard_1adbb14bf3_Cardboard_408.jpg,test,,reject,,,,reject,0.825476,0.174524,0.825476,reject,True
+test/reject/realwaste_test_reject_000481_02454_Metal_4ddd3dab0c_Metal_627.jpg,test,,reject,,,,reject,0.997244,0.002756,0.997244,reject,True
+test/reject/realwaste_test_reject_000482_02455_Plastic_ca0ccdb04f_Plastic_537.jpg,test,,reject,,,,reject,0.944880,0.055120,0.944880,reject,True
+test/reject/realwaste_test_reject_000483_02456_Paper_286718b3b0_Paper_407.jpg,test,,reject,,,,reject,0.948766,0.051234,0.948766,reject,True
+test/reject/realwaste_test_reject_000484_02457_Glass_33fde231c9_Glass_265.jpg,test,,reject,,,,reject,0.998727,0.001273,0.998727,reject,True
+test/reject/realwaste_test_reject_000485_02458_Metal_9449729969_Metal_409.jpg,test,,reject,,,,reject,0.761029,0.238971,0.761029,reject,True
+test/reject/realwaste_test_reject_000486_02459_Metal_081b85a043_Metal_647.jpg,test,,reject,,,,reject,0.999996,0.000004,0.999996,reject,True
+test/reject/realwaste_test_reject_000487_02460_Metal_06abc0352e_Metal_750.jpg,test,,reject,,,,reject,0.999697,0.000303,0.999697,reject,True
+test/reject/realwaste_test_reject_000488_02461_Food_Organics_8a590c2b86_Food Organics_148.jpg,test,,reject,,,,reject,0.965339,0.034661,0.965339,reject,True
+test/reject/realwaste_test_reject_000489_02462_Plastic_ab2ac79c72_Plastic_728.jpg,test,,reject,,,,reject,0.991267,0.008733,0.991267,reject,True
+test/reject/realwaste_test_reject_000490_02463_Cardboard_a4a2afc790_Cardboard_213.jpg,test,,reject,,,,reject,0.988792,0.011208,0.988792,reject,True
+test/reject/realwaste_test_reject_000491_02464_Cardboard_f0c525a2e1_Cardboard_401.jpg,test,,reject,,,,reject,0.941822,0.058178,0.941822,reject,True
+test/reject/realwaste_test_reject_000492_02465_Glass_837faefe7f_Glass_126.jpg,test,,reject,,,,reject,0.996573,0.003427,0.996573,reject,True
+test/reject/realwaste_test_reject_000493_02466_Plastic_a9097e5d76_Plastic_198.jpg,test,,reject,,,,reject,0.922579,0.077421,0.922579,reject,True
+test/reject/realwaste_test_reject_000494_02467_Glass_8f2b744f4c_Glass_129.jpg,test,,reject,,,,reject,0.995293,0.004707,0.995293,reject,True
+test/reject/realwaste_test_reject_000495_02468_Cardboard_9f01023954_Cardboard_379.jpg,test,,reject,,,,reject,0.930211,0.069789,0.930211,reject,True
+test/reject/realwaste_test_reject_000496_02469_Metal_a8d23e6b38_Metal_345.jpg,test,,reject,,,,reject,0.995229,0.004771,0.995229,reject,True
+test/reject/realwaste_test_reject_000497_02470_Plastic_108a758fa7_Plastic_800.jpg,test,,reject,,,,reject,0.999986,0.000014,0.999986,reject,True
+test/reject/realwaste_test_reject_000498_02471_Plastic_f3bd47d0fc_Plastic_550.jpg,test,,reject,,,,reject,0.995698,0.004302,0.995698,reject,True
+test/reject/realwaste_test_reject_000499_02472_Plastic_88d5a3dd1e_Plastic_214.jpg,test,,reject,,,,reject,0.994925,0.005075,0.994925,reject,True
+test/reject/realwaste_test_reject_000500_02473_Cardboard_df318ee317_Cardboard_308.jpg,test,,reject,,,,reject,0.949907,0.050093,0.949907,reject,True
+test/reject/realwaste_test_reject_000501_02474_Food_Organics_c4308c8f88_Food Organics_132.jpg,test,,reject,,,,reject,0.934500,0.065500,0.934500,reject,True
+test/reject/realwaste_test_reject_000502_02475_Paper_88531dde28_Paper_360.jpg,test,,reject,,,,accept,0.981845,0.981845,0.018155,accept,False
+test/reject/realwaste_test_reject_000503_02476_Paper_2b39111fc6_Paper_291.jpg,test,,reject,,,,accept,0.987435,0.987435,0.012565,accept,False
+test/reject/realwaste_test_reject_000504_02477_Vegetation_2908245eef_Vegetation_92.jpg,test,,reject,,,,reject,0.573978,0.426022,0.573978,reject,True
+test/reject/realwaste_test_reject_000505_02478_Glass_360b03a9ae_Glass_59.jpg,test,,reject,,,,reject,0.697314,0.302686,0.697314,reject,True
+test/reject/realwaste_test_reject_000506_02479_Food_Organics_089b3f2147_Food Organics_251.jpg,test,,reject,,,,reject,0.999473,0.000527,0.999473,reject,True
+test/reject/realwaste_test_reject_000507_02480_Paper_128e75528b_Paper_218.jpg,test,,reject,,,,reject,0.838366,0.161634,0.838366,reject,True
+test/reject/realwaste_test_reject_000508_02481_Metal_e6cb54ef1a_Metal_332.jpg,test,,reject,,,,reject,0.988025,0.011975,0.988025,reject,True
+test/reject/realwaste_test_reject_000509_02482_Metal_71de66abf4_Metal_704.jpg,test,,reject,,,,reject,0.999982,0.000018,0.999982,reject,True
+test/reject/realwaste_test_reject_000510_02483_Paper_0d86fb4ad1_Paper_41.jpg,test,,reject,,,,reject,0.975086,0.024914,0.975086,reject,True
+test/reject/realwaste_test_reject_000511_02484_Metal_2a5ab42451_Metal_53.jpg,test,,reject,,,,reject,0.520049,0.479951,0.520049,reject,True
+test/reject/realwaste_test_reject_000512_02485_Plastic_978638908a_Plastic_662.jpg,test,,reject,,,,reject,0.972277,0.027723,0.972277,reject,True
+test/reject/realwaste_test_reject_000513_02486_Plastic_66b587da52_Plastic_268.jpg,test,,reject,,,,reject,0.721851,0.278149,0.721851,reject,True
+test/reject/realwaste_test_reject_000514_02487_Plastic_e3e71fd0ec_Plastic_2.jpg,test,,reject,,,,reject,0.999981,0.000019,0.999981,reject,True
+test/reject/realwaste_test_reject_000515_02488_Vegetation_39a1b04050_Vegetation_293.jpg,test,,reject,,,,reject,0.999897,0.000103,0.999897,reject,True
+test/reject/realwaste_test_reject_000516_02489_Plastic_653cecddca_Plastic_175.jpg,test,,reject,,,,reject,0.759700,0.240300,0.759700,reject,True
+test/reject/realwaste_test_reject_000517_02490_Metal_cec25c982e_Metal_642.jpg,test,,reject,,,,reject,0.997992,0.002008,0.997992,reject,True
+test/reject/realwaste_test_reject_000518_02491_Plastic_8b2b632d15_Plastic_633.jpg,test,,reject,,,,reject,0.997028,0.002972,0.997028,reject,True
+test/reject/realwaste_test_reject_000519_02492_Food_Organics_7281fbf41b_Food Organics_346.jpg,test,,reject,,,,reject,0.815419,0.184581,0.815419,reject,True
+test/reject/realwaste_test_reject_000520_02493_Paper_06d51054e6_Paper_449.jpg,test,,reject,,,,reject,0.942386,0.057614,0.942386,reject,True
+test/reject/realwaste_test_reject_000521_02494_Paper_c65bcc1818_Paper_14.jpg,test,,reject,,,,reject,0.562820,0.437180,0.562820,reject,True
+test/reject/realwaste_test_reject_000522_02495_Metal_e87f13513a_Metal_672.jpg,test,,reject,,,,reject,0.833445,0.166555,0.833445,reject,True
+test/reject/realwaste_test_reject_000523_02496_Plastic_134293ca24_Plastic_611.jpg,test,,reject,,,,reject,0.747502,0.252497,0.747502,reject,True
+test/reject/realwaste_test_reject_000524_02497_Metal_b9532283dc_Metal_312.jpg,test,,reject,,,,reject,0.979489,0.020511,0.979489,reject,True
+test/reject/realwaste_test_reject_000525_02498_Plastic_129940579b_Plastic_51.jpg,test,,reject,,,,reject,0.973546,0.026454,0.973546,reject,True
+test/reject/realwaste_test_reject_000526_02499_Plastic_9ca6a21c45_Plastic_232.jpg,test,,reject,,,,reject,0.645872,0.354128,0.645872,reject,True
+test/reject/realwaste_test_reject_000527_02500_Food_Organics_8845b201c6_Food Organics_302.jpg,test,,reject,,,,reject,0.950570,0.049430,0.950570,reject,True
+test/reject/realwaste_test_reject_000528_02501_Vegetation_8d9352ad0d_Vegetation_141.jpg,test,,reject,,,,reject,0.993766,0.006234,0.993766,reject,True
+test/reject/realwaste_test_reject_000529_02502_Plastic_de15a84f1a_Plastic_778.jpg,test,,reject,,,,reject,0.670724,0.329276,0.670724,reject,True
+test/reject/realwaste_test_reject_000530_02503_Vegetation_3ac82e1e60_Vegetation_72.jpg,test,,reject,,,,reject,0.763545,0.236455,0.763545,reject,True
+test/reject/realwaste_test_reject_000531_02504_Plastic_ff8ceea545_Plastic_569.jpg,test,,reject,,,,reject,0.998009,0.001991,0.998009,reject,True
+test/reject/realwaste_test_reject_000532_02505_Plastic_6077dcfe20_Plastic_25.jpg,test,,reject,,,,reject,0.993873,0.006127,0.993873,reject,True
+test/reject/realwaste_test_reject_000533_02506_Metal_4da832e665_Metal_389.jpg,test,,reject,,,,reject,0.984292,0.015708,0.984292,reject,True
+test/reject/realwaste_test_reject_000534_02507_Paper_2f416cf427_Paper_140.jpg,test,,reject,,,,reject,0.998868,0.001132,0.998868,reject,True
+test/reject/realwaste_test_reject_000535_02508_Food_Organics_b6a00b1216_Food Organics_284.jpg,test,,reject,,,,reject,0.966857,0.033143,0.966857,reject,True
+test/reject/realwaste_test_reject_000536_02509_Vegetation_45fb165792_Vegetation_328.jpg,test,,reject,,,,reject,0.844241,0.155759,0.844241,reject,True
+test/reject/realwaste_test_reject_000537_02510_Plastic_8d1f4a5da3_Plastic_319.jpg,test,,reject,,,,reject,0.925079,0.074921,0.925079,reject,True
+test/reject/realwaste_test_reject_000538_02511_Plastic_e2cccd9f47_Plastic_177.jpg,test,,reject,,,,accept,0.817394,0.817394,0.182606,accept,False
+test/reject/realwaste_test_reject_000539_02512_Paper_aae76a0ef9_Paper_106.jpg,test,,reject,,,,accept,0.545852,0.545852,0.454148,reject,False
+test/reject/realwaste_test_reject_000540_02513_Cardboard_49edcdab75_Cardboard_110.jpg,test,,reject,,,,reject,0.735935,0.264065,0.735935,reject,True
+test/reject/realwaste_test_reject_000541_02514_Paper_892b1fc439_Paper_252.jpg,test,,reject,,,,accept,0.972854,0.972854,0.027146,accept,False
+test/reject/realwaste_test_reject_000542_02515_Plastic_4b9a42c0d8_Plastic_652.jpg,test,,reject,,,,reject,0.983444,0.016556,0.983444,reject,True
+test/reject/realwaste_test_reject_000543_02516_Food_Organics_f992ecc1f0_Food Organics_38.jpg,test,,reject,,,,reject,0.859182,0.140818,0.859182,reject,True
+test/reject/realwaste_test_reject_000544_02517_Plastic_9babf1c929_Plastic_234.jpg,test,,reject,,,,reject,0.996284,0.003716,0.996284,reject,True
+test/reject/realwaste_test_reject_000545_02518_Metal_4700ea23f0_Metal_215.jpg,test,,reject,,,,reject,0.838261,0.161739,0.838261,reject,True
+test/reject/realwaste_test_reject_000546_02519_Metal_dbf1e6e254_Metal_491.jpg,test,,reject,,,,reject,0.998925,0.001075,0.998925,reject,True
+test/reject/realwaste_test_reject_000547_02520_Glass_166eec9066_Glass_382.jpg,test,,reject,,,,reject,0.999922,0.000078,0.999922,reject,True
+test/reject/realwaste_test_reject_000548_02521_Food_Organics_ab4eb3c897_Food Organics_312.jpg,test,,reject,,,,reject,0.743588,0.256412,0.743588,reject,True
+test/reject/realwaste_test_reject_000549_02522_Paper_afeb00b542_Paper_194.jpg,test,,reject,,,,reject,0.986545,0.013455,0.986545,reject,True
+test/reject/realwaste_test_reject_000550_02523_Plastic_72c07cff4c_Plastic_11.jpg,test,,reject,,,,reject,0.999991,0.000009,0.999991,reject,True
+test/reject/realwaste_test_reject_000551_02524_Vegetation_f2b963c32e_Vegetation_372.jpg,test,,reject,,,,reject,0.998318,0.001682,0.998318,reject,True
+test/reject/realwaste_test_reject_000552_02525_Cardboard_f88282d4a2_Cardboard_414.jpg,test,,reject,,,,reject,0.981237,0.018763,0.981237,reject,True
+test/reject/realwaste_test_reject_000553_02526_Plastic_3db5003356_Plastic_504.jpg,test,,reject,,,,accept,0.977156,0.977156,0.022844,accept,False
+test/reject/realwaste_test_reject_000554_02527_Vegetation_d655284149_Vegetation_302.jpg,test,,reject,,,,reject,0.999054,0.000946,0.999054,reject,True
+test/reject/realwaste_test_reject_000555_02528_Metal_9ec88dc3b7_Metal_218.jpg,test,,reject,,,,reject,0.969844,0.030156,0.969844,reject,True
+test/reject/realwaste_test_reject_000556_02529_Food_Organics_e772050d58_Food Organics_192.jpg,test,,reject,,,,reject,0.998398,0.001602,0.998398,reject,True
+test/reject/realwaste_test_reject_000557_02530_Metal_389712346c_Metal_470.jpg,test,,reject,,,,reject,0.999712,0.000288,0.999712,reject,True
+test/reject/realwaste_test_reject_000558_02531_Glass_1026190c9c_Glass_352.jpg,test,,reject,,,,reject,0.988191,0.011809,0.988191,reject,True
+test/reject/realwaste_test_reject_000559_02532_Cardboard_4f45bce5d1_Cardboard_376.jpg,test,,reject,,,,reject,0.868676,0.131324,0.868676,reject,True
+test/reject/realwaste_test_reject_000560_02533_Metal_53385c3fb2_Metal_288.jpg,test,,reject,,,,reject,0.999940,0.000060,0.999940,reject,True
+test/reject/realwaste_test_reject_000561_02534_Cardboard_03e3f39f58_Cardboard_195.jpg,test,,reject,,,,reject,0.976703,0.023297,0.976703,reject,True
+test/reject/realwaste_test_reject_000562_02535_Glass_272b0202dd_Glass_18.jpg,test,,reject,,,,accept,0.876869,0.876869,0.123131,accept,False
+test/reject/realwaste_test_reject_000563_02536_Plastic_562ca15be7_Plastic_86.jpg,test,,reject,,,,reject,0.983986,0.016013,0.983986,reject,True
+test/reject/realwaste_test_reject_000564_02537_Glass_21a90a766c_Glass_241.jpg,test,,reject,,,,reject,0.965764,0.034236,0.965764,reject,True
+test/reject/realwaste_test_reject_000565_02538_Plastic_322a37b348_Plastic_416.jpg,test,,reject,,,,reject,0.992512,0.007488,0.992512,reject,True
+test/reject/realwaste_test_reject_000566_02539_Plastic_aafc488d9f_Plastic_411.jpg,test,,reject,,,,reject,0.998387,0.001613,0.998387,reject,True
+test/reject/realwaste_test_reject_000567_02540_Plastic_6e1a099141_Plastic_748.jpg,test,,reject,,,,reject,0.788977,0.211023,0.788977,reject,True
+test/reject/realwaste_test_reject_000568_02541_Plastic_1f81fea089_Plastic_433.jpg,test,,reject,,,,reject,0.999987,0.000013,0.999987,reject,True
+test/reject/realwaste_test_reject_000569_02542_Plastic_2247b40b26_Plastic_797.jpg,test,,reject,,,,reject,0.999987,0.000013,0.999987,reject,True
+test/reject/realwaste_test_reject_000570_02543_Vegetation_845a81425b_Vegetation_143.jpg,test,,reject,,,,reject,0.803748,0.196252,0.803748,reject,True
+test/reject/realwaste_test_reject_000571_02544_Plastic_5dcb2b08c8_Plastic_559.jpg,test,,reject,,,,reject,0.980996,0.019004,0.980996,reject,True
+test/reject/realwaste_test_reject_000572_02545_Food_Organics_21bf8ab7d7_Food Organics_139.jpg,test,,reject,,,,reject,0.998889,0.001111,0.998889,reject,True
+test/reject/realwaste_test_reject_000573_02546_Metal_0c44c5d912_Metal_456.jpg,test,,reject,,,,reject,0.999779,0.000221,0.999779,reject,True
+test/reject/realwaste_test_reject_000574_02547_Cardboard_f5641fd818_Cardboard_2.jpg,test,,reject,,,,reject,0.933880,0.066120,0.933880,reject,True
+test/reject/realwaste_test_reject_000575_02548_Vegetation_a0104dba82_Vegetation_317.jpg,test,,reject,,,,reject,0.968327,0.031673,0.968327,reject,True
+test/reject/realwaste_test_reject_000576_02549_Plastic_3c1cdb3e93_Plastic_131.jpg,test,,reject,,,,reject,0.999693,0.000307,0.999693,reject,True
+test/reject/realwaste_test_reject_000577_02550_Food_Organics_cb6a12b134_Food Organics_180.jpg,test,,reject,,,,reject,0.998733,0.001267,0.998733,reject,True
+test/reject/realwaste_test_reject_000578_02551_Cardboard_9fd62a56fe_Cardboard_298.jpg,test,,reject,,,,reject,0.639834,0.360166,0.639834,reject,True
+test/reject/realwaste_test_reject_000579_02552_Paper_28a4bb1749_Paper_82.jpg,test,,reject,,,,reject,0.985471,0.014529,0.985471,reject,True
+test/reject/realwaste_test_reject_000580_02553_Food_Organics_124793b0da_Food Organics_333.jpg,test,,reject,,,,reject,0.993114,0.006886,0.993114,reject,True
+test/reject/realwaste_test_reject_000581_02554_Glass_aba50806c0_Glass_251.jpg,test,,reject,,,,reject,0.998345,0.001655,0.998345,reject,True
+test/reject/realwaste_test_reject_000582_02555_Vegetation_9ceafb5fc8_Vegetation_236.jpg,test,,reject,,,,reject,0.999572,0.000428,0.999572,reject,True
+test/reject/realwaste_test_reject_000583_02556_Plastic_d5e7a5d016_Plastic_692.jpg,test,,reject,,,,reject,0.912453,0.087547,0.912453,reject,True
+test/reject/realwaste_test_reject_000584_02557_Plastic_c1effc6860_Plastic_16.jpg,test,,reject,,,,reject,0.999671,0.000329,0.999671,reject,True
+test/reject/realwaste_test_reject_000585_02558_Glass_b58ca4819e_Glass_212.jpg,test,,reject,,,,reject,0.998099,0.001901,0.998099,reject,True
+test/reject/realwaste_test_reject_000586_02559_Plastic_1bf3b567b7_Plastic_217.jpg,test,,reject,,,,reject,0.999781,0.000219,0.999781,reject,True
+test/reject/realwaste_test_reject_000587_02560_Cardboard_2664e52240_Cardboard_259.jpg,test,,reject,,,,reject,0.990905,0.009095,0.990905,reject,True
+test/reject/realwaste_test_reject_000588_02561_Metal_a837afee64_Metal_160.jpg,test,,reject,,,,reject,0.999986,0.000014,0.999986,reject,True
+test/reject/realwaste_test_reject_000589_02562_Plastic_c118714585_Plastic_501.jpg,test,,reject,,,,reject,0.889335,0.110665,0.889335,reject,True
+test/reject/realwaste_test_reject_000590_02563_Metal_cc850ecfbd_Metal_77.jpg,test,,reject,,,,reject,0.904856,0.095144,0.904856,reject,True
+test/accept/taco_test_accept_000000_00665_d32ea80cdf_taco_00356_Other_plastic_wrapper_68785c5d.jpg,test,,accept,,,,reject,0.864949,0.135051,0.864949,reject,False
+test/accept/taco_test_accept_000001_00666_3f8da990a7_taco_01107_Other_plastic_wrapper_d84aad28.jpg,test,,accept,,,,accept,0.847812,0.847812,0.152188,accept,True
+test/accept/taco_test_accept_000002_00667_cfab5bc6eb_taco_00490_Cigarette_fde3ea9c.jpg,test,,accept,,,,reject,0.524052,0.475948,0.524052,reject,False
+test/accept/taco_test_accept_000003_00668_ae532242a8_taco_01231_Plastic_film_64dc8ff6.jpg,test,,accept,,,,accept,0.865582,0.865582,0.134418,accept,True
+test/accept/taco_test_accept_000004_00669_e06793ddff_taco_00762_Other_plastic_wrapper_05c1fcfc.jpg,test,,accept,,,,accept,0.736616,0.736616,0.263384,reject,True
+test/accept/taco_test_accept_000005_00670_b43c34d485_taco_00419_Other_plastic_wrapper_3ddf1179.jpg,test,,accept,,,,reject,0.842556,0.157443,0.842556,reject,False
+test/accept/taco_test_accept_000006_00671_ce1edbe933_taco_00280_Plastic_film_f9f7f237.jpg,test,,accept,,,,accept,0.652860,0.652860,0.347140,reject,True
+test/accept/taco_test_accept_000007_00672_8af0b95452_taco_00985_Styrofoam_piece_a0aaa022.jpg,test,,accept,,,,accept,0.716671,0.716671,0.283329,reject,True
+test/accept/taco_test_accept_000008_00673_2df6c73b33_taco_00217_Styrofoam_piece_f46688d4.jpg,test,,accept,,,,accept,0.908462,0.908462,0.091538,accept,True
+test/accept/taco_test_accept_000009_00674_33a75e727b_taco_01062_Cigarette_e7b84a8a.jpg,test,,accept,,,,reject,0.601119,0.398881,0.601119,reject,False
+test/accept/taco_test_accept_000010_00675_00a2cfea6c_taco_00215_Styrofoam_piece_fb72b6bf.jpg,test,,accept,,,,accept,0.954918,0.954918,0.045082,accept,True
+test/accept/taco_test_accept_000011_00676_40ea1e1b30_taco_00963_Plastic_film_d81ad1d1.jpg,test,,accept,,,,accept,0.790965,0.790965,0.209035,accept,True
+test/accept/taco_test_accept_000012_00677_920356f372_taco_00702_Other_plastic_wrapper_2a34a50f.jpg,test,,accept,,,,accept,0.540157,0.540157,0.459843,reject,True
+test/accept/taco_test_accept_000013_00678_5ce8949005_taco_00383_Other_plastic_wrapper_2caabe57.jpg,test,,accept,,,,reject,0.507279,0.492721,0.507279,reject,False
+test/accept/taco_test_accept_000014_00679_ed5468021f_taco_00858_Plastic_film_76a108fb.jpg,test,,accept,,,,accept,0.747735,0.747735,0.252265,reject,True
+test/accept/taco_test_accept_000015_00680_07fc455aeb_taco_00375_Other_plastic_wrapper_31d6f204.jpg,test,,accept,,,,accept,0.660680,0.660680,0.339319,reject,True
+test/accept/taco_test_accept_000016_00681_9b7401ca2c_taco_01092_Disposable_food_container_2ce4309c.jpg,test,,accept,,,,accept,0.628115,0.628115,0.371885,reject,True
+test/accept/taco_test_accept_000017_00682_6b521d9a1d_taco_01432_Plastic_film_da691e48.jpg,test,,accept,,,,accept,0.715844,0.715844,0.284156,reject,True
+test/accept/taco_test_accept_000018_00683_7dabfcc851_taco_00412_Single-use_carrier_bag_4537be68.jpg,test,,accept,,,,accept,0.769771,0.769771,0.230229,accept,True
+test/accept/taco_test_accept_000019_00684_00c732025a_taco_00169_Plastic_film_9b77c2f5.jpg,test,,accept,,,,accept,0.583094,0.583094,0.416906,reject,True
+test/accept/taco_test_accept_000020_00685_8ff900e617_taco_00475_Plastic_film_c81b677d.jpg,test,,accept,,,,accept,0.708850,0.708850,0.291150,reject,True
+test/accept/taco_test_accept_000021_00686_54b7f530f6_taco_01440_Cigarette_2219cfc6.jpg,test,,accept,,,,accept,0.793979,0.793979,0.206021,accept,True
+test/accept/taco_test_accept_000022_00687_485f64e6d6_taco_01241_Cigarette_2cc63998.jpg,test,,accept,,,,accept,0.878717,0.878717,0.121283,accept,True
+test/accept/taco_test_accept_000023_00688_3298ca72ac_taco_00299_Cigarette_7e18002e.jpg,test,,accept,,,,reject,0.869244,0.130756,0.869244,reject,False
+test/accept/taco_test_accept_000024_00689_577b890e13_taco_00182_Cigarette_e6e45a5c.jpg,test,,accept,,,,accept,0.525904,0.525904,0.474096,reject,True
+test/accept/taco_test_accept_000025_00690_29a18c4d0a_taco_00864_Tissues_b6a16fff.jpg,test,,accept,,,,reject,0.524764,0.475236,0.524764,reject,False
+test/accept/taco_test_accept_000026_00691_a45087ce41_taco_00152_Styrofoam_piece_67d9c2be.jpg,test,,accept,,,,accept,0.689031,0.689031,0.310969,reject,True
+test/accept/taco_test_accept_000027_00692_648d4ec67b_taco_01427_Tissues_2902f438.jpg,test,,accept,,,,reject,0.636864,0.363135,0.636864,reject,False
+test/accept/taco_test_accept_000028_00693_637b71b255_taco_00657_Plastic_film_3c5ab10a.jpg,test,,accept,,,,accept,0.779591,0.779591,0.220409,accept,True
+test/accept/taco_test_accept_000029_00694_6369445b0d_taco_00535_Plastic_film_c98ffa9f.jpg,test,,accept,,,,reject,0.754665,0.245335,0.754665,reject,False
+test/accept/taco_test_accept_000030_00695_c9e28729c0_taco_01356_Plastic_film_8916e76f.jpg,test,,accept,,,,reject,0.683359,0.316641,0.683359,reject,False
+test/accept/taco_test_accept_000031_00696_98756421c4_taco_00590_Other_plastic_wrapper_522a1d6a.jpg,test,,accept,,,,reject,0.933581,0.066419,0.933581,reject,False
+test/accept/taco_test_accept_000032_00697_6b17145eb7_taco_00614_Disposable_food_container_96aa7d40.jpg,test,,accept,,,,accept,0.658158,0.658158,0.341842,reject,True
+test/accept/taco_test_accept_000033_00698_f9f9d3b54b_taco_00264_Single-use_carrier_bag_f6537a3b.jpg,test,,accept,,,,accept,0.598741,0.598741,0.401259,reject,True
+test/accept/taco_test_accept_000034_00699_63a031a195_taco_00653_Other_plastic_wrapper_0600555e.jpg,test,,accept,,,,reject,0.979315,0.020685,0.979315,reject,False
+test/accept/taco_test_accept_000035_00700_b8e9bbdd07_taco_00659_Plastic_film_03201b03.jpg,test,,accept,,,,accept,0.621252,0.621252,0.378748,reject,True
+test/accept/taco_test_accept_000036_00701_b38b933318_taco_00995_Cigarette_19df2bc7.jpg,test,,accept,,,,accept,0.661070,0.661070,0.338930,reject,True
+test/accept/taco_test_accept_000037_00702_540430f440_taco_00674_Garbage_bag_840d2134.jpg,test,,accept,,,,accept,0.541736,0.541736,0.458264,reject,True
+test/accept/taco_test_accept_000038_00703_7037488ad7_taco_00612_Plastic_film_f0c00314.jpg,test,,accept,,,,reject,0.800211,0.199789,0.800211,reject,False
+test/accept/taco_test_accept_000039_00704_b104a615c2_taco_00233_Plastic_film_2995d5ab.jpg,test,,accept,,,,reject,0.511844,0.488156,0.511844,reject,False
+test/accept/taco_test_accept_000040_00705_31c3bc0415_taco_00385_Single-use_carrier_bag_1f9b261f.jpg,test,,accept,,,,accept,0.758634,0.758634,0.241366,reject,True
+test/accept/taco_test_accept_000041_00706_bc0b9a653d_taco_01029_Other_plastic_wrapper_f8ba7c29.jpg,test,,accept,,,,reject,0.562380,0.437620,0.562380,reject,False
+test/accept/taco_test_accept_000042_00707_47c54e27fc_taco_00430_Styrofoam_piece_d8593837.jpg,test,,accept,,,,reject,0.561613,0.438387,0.561613,reject,False
+test/accept/taco_test_accept_000043_00708_c7aff6eb84_taco_01172_Other_plastic_wrapper_617057de.jpg,test,,accept,,,,accept,0.723176,0.723176,0.276824,reject,True
+test/accept/taco_test_accept_000044_00709_c5e54f86df_taco_01466_Cigarette_127616e4.jpg,test,,accept,,,,accept,0.815493,0.815493,0.184507,accept,True
+test/accept/taco_test_accept_000045_00710_43ea695921_taco_01333_Cigarette_c9697a2e.jpg,test,,accept,,,,accept,0.591500,0.591500,0.408500,reject,True
+test/accept/taco_test_accept_000046_00711_ccc8a31ca9_taco_01495_Other_plastic_wrapper_ea08fda9.jpg,test,,accept,,,,reject,0.930744,0.069256,0.930744,reject,False
+test/accept/taco_test_accept_000047_00712_b76219b03b_taco_01415_Tissues_033ae0c9.jpg,test,,accept,,,,accept,0.792544,0.792544,0.207456,accept,True
+test/accept/taco_test_accept_000048_00713_1d577208d9_taco_00461_Plastic_utensils_302d026e.jpg,test,,accept,,,,accept,0.544966,0.544966,0.455034,reject,True
+test/accept/taco_test_accept_000049_00714_924d4fe1c2_taco_01403_Plastic_film_eff7ab6e.jpg,test,,accept,,,,reject,0.705564,0.294436,0.705564,reject,False
+test/accept/taco_test_accept_000050_00715_e23860bf17_taco_00462_Other_plastic_wrapper_0f72027f.jpg,test,,accept,,,,accept,0.693909,0.693909,0.306091,reject,True
+test/accept/taco_test_accept_000051_00716_a788ed3c74_taco_00245_Garbage_bag_dd92fea9.jpg,test,,accept,,,,reject,0.827342,0.172658,0.827342,reject,False
+test/accept/taco_test_accept_000052_00717_c7cf5ed771_taco_01156_Other_plastic_wrapper_db9ddd6b.jpg,test,,accept,,,,accept,0.878509,0.878509,0.121491,accept,True
+test/accept/taco_test_accept_000053_00718_edf4a48827_taco_00906_Styrofoam_piece_76a83b69.jpg,test,,accept,,,,accept,0.647943,0.647943,0.352057,reject,True
+test/accept/taco_test_accept_000054_00719_38a09b9a6b_taco_00688_Disposable_food_container_8121a203.jpg,test,,accept,,,,reject,0.935691,0.064309,0.935691,reject,False
+test/accept/taco_test_accept_000055_00720_3ed15b6dad_taco_00409_Plastic_film_7111218a.jpg,test,,accept,,,,accept,0.618380,0.618380,0.381620,reject,True
+test/accept/taco_test_accept_000056_00721_f09bac35d1_taco_00698_Crisp_packet_a5dc8621.jpg,test,,accept,,,,accept,0.823757,0.823757,0.176243,accept,True
+test/accept/taco_test_accept_000057_00722_9f1804a196_taco_00347_Cigarette_c652d1e8.jpg,test,,accept,,,,accept,0.724485,0.724485,0.275515,reject,True
+test/accept/taco_test_accept_000058_00723_e313d9bf0c_taco_00218_Styrofoam_piece_734fcacb.jpg,test,,accept,,,,accept,0.535471,0.535471,0.464529,reject,True
+test/accept/taco_test_accept_000059_00724_c307e5adf4_taco_00283_Other_plastic_wrapper_1fa20183.jpg,test,,accept,,,,accept,0.582462,0.582462,0.417538,reject,True
+test/accept/taco_test_accept_000060_00725_dd11a9e5bf_taco_01050_Cigarette_3657c81a.jpg,test,,accept,,,,accept,0.598375,0.598375,0.401625,reject,True
+test/accept/taco_test_accept_000061_00726_770d701e68_taco_01412_Plastic_film_ab267a4b.jpg,test,,accept,,,,accept,0.825086,0.825086,0.174914,accept,True
+test/accept/taco_test_accept_000062_00727_df773ce9d7_taco_00687_Other_plastic_wrapper_267be5e5.jpg,test,,accept,,,,accept,0.788271,0.788271,0.211729,accept,True
+test/accept/taco_test_accept_000063_00728_aa2717c57f_taco_00769_Other_plastic_wrapper_b8e650be.jpg,test,,accept,,,,accept,0.556429,0.556429,0.443571,reject,True
+test/accept/taco_test_accept_000064_00729_b5d929fcf9_taco_01190_Disposable_food_container_88da93da.jpg,test,,accept,,,,accept,0.649996,0.649996,0.350004,reject,True
+test/accept/taco_test_accept_000065_00730_cb4b6852bc_taco_00948_Cigarette_59bc6cfb.jpg,test,,accept,,,,accept,0.657762,0.657762,0.342238,reject,True
+test/accept/taco_test_accept_000066_00731_5d1a09b600_taco_00834_Other_plastic_wrapper_b612e631.jpg,test,,accept,,,,accept,0.668383,0.668383,0.331617,reject,True
+test/accept/taco_test_accept_000067_00732_7dc6c16cee_taco_01444_Plastic_film_0368cdfd.jpg,test,,accept,,,,accept,0.692566,0.692566,0.307434,reject,True
+test/accept/taco_test_accept_000068_00733_245e6951c8_taco_01404_Cigarette_e0a71b66.jpg,test,,accept,,,,accept,0.588911,0.588911,0.411089,reject,True
+test/accept/taco_test_accept_000069_00734_4e520deeb0_taco_00771_Crisp_packet_17c5646f.jpg,test,,accept,,,,reject,0.529804,0.470196,0.529804,reject,False
+test/accept/taco_test_accept_000070_00735_9d7e60b1ac_taco_01223_Other_plastic_wrapper_e2c24e8e.jpg,test,,accept,,,,accept,0.602172,0.602172,0.397827,reject,True
+test/accept/taco_test_accept_000071_00736_1ccb1f765c_taco_00367_Other_plastic_wrapper_d3233967.jpg,test,,accept,,,,accept,0.523359,0.523359,0.476642,reject,True
+test/accept/taco_test_accept_000072_00737_0ecdaa4af0_taco_00680_Other_plastic_wrapper_c2fca5be.jpg,test,,accept,,,,reject,0.659898,0.340102,0.659898,reject,False
+test/accept/taco_test_accept_000073_00738_7ce39f5940_taco_00743_Plastic_film_b1ef5f03.jpg,test,,accept,,,,accept,0.567408,0.567408,0.432592,reject,True
+test/accept/taco_test_accept_000074_00739_d6e62c56ff_taco_00682_Other_plastic_wrapper_88f564d1.jpg,test,,accept,,,,accept,0.694037,0.694037,0.305963,reject,True
+test/accept/taco_test_accept_000075_00740_b43e8d83cf_taco_00866_Plastic_utensils_86d870f7.jpg,test,,accept,,,,accept,0.693804,0.693804,0.306196,reject,True
+test/accept/taco_test_accept_000076_00741_1ecb429475_taco_00656_Crisp_packet_4ab8fd1b.jpg,test,,accept,,,,accept,0.615141,0.615141,0.384859,reject,True
+test/accept/taco_test_accept_000077_00742_550411efff_taco_00133_Other_plastic_wrapper_ee43a88c.jpg,test,,accept,,,,reject,0.776688,0.223312,0.776688,reject,False
+test/accept/taco_test_accept_000078_00743_485e18de74_taco_00823_Plastic_film_df6ff875.jpg,test,,accept,,,,accept,0.528841,0.528841,0.471159,reject,True
+test/accept/taco_test_accept_000079_00744_748ac74947_taco_00533_Cigarette_aa01cd6e.jpg,test,,accept,,,,reject,0.738284,0.261716,0.738284,reject,False
+test/accept/taco_test_accept_000080_00745_e74424dfd5_taco_00298_Cigarette_bb3597ce.jpg,test,,accept,,,,reject,0.536114,0.463886,0.536114,reject,False
+test/accept/taco_test_accept_000081_00746_2351ddf490_taco_00993_Garbage_bag_e3f92c5b.jpg,test,,accept,,,,accept,0.960406,0.960406,0.039594,accept,True
+test/accept/taco_test_accept_000082_00747_d3e0afea5f_taco_00136_Tissues_9622027d.jpg,test,,accept,,,,accept,0.967086,0.967086,0.032914,accept,True
+test/accept/taco_test_accept_000083_00748_db7727ec68_taco_00616_Plastic_film_764753ca.jpg,test,,accept,,,,accept,0.645151,0.645151,0.354849,reject,True
+test/accept/taco_test_accept_000084_00749_56c99e31d0_taco_00327_Cigarette_89f2a85c.jpg,test,,accept,,,,accept,0.734980,0.734980,0.265020,reject,True
+test/accept/taco_test_accept_000085_00750_a526c61554_taco_00722_Cigarette_50973b63.jpg,test,,accept,,,,accept,0.627361,0.627361,0.372639,reject,True
+test/accept/taco_test_accept_000086_00751_d1898b7945_taco_00798_Other_plastic_wrapper_98c4472f.jpg,test,,accept,,,,accept,0.850908,0.850908,0.149092,accept,True
+test/accept/taco_test_accept_000087_00752_ecb51da7f4_taco_00870_Disposable_food_container_8359925d.jpg,test,,accept,,,,reject,0.721538,0.278462,0.721538,reject,False
+test/accept/taco_test_accept_000088_00753_a6c6725068_taco_00316_Cigarette_8569fb71.jpg,test,,accept,,,,accept,0.771439,0.771439,0.228561,accept,True
+test/accept/taco_test_accept_000089_00754_51322ac8e2_taco_00121_Plastic_film_45983dbb.jpg,test,,accept,,,,accept,0.843512,0.843512,0.156488,accept,True
+test/accept/taco_test_accept_000090_00755_59c4c02b89_taco_00663_Plastic_film_6f4b50bd.jpg,test,,accept,,,,reject,0.753524,0.246476,0.753524,reject,False
+test/accept/taco_test_accept_000091_00756_807da731bb_taco_01486_Other_plastic_wrapper_4f8a045f.jpg,test,,accept,,,,accept,0.905570,0.905570,0.094430,accept,True
+test/accept/taco_test_accept_000092_00757_cd9ddd6d93_taco_01279_Plastic_film_e5cf92fe.jpg,test,,accept,,,,accept,0.697628,0.697628,0.302372,reject,True
+test/accept/taco_test_accept_000093_00758_eed581a4d1_taco_01264_Plastic_film_54b642c3.jpg,test,,accept,,,,accept,0.653181,0.653181,0.346819,reject,True
+test/accept/taco_test_accept_000094_00759_33138ae4e7_taco_00753_Cigarette_94f7f8c9.jpg,test,,accept,,,,reject,0.579730,0.420270,0.579730,reject,False
+test/accept/taco_test_accept_000095_00760_2691cb3e3e_taco_00860_Other_plastic_wrapper_70bca3d9.jpg,test,,accept,,,,accept,0.543582,0.543582,0.456418,reject,True
+test/accept/taco_test_accept_000096_00761_f1a2394c23_taco_00038_Plastic_film_2a3bbdcd.jpg,test,,accept,,,,accept,0.627387,0.627387,0.372613,reject,True
+test/accept/taco_test_accept_000097_00762_98bbe3b43d_taco_00191_Plastic_film_e1adfc48.jpg,test,,accept,,,,reject,0.590079,0.409921,0.590079,reject,False
+test/accept/taco_test_accept_000098_00763_c8c47de095_taco_01373_Cigarette_5f81e1bd.jpg,test,,accept,,,,accept,0.691304,0.691304,0.308696,reject,True
+test/accept/taco_test_accept_000099_00764_dd01796958_taco_01203_Single-use_carrier_bag_1c8ca3df.jpg,test,,accept,,,,accept,0.754672,0.754672,0.245328,reject,True
+test/accept/taco_test_accept_000100_00765_25777d7b2b_taco_00407_Other_plastic_wrapper_076fbfa1.jpg,test,,accept,,,,accept,0.557162,0.557162,0.442838,reject,True
+test/accept/taco_test_accept_000101_00766_47f2c3e97f_taco_01410_Plastic_film_8da19c87.jpg,test,,accept,,,,accept,0.846650,0.846650,0.153350,accept,True
+test/accept/taco_test_accept_000102_00767_9e2e8e84cc_taco_00775_Cigarette_6d547191.jpg,test,,accept,,,,accept,0.680115,0.680115,0.319885,reject,True
+test/accept/taco_test_accept_000103_00768_b77170766d_taco_01064_Cigarette_233764a4.jpg,test,,accept,,,,accept,0.979729,0.979729,0.020271,accept,True
+test/accept/taco_test_accept_000104_00769_e812f5b9c3_taco_00633_Plastic_film_14118dc3.jpg,test,,accept,,,,accept,0.760877,0.760877,0.239123,accept,True
+test/accept/taco_test_accept_000105_00770_5b4c2c5533_taco_01423_Styrofoam_piece_f6ddfb2a.jpg,test,,accept,,,,accept,0.540263,0.540263,0.459737,reject,True
+test/accept/taco_test_accept_000106_00771_b3ad1fab13_taco_01230_Other_plastic_wrapper_93e21a41.jpg,test,,accept,,,,accept,0.569767,0.569767,0.430233,reject,True
+test/accept/taco_test_accept_000107_00772_a2f0122048_taco_01094_Other_plastic_wrapper_f9b5f390.jpg,test,,accept,,,,accept,0.580807,0.580807,0.419193,reject,True
+test/accept/taco_test_accept_000108_00773_fbb369ff54_taco_00067_Tissues_989d3a10.jpg,test,,accept,,,,reject,0.641510,0.358490,0.641510,reject,False
+test/accept/taco_test_accept_000109_00774_926ae55b33_taco_00750_Plastic_film_82d0f31f.jpg,test,,accept,,,,reject,0.864711,0.135289,0.864711,reject,False
+test/accept/taco_test_accept_000110_00775_92085e635d_taco_01242_Garbage_bag_66e3f412.jpg,test,,accept,,,,accept,0.818330,0.818330,0.181670,accept,True
+test/accept/taco_test_accept_000111_00776_3085541818_taco_01367_Plastic_film_bb81c460.jpg,test,,accept,,,,reject,0.540545,0.459455,0.540545,reject,False
+test/accept/taco_test_accept_000112_00777_568e25ef0b_taco_01084_Crisp_packet_2c2d5bfa.jpg,test,,accept,,,,accept,0.517638,0.517638,0.482362,reject,True
+test/accept/taco_test_accept_000113_00778_050d534562_taco_00254_Plastic_film_785c4562.jpg,test,,accept,,,,reject,0.917233,0.082767,0.917233,reject,False
+test/accept/taco_test_accept_000114_00779_a29e3622f9_taco_00896_Plastic_film_888a396b.jpg,test,,accept,,,,accept,0.633239,0.633239,0.366761,reject,True
+test/accept/taco_test_accept_000115_00780_8d7ae49828_taco_01287_Other_plastic_wrapper_e3794a42.jpg,test,,accept,,,,reject,0.538597,0.461403,0.538597,reject,False
+test/accept/taco_test_accept_000116_00781_cd0c7697dd_taco_00820_Plastic_film_3a93f4d7.jpg,test,,accept,,,,reject,0.614051,0.385949,0.614051,reject,False
+test/accept/taco_test_accept_000117_00782_239bfb94ed_taco_00640_Other_plastic_wrapper_a0d10422.jpg,test,,accept,,,,reject,0.671436,0.328564,0.671436,reject,False
+test/reject/taco_test_reject_000000_01138_0e7b6a5bbc_taco_01277_Glass_bottle_bd53d0ec.jpg,test,,reject,,,,accept,0.600043,0.600043,0.399957,reject,False
+test/reject/taco_test_reject_000001_01139_1c13278c93_taco_01491_Clear_plastic_bottle_fd752c93.jpg,test,,reject,,,,accept,0.622120,0.622120,0.377880,reject,False
+test/reject/taco_test_reject_000002_01140_7de2695b2f_taco_00474_Plastic_bottle_cap_ca84baf9.jpg,test,,reject,,,,reject,0.990230,0.009770,0.990230,reject,True
+test/reject/taco_test_reject_000003_01141_8984d0268b_taco_00148_Clear_plastic_bottle_8d1c1332.jpg,test,,reject,,,,accept,0.875312,0.875312,0.124688,accept,False
+test/reject/taco_test_reject_000004_01142_862e1a7420_taco_00710_Drink_can_08a8ba07.jpg,test,,reject,,,,reject,0.764412,0.235588,0.764412,reject,True
+test/reject/taco_test_reject_000005_01143_57362f0609_taco_01350_Drink_carton_ca0df1ea.jpg,test,,reject,,,,accept,0.738546,0.738546,0.261454,reject,False
+test/reject/taco_test_reject_000006_01144_2c626387c5_taco_01155_Clear_plastic_bottle_a7068a41.jpg,test,,reject,,,,reject,0.660458,0.339542,0.660458,reject,True
+test/reject/taco_test_reject_000007_01145_3900ac04bb_taco_00214_Corrugated_carton_ae59f747.jpg,test,,reject,,,,accept,0.845724,0.845724,0.154276,accept,False
+test/reject/taco_test_reject_000008_01146_9c7cf77813_taco_00036_Clear_plastic_bottle_c4df50d9.jpg,test,,reject,,,,accept,0.583168,0.583168,0.416832,reject,False
+test/reject/taco_test_reject_000009_01147_0e26d8b3d7_taco_01141_Drink_can_436405cf.jpg,test,,reject,,,,accept,0.698538,0.698538,0.301462,reject,False
+test/reject/taco_test_reject_000010_01148_5b495e8953_taco_00309_Drink_can_7d0bd8d0.jpg,test,,reject,,,,reject,0.790679,0.209321,0.790679,reject,True
+test/reject/taco_test_reject_000011_01149_c3aa7f322f_taco_00480_Metal_bottle_cap_6519c2b9.jpg,test,,reject,,,,reject,0.618455,0.381545,0.618455,reject,True
+test/reject/taco_test_reject_000012_01150_ce18dd4aa3_taco_01419_Scrap_metal_75ce8043.jpg,test,,reject,,,,accept,0.789009,0.789009,0.210991,accept,False
+test/reject/taco_test_reject_000013_01151_1c2244e2fd_taco_00467_Metal_bottle_cap_9ab84b7f.jpg,test,,reject,,,,reject,0.686193,0.313807,0.686193,reject,True
+test/reject/taco_test_reject_000014_01152_e927b50c34_taco_01195_Drink_can_cf4ab0df.jpg,test,,reject,,,,reject,0.578546,0.421454,0.578546,reject,True
+test/reject/taco_test_reject_000015_01153_2855b152b6_taco_00028_Drink_can_9fdba6dc.jpg,test,,reject,,,,accept,0.519243,0.519243,0.480757,reject,False
+test/reject/taco_test_reject_000016_01154_90f7cbce61_taco_00578_Other_plastic_bottle_a067e361.jpg,test,,reject,,,,reject,0.830475,0.169525,0.830475,reject,True
+test/reject/taco_test_reject_000017_01155_5985f48e9a_taco_00842_Metal_bottle_cap_1418676b.jpg,test,,reject,,,,accept,0.537428,0.537428,0.462572,reject,False
+test/reject/taco_test_reject_000018_01156_2bc12902d0_taco_00131_Corrugated_carton_8a9e0077.jpg,test,,reject,,,,accept,0.776733,0.776733,0.223267,accept,False
+test/reject/taco_test_reject_000019_01157_b39f6ad7a7_taco_01330_Clear_plastic_bottle_bb7be166.jpg,test,,reject,,,,accept,0.767855,0.767855,0.232145,accept,False
+test/reject/taco_test_reject_000020_01158_a52456b2ed_taco_01145_Clear_plastic_bottle_0207866d.jpg,test,,reject,,,,accept,0.542282,0.542282,0.457718,reject,False
+test/reject/taco_test_reject_000021_01159_1271d0eab3_taco_01044_Glass_bottle_3b0d52bf.jpg,test,,reject,,,,reject,0.611092,0.388908,0.611092,reject,True
+test/reject/taco_test_reject_000022_01160_3f24dd913b_taco_00324_Drink_can_c6336f81.jpg,test,,reject,,,,accept,0.676629,0.676629,0.323371,reject,False
+test/reject/taco_test_reject_000023_01161_8fdf04bd38_taco_00723_Drink_can_89a0b19f.jpg,test,,reject,,,,accept,0.539768,0.539768,0.460232,reject,False
+test/reject/taco_test_reject_000024_01162_49278af63e_taco_01105_Other_plastic_bottle_5fe538a2.jpg,test,,reject,,,,reject,0.695181,0.304819,0.695181,reject,True
+test/reject/taco_test_reject_000025_01163_c52beba657_taco_01348_Clear_plastic_bottle_a30dcffd.jpg,test,,reject,,,,reject,0.811030,0.188970,0.811030,reject,True
+test/reject/taco_test_reject_000026_01164_6c98a71ca9_taco_00081_Corrugated_carton_cdff2416.jpg,test,,reject,,,,reject,0.702245,0.297755,0.702245,reject,True
+test/reject/taco_test_reject_000027_01165_80c5118ee9_taco_00440_Clear_plastic_bottle_2056839b.jpg,test,,reject,,,,reject,0.961352,0.038648,0.961352,reject,True
+test/reject/taco_test_reject_000028_01166_28d4c8dcd4_taco_00645_Metal_bottle_cap_f3e48373.jpg,test,,reject,,,,reject,0.637928,0.362072,0.637928,reject,True
+test/reject/taco_test_reject_000029_01167_f834bacf9f_taco_00395_Plastic_bottle_cap_938efe3d.jpg,test,,reject,,,,accept,0.594710,0.594710,0.405290,reject,False
+test/reject/taco_test_reject_000030_01168_5022967ba9_taco_01295_Plastic_bottle_cap_b799eadc.jpg,test,,reject,,,,accept,0.625682,0.625682,0.374318,reject,False
+test/reject/taco_test_reject_000031_01169_a40c1e91b8_taco_00016_Aerosol_ad15261b.jpg,test,,reject,,,,reject,0.505391,0.494609,0.505391,reject,True
+test/reject/taco_test_reject_000032_01170_69efdea2a0_taco_00024_Aerosol_7deb7cd2.jpg,test,,reject,,,,reject,0.679975,0.320025,0.679975,reject,True
+test/reject/taco_test_reject_000033_01171_57d7ca49be_taco_01056_Drink_can_7f45a7a4.jpg,test,,reject,,,,accept,0.523017,0.523017,0.476983,reject,False
+test/reject/taco_test_reject_000034_01172_b4ff723f53_taco_00582_Glass_bottle_7edddce4.jpg,test,,reject,,,,accept,0.615225,0.615225,0.384775,reject,False
+test/reject/taco_test_reject_000035_01173_4d8b3fb4f3_taco_00794_Clear_plastic_bottle_e68af571.jpg,test,,reject,,,,accept,0.737115,0.737115,0.262885,reject,False
+test/reject/taco_test_reject_000036_01174_00d81b24d9_taco_00543_Other_plastic_bottle_268362d7.jpg,test,,reject,,,,reject,0.535473,0.464527,0.535473,reject,True
+test/reject/taco_test_reject_000037_01175_2f6f72beaa_taco_00009_Food_Can_72309f9a.jpg,test,,reject,,,,reject,0.675022,0.324978,0.675022,reject,True
+test/reject/taco_test_reject_000038_01176_9f39c44e43_taco_00843_Drink_can_76061858.jpg,test,,reject,,,,reject,0.604641,0.395359,0.604641,reject,True
+test/reject/taco_test_reject_000039_01177_48a959632e_taco_01131_Clear_plastic_bottle_61b02e82.jpg,test,,reject,,,,reject,0.913734,0.086266,0.913734,reject,True
+test/reject/taco_test_reject_000040_01178_a0c72aa057_taco_01188_Clear_plastic_bottle_76a8e54a.jpg,test,,reject,,,,reject,0.570262,0.429738,0.570262,reject,True
+test/reject/taco_test_reject_000041_01179_526d6e4821_taco_00550_Broken_glass_19d6cb10.jpg,test,,reject,,,,accept,0.755527,0.755527,0.244473,reject,False
+test/reject/taco_test_reject_000042_01180_d4d4a68c1e_taco_00126_Drink_can_f2c08397.jpg,test,,reject,,,,accept,0.561291,0.561291,0.438709,reject,False
+test/reject/taco_test_reject_000043_01181_269c4a8b60_taco_00042_Drink_can_a2887150.jpg,test,,reject,,,,accept,0.692644,0.692644,0.307356,reject,False
+test/reject/taco_test_reject_000044_01182_02fccf436b_taco_01082_Clear_plastic_bottle_8244e53a.jpg,test,,reject,,,,accept,0.507063,0.507063,0.492937,reject,False
+test/reject/taco_test_reject_000045_01183_8074418f1f_taco_01019_Clear_plastic_bottle_8d5f1feb.jpg,test,,reject,,,,accept,0.689287,0.689287,0.310713,reject,False
+test/reject/taco_test_reject_000046_01184_1ef1c05fd2_taco_00463_Scrap_metal_61b2c3b2.jpg,test,,reject,,,,accept,0.932961,0.932961,0.067039,accept,False
+test/reject/taco_test_reject_000047_01185_362b2ab725_taco_01165_Corrugated_carton_fc90da72.jpg,test,,reject,,,,reject,0.697709,0.302291,0.697709,reject,True
+test/reject/taco_test_reject_000048_01186_ac85567381_taco_00664_Metal_bottle_cap_7c25e634.jpg,test,,reject,,,,accept,0.730815,0.730815,0.269185,reject,False
+test/reject/taco_test_reject_000049_01187_f5aa0d23e5_taco_00116_Drink_can_b025ca09.jpg,test,,reject,,,,accept,0.761254,0.761254,0.238746,accept,False
+test/reject/taco_test_reject_000050_01188_71c20c8edc_taco_01256_Drink_can_237cb80d.jpg,test,,reject,,,,accept,0.842317,0.842317,0.157683,accept,False
+test/reject/taco_test_reject_000051_01189_8ab8c1edde_taco_01489_Other_plastic_bottle_59964307.jpg,test,,reject,,,,accept,0.585729,0.585729,0.414271,reject,False
+test/reject/taco_test_reject_000052_01190_649b7389aa_taco_01253_Drink_carton_eedb18d6.jpg,test,,reject,,,,accept,0.582172,0.582172,0.417828,reject,False
+test/reject/taco_test_reject_000053_01191_f3ffb132d9_taco_01336_Glass_bottle_ba06d8aa.jpg,test,,reject,,,,accept,0.754222,0.754222,0.245778,reject,False
+test/reject/taco_test_reject_000054_01192_feefa148b5_taco_00697_Other_carton_286ff31a.jpg,test,,reject,,,,accept,0.629242,0.629242,0.370757,reject,False
+test/reject/taco_test_reject_000055_01193_5df440f48c_taco_01252_Clear_plastic_bottle_a67c9d5a.jpg,test,,reject,,,,accept,0.739248,0.739248,0.260752,reject,False
+test/reject/taco_test_reject_000056_01194_5ef7fef644_taco_00765_Clear_plastic_bottle_ac970196.jpg,test,,reject,,,,accept,0.842242,0.842242,0.157758,accept,False
+test/reject/taco_test_reject_000057_01195_20999aab47_taco_00453_Other_carton_409884eb.jpg,test,,reject,,,,accept,0.552321,0.552321,0.447679,reject,False
+test/reject/taco_test_reject_000058_01196_845f269dc6_taco_01498_Drink_carton_e979ce6c.jpg,test,,reject,,,,reject,0.833797,0.166203,0.833797,reject,True
+test/reject/taco_test_reject_000059_01197_a8f2c3dbb7_taco_00015_Other_plastic_bottle_b95ce2fe.jpg,test,,reject,,,,reject,0.589133,0.410867,0.589133,reject,True
+test/reject/taco_test_reject_000060_01198_70811164ac_taco_01101_Aerosol_f013633f.jpg,test,,reject,,,,accept,0.634895,0.634895,0.365105,reject,False
+test/reject/taco_test_reject_000061_01199_5e828abdd0_taco_00677_Drink_can_d9782c34.jpg,test,,reject,,,,accept,0.658938,0.658938,0.341062,reject,False
+test/accept/tidy_test_accept_000000_00158_plastic_db38da796f_pl32.JPG,test,,accept,,,,reject,0.764827,0.235173,0.764827,reject,False
+test/accept/tidy_test_accept_000001_00159_cigarette-butt_7f734a68b5_cb46.JPG,test,,accept,,,,accept,0.975563,0.975563,0.024437,accept,True
+test/accept/tidy_test_accept_000002_00160_cigarette-butt_53d7bcd8c0_cb19.JPG,test,,accept,,,,accept,0.870967,0.870967,0.129033,accept,True
+test/accept/tidy_test_accept_000003_00161_plastic_3c8013a0c8_pl0.JPG,test,,accept,,,,reject,0.758967,0.241033,0.758967,reject,False
+test/accept/tidy_test_accept_000004_00162_plastic-bag_f95ba3c3b4_pb4.JPG,test,,accept,,,,accept,0.701751,0.701751,0.298249,reject,True
+test/accept/tidy_test_accept_000005_00163_plastic-bag_d5c3500def_pb3.JPG,test,,accept,,,,accept,0.538158,0.538158,0.461842,reject,True
+test/accept/tidy_test_accept_000006_00164_unknown_cf1c54cd16_u5.JPG,test,,accept,,,,accept,0.861428,0.861428,0.138572,accept,True
+test/accept/tidy_test_accept_000007_00165_plastic_8a95490d14_pl31.JPG,test,,accept,,,,accept,0.786403,0.786403,0.213597,accept,True
+test/accept/tidy_test_accept_000008_00166_cigarette-butt_766433bcad_cb10.JPG,test,,accept,,,,accept,0.942071,0.942071,0.057929,accept,True
+test/accept/tidy_test_accept_000009_00167_cigarette-butt_50aa5833bf_cb29.JPG,test,,accept,,,,accept,0.920554,0.920554,0.079446,accept,True
+test/accept/tidy_test_accept_000010_00168_plastic_d842a4efa3_pl0.JPG,test,,accept,,,,accept,0.681967,0.681967,0.318033,reject,True
+test/accept/tidy_test_accept_000011_00169_cigarette-butt_1d09d1d36d_cb15.jpg,test,,accept,,,,accept,0.647303,0.647303,0.352697,reject,True
+test/accept/tidy_test_accept_000012_00170_plastic_bcc20466bd_pl21.JPG,test,,accept,,,,accept,0.880743,0.880743,0.119257,accept,True
+test/accept/tidy_test_accept_000013_00171_plastic_e362ad4061_pl53.JPG,test,,accept,,,,accept,0.843298,0.843298,0.156702,accept,True
+test/accept/tidy_test_accept_000014_00172_unknown_df32de1bc5_u3.JPG,test,,accept,,,,accept,0.727479,0.727479,0.272521,reject,True
+test/accept/tidy_test_accept_000015_00173_plastic_89b6c6c53b_pl4.jpg,test,,accept,,,,reject,0.608789,0.391211,0.608789,reject,False
+test/accept/tidy_test_accept_000016_00174_plastic_3bc36557be_pl57.JPG,test,,accept,,,,accept,0.827662,0.827662,0.172338,accept,True
+test/accept/tidy_test_accept_000017_00175_cigarette-butt_6533db1da0_cb12.JPG,test,,accept,,,,accept,0.964831,0.964831,0.035169,accept,True
+test/accept/tidy_test_accept_000018_00176_plastic_04759a0251_pl18.JPG,test,,accept,,,,reject,0.913858,0.086142,0.913858,reject,False
+test/accept/tidy_test_accept_000019_00177_plastic-bag_74a0aa6877_pb1.JPG,test,,accept,,,,accept,0.904505,0.904505,0.095495,accept,True
+test/accept/tidy_test_accept_000020_00178_unknown_7089937df9_u16.JPG,test,,accept,,,,accept,0.954204,0.954204,0.045796,accept,True
+test/accept/tidy_test_accept_000021_00179_plastic_ccf74133d4_pl56.JPG,test,,accept,,,,accept,0.870640,0.870640,0.129360,accept,True
+test/accept/tidy_test_accept_000022_00180_cigarette-butt_ec5e4496c6_cb37.JPG,test,,accept,,,,reject,0.563258,0.436742,0.563258,reject,False
+test/accept/tidy_test_accept_000023_00181_plastic_9d0c24db10_pl35.JPG,test,,accept,,,,reject,0.628127,0.371873,0.628127,reject,False
+test/accept/tidy_test_accept_000024_00182_plastic-bag_dbd90d7be7_pb0.JPG,test,,accept,,,,reject,0.654837,0.345163,0.654837,reject,False
+test/accept/tidy_test_accept_000025_00183_plastic_97ee1243ae_pl26.JPG,test,,accept,,,,reject,0.510265,0.489735,0.510265,reject,False
+test/accept/tidy_test_accept_000026_00184_cigarette-butt_87ff42ecdf_cb7.jpg,test,,accept,,,,accept,0.597916,0.597916,0.402084,reject,True
+test/reject/tidy_test_reject_000000_00269_paper_fea3ef40c1_pa9.JPG,test,,reject,,,,accept,0.610989,0.610989,0.389011,reject,False
+test/reject/tidy_test_reject_000001_00270_paper_ea8f2bfa29_pa6.JPG,test,,reject,,,,accept,0.510275,0.510275,0.489725,reject,False
+test/reject/tidy_test_reject_000002_00271_paper_b46dc006ce_pa37.JPG,test,,reject,,,,accept,0.550380,0.550380,0.449620,reject,False
+test/reject/tidy_test_reject_000003_00272_paper_434e0feb78_pa44.JPG,test,,reject,,,,reject,0.569661,0.430339,0.569661,reject,True
+test/reject/tidy_test_reject_000004_00273_paper_27ab558351_pa33.JPG,test,,reject,,,,reject,0.972688,0.027312,0.972688,reject,True
+test/reject/tidy_test_reject_000005_00274_paper_56cc8d09de_pa11.JPG,test,,reject,,,,accept,0.693215,0.693215,0.306785,reject,False
+test/reject/tidy_test_reject_000006_00275_paper_8587244418_pa3.jpg,test,,reject,,,,accept,0.794989,0.794989,0.205011,accept,False
+test/reject/tidy_test_reject_000007_00276_glass_7b7c958ebd_g9.JPG,test,,reject,,,,accept,0.501826,0.501826,0.498174,reject,False
+test/reject/tidy_test_reject_000008_00277_paper_0522c55b88_pa2.JPG,test,,reject,,,,accept,0.923616,0.923616,0.076384,accept,False
+test/reject/tidy_test_reject_000009_00278_paper_d8d978e6ee_pa14.JPG,test,,reject,,,,reject,0.856556,0.143444,0.856556,reject,True
+test/reject/tidy_test_reject_000010_00279_paper_e5783537e2_pa21.JPG,test,,reject,,,,accept,0.553354,0.553354,0.446646,reject,False
+test/reject/tidy_test_reject_000011_00280_glass_631ed43837_g12.JPG,test,,reject,,,,accept,0.749592,0.749592,0.250408,reject,False
+test/reject/tidy_test_reject_000012_00281_paper_9426edb960_pa28.JPG,test,,reject,,,,accept,0.500779,0.500779,0.499221,reject,False
+test/reject/tidy_test_reject_000013_00282_paper_6ee89c27ea_pa31.JPG,test,,reject,,,,reject,0.885508,0.114492,0.885508,reject,True
+test/reject/tidy_test_reject_000014_00283_paper_b36eae6064_pa3.JPG,test,,reject,,,,reject,0.689107,0.310893,0.689107,reject,True
