@@ -8,6 +8,8 @@ PYTHONPATH=src "$PYTHON_BIN" tests/test_model_adapter.py
 PYTHONPATH=src "$PYTHON_BIN" tests/smoke_stub_inference.py
 PYTHONPATH=src "$PYTHON_BIN" tests/test_accept_gate.py
 PYTHONPATH=src "$PYTHON_BIN" tests/test_voice_feedback.py
+PYTHONPATH=src "$PYTHON_BIN" tests/test_agx_audio.py
+PYTHONPATH=src "$PYTHON_BIN" tests/test_agx_l515_voice_demo.py
 PYTHONPATH=src "$PYTHON_BIN" tests/test_esp32_serial.py
 PYTHONPATH=src "$PYTHON_BIN" tests/test_runtime_integration.py
 "$PYTHON_BIN" scripts/validate-model-metrics.py

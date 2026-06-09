@@ -32,6 +32,7 @@ def result(predicted_class: str, confidence: float, ts: str, *, num_objects: int
 
 def main() -> None:
     router = VoiceCueRouter(rng=FirstChoice())
+    require(len(DEFAULT_VOICE_LINES["accept"]) == 20, "accept voice library should include 20 recorded lines")
     require(len(DEFAULT_VOICE_LINES["reject"]) == 30, "reject voice library should include 30 recorded lines")
 
     accept = router.route(result("accept", 0.91, "2026-06-04T12:00:00")).to_payload()
@@ -44,6 +45,7 @@ def main() -> None:
         str(accept["audio_path"]).endswith("assets/voice/gpt-sovits/accept/accept-01.wav"),
         "accept should point at the pre-generated voice asset",
     )
+    require(accept["text"] == "做得好，這個分類很漂亮。", "accept should use the 20-line positive voice pool")
 
     low = router.route(result("reject", 0.42, "2026-06-04T12:00:10")).to_payload()
     require(low["category"] == "low_confidence", "low confidence should use self-mock voice")

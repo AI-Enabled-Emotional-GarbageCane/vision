@@ -45,15 +45,90 @@ AI 影像辨識服務 — [AI 情緒垃圾筒](https://github.com/AI-Enabled-Emo
 `src/voice_feedback.py` 會把 `recognition_result` 轉成可選的 `voice_feedback_cue`，內容包含 roast 情境、GPT-SoVITS 預生成音檔路徑、台詞、音效與 0.5 秒停頓設定。這是給整合測試或下游 display 使用的 adapter；vision 仍不直接播放語音，也不改 `q_result` 的 v0.3 必要欄位。
 
 若 runtime 傳入 `q_voice`，每次送出 `recognition_result` 後會額外送出一筆 voice cue；未傳入時行為維持原本 contract。
+當 `recognition_result.class == "accept"` 且信心高於門檻時，voice cue 會從 20 句 `accept/accept-01.wav` 到 `accept/accept-20.wav` 正向錄音池隨機選一段。
 當 `recognition_result.class == "reject"` 且信心高於門檻時，voice cue 會從 30 句 `reject/reject-01.wav` 到 `reject/reject-30.wav` 錄音池隨機選一段。
 
-GPT-SoVITS 模型與語音素材產生放在 AGX / Jetson 端；ESP32 只當播放端。`src/esp32_serial.py` 可把 `voice_feedback_cue` 轉成 ESP32 透過 USB Serial / UART 接收的一行 JSON：
+本機模擬 voice cue 並播放 display repo 內的 WAV：
+
+```bash
+python3 scripts/simulate-accept-voice.py
+python3 scripts/simulate-reject-voice.py
+```
+
+兩支腳本預設播放到 AGX 的 HDMI 螢幕 sink：`alsa_output.platform-3510000.hda.hdmi-stereo`。若要只看抽到哪句、不播放音檔：
+
+```bash
+python3 scripts/simulate-accept-voice.py --dry-run
+```
+
+### AGX L515 + HDMI 完整 demo
+
+`scripts/run-agx-l515-voice-demo.py` 會跑完整閉環：
+
+```text
+L515 depth frame -> user_detected -> L515 RGB frame -> vision model -> recognition_result -> random WAV -> AGX HDMI speaker
+```
+
+預設會自動選 `exports/` 裡最新的 `best.onnx` / `best.pt`，目前是 `exports/20260608-demo-accept-recall/best.onnx`。先 dry-run 檢查觸發與抽句子，不真的播放聲音：
+
+```bash
+python3 scripts/run-agx-l515-voice-demo.py --dry-run-audio --max-events 1
+```
+
+相機後端預設為 `--camera-backend auto`。若 `pyrealsense2` / librealsense 在 Jetson 上列舉不到 L515，但 Linux V4L2 已看到 `/dev/video*`，程式會自動改用 V4L2 fallback：`/dev/video2` 讀 `Z16` depth，`/dev/video6` 讀 `YUYV` color。也可以手動指定：
+
+```bash
+python3 scripts/run-agx-l515-voice-demo.py \
+  --camera-backend v4l2 \
+  --v4l2-depth-device /dev/video2 \
+  --v4l2-color-device /dev/video6 \
+  --dry-run-audio \
+  --max-events 1
+```
+
+Demo 預設也會把「中央 depth 幾乎全失效」視為靠近觸發，因為衛生紙、太近或反射不穩的物體可能讓 L515 回傳 0 而不是穩定距離。若要關掉這個 fallback，可加 `--no-trigger-on-invalid-center`。
+
+如果只是要確認相機能打開，不想等深度觸發：
+
+```bash
+python3 scripts/run-agx-l515-voice-demo.py --dry-run-audio --max-frames 2 --warmup-frames 0
+```
+
+確認 AGX HDMI 有聲音後，直接跑：
+
+```bash
+python3 scripts/run-agx-l515-voice-demo.py --max-events 1
+```
+
+若要同時串接 Display UI，讓畫面同步顯示 accept / reject 結果與事件紀錄：
+
+```bash
+python3 scripts/run-agx-l515-voice-demo.py \
+  --display \
+  --display-host 0.0.0.0 \
+  --display-port 8080 \
+  --max-events 1 \
+  --keep-display-open
+```
+
+打開 `http://<AGX-IP>:8080` 即可看 UI。這條路徑會把 `recognition_result` 推進 display，但 display-side 音訊會關閉，避免和 AGX voice sink 重複播放；語音仍由 `AgxWavVoiceSink` 播放 accept / reject WAV。
+
+若 HDMI sink 名稱不同，可指定播放裝置：
+
+```bash
+DISPLAY_AUDIO_DEVICE=alsa_output.platform-3510000.hda.hdmi-stereo \
+  python3 scripts/run-agx-l515-voice-demo.py --max-events 1
+```
+
+這條 demo 路徑不需要 ESP32；它直接在 AGX 主機端播放 `display/assets/audio/accept/*.wav` 或 `display/assets/audio/reject/*.wav`。
+
+GPT-SoVITS 模型與語音素材產生放在 AGX / Jetson 端。若未來改回 ESP32 播放，`src/esp32_serial.py` 可把 `voice_feedback_cue` 轉成 ESP32 透過 USB Serial / UART 接收的一行 JSON：
 
 ```json
 {"category":"reject","audio_path":"reject/reject-01.wav","pre_sfx":"ding","pre_delay_ms":500}
 ```
 
-若 runtime 傳入 `voice_sink`，同一筆 voice cue 會被送到該 sink；可用 `Esp32SerialVoiceSink("/dev/ttyACM0")` 把指令送給 ESP32-S3 voice player。ESP32 sketch 與 SD card 音檔目錄放在 firmware repo 的 `esp32_voice_player/`。
+若 runtime 傳入 `voice_sink`，同一筆 voice cue 會被送到該 sink；AGX HDMI demo 使用 `AgxWavVoiceSink`，ESP32 舊路徑可用 `Esp32SerialVoiceSink("/dev/ttyACM0")`。ESP32 sketch 與 SD card 音檔目錄放在 firmware repo 的 `esp32_voice_player/`。
 
 ## 模型紀錄
 

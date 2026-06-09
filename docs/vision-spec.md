@@ -83,7 +83,7 @@ yolo export model=<best.pt> format=onnx
 判斷規則：
 - `confidence < 0.5`：`low_confidence` 自嘲語音。
 - `num_objects > 1`：`multi_object` 中重度吐槽，保留給未來 detection 版本。
-- `class == "accept"`：`accept` 輕度肯定。
+- `class == "accept"`：每次都從 20 句 `accept` 正向錄音池隨機選一段輕度肯定。
 - `class == "reject"`：每次都從 30 句 `reject` 錄音池隨機選一段中度吐槽。
 
 此 adapter 可在 `run_vision_runtime_loop(..., q_voice=<Queue>)` 傳入額外 queue 時啟用；未傳入時只送原本 `q_result`。`voice_feedback_cue` 不屬於 v0.3 public contract 的必要 payload，display/speaker 仍負責實際播放 GPT-SoVITS 預生成語音素材。
